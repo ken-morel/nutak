@@ -13742,8 +13742,7 @@ pub fn nk_stricmpn(arg_s1: [*c]const u8, arg_s2: [*c]const u8, arg_n: c_int) cal
                 if (!(d != 0)) break;
             }
 
-            //return ((d >= @as(c_int, 0)) << @intCast(1)) - @as(c_int, 1);
-            return (@intFromBool(d >= @as(c_int, 0)) << @as(u32, 1)) - @as(c_int, 1);
+            return (@as(c_int, if (d >= 0) 1 else 0) << 1) - 1;
         }
         if (!(c1 != 0)) break;
     }
