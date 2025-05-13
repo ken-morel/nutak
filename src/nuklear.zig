@@ -67,7 +67,6 @@ pub const nk_bool = c_int;
 pub const nk_hash = nk_uint;
 pub const nk_flags = nk_uint;
 pub const nk_rune = nk_uint;
-pub const _dummy_array437 = [1]u8;
 pub const _dummy_array438 = [1]u8;
 pub const _dummy_array439 = [1]u8;
 pub const _dummy_array440 = [1]u8;
@@ -76,7 +75,8 @@ pub const _dummy_array442 = [1]u8;
 pub const _dummy_array443 = [1]u8;
 pub const _dummy_array444 = [1]u8;
 pub const _dummy_array445 = [1]u8;
-pub const _dummy_array449 = [1]u8;
+pub const _dummy_array446 = [1]u8;
+pub const _dummy_array450 = [1]u8;
 pub const struct_nk_buffer_marker = extern struct {
     active: nk_bool = @import("std").mem.zeroes(nk_bool),
     offset: nk_size = @import("std").mem.zeroes(nk_size),
@@ -980,7 +980,7 @@ pub fn nk_init_fixed(arg_ctx: [*c]struct_nk_context, arg_memory: ?*anyopaque, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (memory != null) {} else {
-                __assert_fail("memory", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19367))), "nk_bool nk_init_fixed(struct nk_context *, void *, nk_size, const struct nk_user_font *)");
+                __assert_fail("memory", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19368))), "nk_bool nk_init_fixed(struct nk_context *, void *, nk_size, const struct nk_user_font *)");
             };
         };
     };
@@ -1001,7 +1001,7 @@ pub fn nk_init(arg_ctx: [*c]struct_nk_context, arg_alloc: [*c]const struct_nk_al
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (alloc != null) {} else {
-                __assert_fail("alloc", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19399))), "nk_bool nk_init(struct nk_context *, const struct nk_allocator *, const struct nk_user_font *)");
+                __assert_fail("alloc", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19400))), "nk_bool nk_init(struct nk_context *, const struct nk_allocator *, const struct nk_user_font *)");
             };
         };
     };
@@ -1025,7 +1025,7 @@ pub fn nk_init_custom(arg_ctx: [*c]struct_nk_context, arg_cmds: [*c]struct_nk_bu
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (cmds != null) {} else {
-                __assert_fail("cmds", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19378))), "nk_bool nk_init_custom(struct nk_context *, struct nk_buffer *, struct nk_buffer *, const struct nk_user_font *)");
+                __assert_fail("cmds", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19379))), "nk_bool nk_init_custom(struct nk_context *, struct nk_buffer *, struct nk_buffer *, const struct nk_user_font *)");
             };
         };
     };
@@ -1033,7 +1033,7 @@ pub fn nk_init_custom(arg_ctx: [*c]struct_nk_context, arg_cmds: [*c]struct_nk_bu
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (pool != null) {} else {
-                __assert_fail("pool", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19379))), "nk_bool nk_init_custom(struct nk_context *, struct nk_buffer *, struct nk_buffer *, const struct nk_user_font *)");
+                __assert_fail("pool", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19380))), "nk_bool nk_init_custom(struct nk_context *, struct nk_buffer *, struct nk_buffer *, const struct nk_user_font *)");
             };
         };
     };
@@ -1061,7 +1061,7 @@ pub fn nk_clear(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19444))), "void nk_clear(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19445))), "void nk_clear(struct nk_context *)");
             };
         };
     };
@@ -1132,7 +1132,7 @@ pub fn nk_free(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19420))), "void nk_free(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19421))), "void nk_free(struct nk_context *)");
             };
         };
     };
@@ -1202,7 +1202,7 @@ pub fn nk_input_begin(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18195))), "void nk_input_begin(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18196))), "void nk_input_begin(struct nk_context *)");
             };
         };
     };
@@ -1240,7 +1240,7 @@ pub fn nk_input_motion(arg_ctx: [*c]struct_nk_context, arg_x: c_int, arg_y: c_in
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18229))), "void nk_input_motion(struct nk_context *, int, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18230))), "void nk_input_motion(struct nk_context *, int, int)");
             };
         };
     };
@@ -1264,7 +1264,7 @@ pub fn nk_input_key(arg_ctx: [*c]struct_nk_context, arg_key: enum_nk_keys, arg_d
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18241))), "void nk_input_key(struct nk_context *, enum nk_keys, nk_bool)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18242))), "void nk_input_key(struct nk_context *, enum nk_keys, nk_bool)");
             };
         };
     };
@@ -1292,7 +1292,7 @@ pub fn nk_input_button(arg_ctx: [*c]struct_nk_context, arg_id: enum_nk_buttons, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18257))), "void nk_input_button(struct nk_context *, enum nk_buttons, int, int, nk_bool)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18258))), "void nk_input_button(struct nk_context *, enum nk_buttons, int, int, nk_bool)");
             };
         };
     };
@@ -1316,7 +1316,7 @@ pub fn nk_input_scroll(arg_ctx: [*c]struct_nk_context, arg_val: struct_nk_vec2) 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18282))), "void nk_input_scroll(struct nk_context *, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18283))), "void nk_input_scroll(struct nk_context *, struct nk_vec2)");
             };
         };
     };
@@ -1337,7 +1337,7 @@ pub fn nk_input_char(arg_ctx: [*c]struct_nk_context, arg_c: u8) callconv(.c) voi
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18309))), "void nk_input_char(struct nk_context *, char)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18310))), "void nk_input_char(struct nk_context *, char)");
             };
         };
     };
@@ -1359,7 +1359,7 @@ pub fn nk_input_glyph(arg_ctx: [*c]struct_nk_context, glyph: [*c]const u8) callc
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18294))), "void nk_input_glyph(struct nk_context *, const char *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18295))), "void nk_input_glyph(struct nk_context *, const char *)");
             };
         };
     };
@@ -1382,7 +1382,7 @@ pub fn nk_input_unicode(arg_ctx: [*c]struct_nk_context, arg_unicode: nk_rune) ca
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18318))), "void nk_input_unicode(struct nk_context *, nk_rune)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18319))), "void nk_input_unicode(struct nk_context *, nk_rune)");
             };
         };
     };
@@ -1399,7 +1399,7 @@ pub fn nk_input_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18214))), "void nk_input_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18215))), "void nk_input_end(struct nk_context *)");
             };
         };
     };
@@ -1455,7 +1455,7 @@ pub fn nk__begin(arg_ctx: [*c]struct_nk_context) callconv(.c) [*c]const struct_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19644))), "const struct nk_command *nk__begin(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19645))), "const struct nk_command *nk__begin(struct nk_context *)");
             };
         };
     };
@@ -1486,7 +1486,7 @@ pub fn nk__next(arg_ctx: [*c]struct_nk_context, arg_cmd: [*c]const struct_nk_com
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19666))), "const struct nk_command *nk__next(struct nk_context *, const struct nk_command *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19667))), "const struct nk_command *nk__next(struct nk_context *, const struct nk_command *)");
             };
         };
     };
@@ -1544,7 +1544,7 @@ pub fn nk_begin_titled(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20668))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20669))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
             };
         };
     };
@@ -1552,7 +1552,7 @@ pub fn nk_begin_titled(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (name != null) {} else {
-                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20669))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
+                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20670))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
             };
         };
     };
@@ -1560,7 +1560,7 @@ pub fn nk_begin_titled(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (title != null) {} else {
-                __assert_fail("title", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20670))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
+                __assert_fail("title", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20671))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
             };
         };
     };
@@ -1568,7 +1568,7 @@ pub fn nk_begin_titled(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (((ctx.*.style.font != null) and (ctx.*.style.font.*.width != null)) and (@intFromPtr("if this triggers you forgot to add a font") != 0)) {} else {
-                __assert_fail("ctx->style.font && ctx->style.font->width && \"if this triggers you forgot to add a font\"", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20671))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
+                __assert_fail("ctx->style.font && ctx->style.font->width && \"if this triggers you forgot to add a font\"", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20672))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
             };
         };
     };
@@ -1576,7 +1576,7 @@ pub fn nk_begin_titled(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (!(ctx.*.current != null) and (@intFromPtr("if this triggers you missed a `nk_end` call") != 0)) {} else {
-                __assert_fail("!ctx->current && \"if this triggers you missed a `nk_end` call\"", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20672))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
+                __assert_fail("!ctx->current && \"if this triggers you missed a `nk_end` call\"", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20673))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
             };
         };
     };
@@ -1593,7 +1593,7 @@ pub fn nk_begin_titled(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, a
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (win != null) {} else {
-                    __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20685))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
+                    __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20686))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
                 };
             };
         };
@@ -1625,7 +1625,7 @@ pub fn nk_begin_titled(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, a
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (win.*.seq != ctx.*.seq) {} else {
-                    __assert_fail("win->seq != ctx->seq", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20716))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
+                    __assert_fail("win->seq != ctx->seq", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20717))), "nk_bool nk_begin_titled(struct nk_context *, const char *, const char *, struct nk_rect, nk_flags)");
                 };
             };
         };
@@ -1714,7 +1714,7 @@ pub fn nk_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20817))), "void nk_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20818))), "void nk_end(struct nk_context *)");
             };
         };
     };
@@ -1722,7 +1722,7 @@ pub fn nk_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((ctx.*.current != null) and (@intFromPtr("if this triggers you forgot to call `nk_begin`") != 0)) {} else {
-                __assert_fail("ctx->current && \"if this triggers you forgot to call `nk_begin`\"", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20818))), "void nk_end(struct nk_context *)");
+                __assert_fail("ctx->current && \"if this triggers you forgot to call `nk_begin`\"", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20819))), "void nk_end(struct nk_context *)");
             };
         };
     };
@@ -1756,7 +1756,7 @@ pub fn nk_window_get_bounds(arg_ctx: [*c]const struct_nk_context) callconv(.c) s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20834))), "struct nk_rect nk_window_get_bounds(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20835))), "struct nk_rect nk_window_get_bounds(const struct nk_context *)");
             };
         };
     };
@@ -1764,7 +1764,7 @@ pub fn nk_window_get_bounds(arg_ctx: [*c]const struct_nk_context) callconv(.c) s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20835))), "struct nk_rect nk_window_get_bounds(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20836))), "struct nk_rect nk_window_get_bounds(const struct nk_context *)");
             };
         };
     };
@@ -1778,7 +1778,7 @@ pub fn nk_window_get_position(arg_ctx: [*c]const struct_nk_context) callconv(.c)
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20842))), "struct nk_vec2 nk_window_get_position(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20843))), "struct nk_vec2 nk_window_get_position(const struct nk_context *)");
             };
         };
     };
@@ -1786,7 +1786,7 @@ pub fn nk_window_get_position(arg_ctx: [*c]const struct_nk_context) callconv(.c)
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20843))), "struct nk_vec2 nk_window_get_position(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20844))), "struct nk_vec2 nk_window_get_position(const struct nk_context *)");
             };
         };
     };
@@ -1800,7 +1800,7 @@ pub fn nk_window_get_size(arg_ctx: [*c]const struct_nk_context) callconv(.c) str
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20850))), "struct nk_vec2 nk_window_get_size(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20851))), "struct nk_vec2 nk_window_get_size(const struct nk_context *)");
             };
         };
     };
@@ -1808,7 +1808,7 @@ pub fn nk_window_get_size(arg_ctx: [*c]const struct_nk_context) callconv(.c) str
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20851))), "struct nk_vec2 nk_window_get_size(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20852))), "struct nk_vec2 nk_window_get_size(const struct nk_context *)");
             };
         };
     };
@@ -1822,7 +1822,7 @@ pub fn nk_window_get_width(arg_ctx: [*c]const struct_nk_context) callconv(.c) f3
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20858))), "float nk_window_get_width(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20859))), "float nk_window_get_width(const struct nk_context *)");
             };
         };
     };
@@ -1830,7 +1830,7 @@ pub fn nk_window_get_width(arg_ctx: [*c]const struct_nk_context) callconv(.c) f3
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20859))), "float nk_window_get_width(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20860))), "float nk_window_get_width(const struct nk_context *)");
             };
         };
     };
@@ -1844,7 +1844,7 @@ pub fn nk_window_get_height(arg_ctx: [*c]const struct_nk_context) callconv(.c) f
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20866))), "float nk_window_get_height(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20867))), "float nk_window_get_height(const struct nk_context *)");
             };
         };
     };
@@ -1852,7 +1852,7 @@ pub fn nk_window_get_height(arg_ctx: [*c]const struct_nk_context) callconv(.c) f
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20867))), "float nk_window_get_height(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20868))), "float nk_window_get_height(const struct nk_context *)");
             };
         };
     };
@@ -1866,7 +1866,7 @@ pub fn nk_window_get_panel(arg_ctx: [*c]const struct_nk_context) callconv(.c) [*
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20919))), "struct nk_panel *nk_window_get_panel(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20920))), "struct nk_panel *nk_window_get_panel(const struct nk_context *)");
             };
         };
     };
@@ -1874,7 +1874,7 @@ pub fn nk_window_get_panel(arg_ctx: [*c]const struct_nk_context) callconv(.c) [*
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20920))), "struct nk_panel *nk_window_get_panel(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20921))), "struct nk_panel *nk_window_get_panel(const struct nk_context *)");
             };
         };
     };
@@ -1888,7 +1888,7 @@ pub fn nk_window_get_content_region(arg_ctx: [*c]const struct_nk_context) callco
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20874))), "struct nk_rect nk_window_get_content_region(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20875))), "struct nk_rect nk_window_get_content_region(const struct nk_context *)");
             };
         };
     };
@@ -1896,7 +1896,7 @@ pub fn nk_window_get_content_region(arg_ctx: [*c]const struct_nk_context) callco
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20875))), "struct nk_rect nk_window_get_content_region(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20876))), "struct nk_rect nk_window_get_content_region(const struct nk_context *)");
             };
         };
     };
@@ -1910,7 +1910,7 @@ pub fn nk_window_get_content_region_min(arg_ctx: [*c]const struct_nk_context) ca
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20882))), "struct nk_vec2 nk_window_get_content_region_min(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20883))), "struct nk_vec2 nk_window_get_content_region_min(const struct nk_context *)");
             };
         };
     };
@@ -1918,7 +1918,7 @@ pub fn nk_window_get_content_region_min(arg_ctx: [*c]const struct_nk_context) ca
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20883))), "struct nk_vec2 nk_window_get_content_region_min(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20884))), "struct nk_vec2 nk_window_get_content_region_min(const struct nk_context *)");
             };
         };
     };
@@ -1926,7 +1926,7 @@ pub fn nk_window_get_content_region_min(arg_ctx: [*c]const struct_nk_context) ca
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20884))), "struct nk_vec2 nk_window_get_content_region_min(const struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20885))), "struct nk_vec2 nk_window_get_content_region_min(const struct nk_context *)");
             };
         };
     };
@@ -1940,7 +1940,7 @@ pub fn nk_window_get_content_region_max(arg_ctx: [*c]const struct_nk_context) ca
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20891))), "struct nk_vec2 nk_window_get_content_region_max(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20892))), "struct nk_vec2 nk_window_get_content_region_max(const struct nk_context *)");
             };
         };
     };
@@ -1948,7 +1948,7 @@ pub fn nk_window_get_content_region_max(arg_ctx: [*c]const struct_nk_context) ca
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20892))), "struct nk_vec2 nk_window_get_content_region_max(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20893))), "struct nk_vec2 nk_window_get_content_region_max(const struct nk_context *)");
             };
         };
     };
@@ -1956,7 +1956,7 @@ pub fn nk_window_get_content_region_max(arg_ctx: [*c]const struct_nk_context) ca
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20893))), "struct nk_vec2 nk_window_get_content_region_max(const struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20894))), "struct nk_vec2 nk_window_get_content_region_max(const struct nk_context *)");
             };
         };
     };
@@ -1970,7 +1970,7 @@ pub fn nk_window_get_content_region_size(arg_ctx: [*c]const struct_nk_context) c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20901))), "struct nk_vec2 nk_window_get_content_region_size(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20902))), "struct nk_vec2 nk_window_get_content_region_size(const struct nk_context *)");
             };
         };
     };
@@ -1978,7 +1978,7 @@ pub fn nk_window_get_content_region_size(arg_ctx: [*c]const struct_nk_context) c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20902))), "struct nk_vec2 nk_window_get_content_region_size(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20903))), "struct nk_vec2 nk_window_get_content_region_size(const struct nk_context *)");
             };
         };
     };
@@ -1986,7 +1986,7 @@ pub fn nk_window_get_content_region_size(arg_ctx: [*c]const struct_nk_context) c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20903))), "struct nk_vec2 nk_window_get_content_region_size(const struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20904))), "struct nk_vec2 nk_window_get_content_region_size(const struct nk_context *)");
             };
         };
     };
@@ -2000,7 +2000,7 @@ pub fn nk_window_get_canvas(arg_ctx: [*c]const struct_nk_context) callconv(.c) [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20910))), "struct nk_command_buffer *nk_window_get_canvas(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20911))), "struct nk_command_buffer *nk_window_get_canvas(const struct nk_context *)");
             };
         };
     };
@@ -2008,7 +2008,7 @@ pub fn nk_window_get_canvas(arg_ctx: [*c]const struct_nk_context) callconv(.c) [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20911))), "struct nk_command_buffer *nk_window_get_canvas(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20912))), "struct nk_command_buffer *nk_window_get_canvas(const struct nk_context *)");
             };
         };
     };
@@ -2016,7 +2016,7 @@ pub fn nk_window_get_canvas(arg_ctx: [*c]const struct_nk_context) callconv(.c) [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20912))), "struct nk_command_buffer *nk_window_get_canvas(const struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20913))), "struct nk_command_buffer *nk_window_get_canvas(const struct nk_context *)");
             };
         };
     };
@@ -2036,7 +2036,7 @@ pub fn nk_window_get_scroll(arg_ctx: [*c]const struct_nk_context, arg_offset_x: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20928))), "void nk_window_get_scroll(const struct nk_context *, nk_uint *, nk_uint *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20929))), "void nk_window_get_scroll(const struct nk_context *, nk_uint *, nk_uint *)");
             };
         };
     };
@@ -2044,7 +2044,7 @@ pub fn nk_window_get_scroll(arg_ctx: [*c]const struct_nk_context, arg_offset_x: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20929))), "void nk_window_get_scroll(const struct nk_context *, nk_uint *, nk_uint *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20930))), "void nk_window_get_scroll(const struct nk_context *, nk_uint *, nk_uint *)");
             };
         };
     };
@@ -2064,7 +2064,7 @@ pub fn nk_window_has_focus(arg_ctx: [*c]const struct_nk_context) callconv(.c) nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20941))), "nk_bool nk_window_has_focus(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20942))), "nk_bool nk_window_has_focus(const struct nk_context *)");
             };
         };
     };
@@ -2072,7 +2072,7 @@ pub fn nk_window_has_focus(arg_ctx: [*c]const struct_nk_context) callconv(.c) nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20942))), "nk_bool nk_window_has_focus(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20943))), "nk_bool nk_window_has_focus(const struct nk_context *)");
             };
         };
     };
@@ -2080,7 +2080,7 @@ pub fn nk_window_has_focus(arg_ctx: [*c]const struct_nk_context) callconv(.c) nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20943))), "nk_bool nk_window_has_focus(const struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20944))), "nk_bool nk_window_has_focus(const struct nk_context *)");
             };
         };
     };
@@ -2094,7 +2094,7 @@ pub fn nk_window_is_hovered(arg_ctx: [*c]const struct_nk_context) callconv(.c) n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20950))), "nk_bool nk_window_is_hovered(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20951))), "nk_bool nk_window_is_hovered(const struct nk_context *)");
             };
         };
     };
@@ -2102,7 +2102,7 @@ pub fn nk_window_is_hovered(arg_ctx: [*c]const struct_nk_context) callconv(.c) n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20951))), "nk_bool nk_window_is_hovered(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20952))), "nk_bool nk_window_is_hovered(const struct nk_context *)");
             };
         };
     };
@@ -2131,7 +2131,7 @@ pub fn nk_window_is_collapsed(arg_ctx: [*c]const struct_nk_context, arg_name: [*
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21002))), "nk_bool nk_window_is_collapsed(const struct nk_context *, const char *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21003))), "nk_bool nk_window_is_collapsed(const struct nk_context *, const char *)");
             };
         };
     };
@@ -2157,7 +2157,7 @@ pub fn nk_window_is_closed(arg_ctx: [*c]const struct_nk_context, arg_name: [*c]c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21017))), "nk_bool nk_window_is_closed(const struct nk_context *, const char *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21018))), "nk_bool nk_window_is_closed(const struct nk_context *, const char *)");
             };
         };
     };
@@ -2183,7 +2183,7 @@ pub fn nk_window_is_hidden(arg_ctx: [*c]const struct_nk_context, arg_name: [*c]c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21032))), "nk_bool nk_window_is_hidden(const struct nk_context *, const char *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21033))), "nk_bool nk_window_is_hidden(const struct nk_context *, const char *)");
             };
         };
     };
@@ -2209,7 +2209,7 @@ pub fn nk_window_is_active(arg_ctx: [*c]const struct_nk_context, arg_name: [*c]c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21047))), "nk_bool nk_window_is_active(const struct nk_context *, const char *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21048))), "nk_bool nk_window_is_active(const struct nk_context *, const char *)");
             };
         };
     };
@@ -2229,7 +2229,7 @@ pub fn nk_window_is_any_hovered(arg_ctx: [*c]const struct_nk_context) callconv(.
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20966))), "nk_bool nk_window_is_any_hovered(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20967))), "nk_bool nk_window_is_any_hovered(const struct nk_context *)");
             };
         };
     };
@@ -2273,7 +2273,7 @@ pub fn nk_window_set_bounds(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21083))), "void nk_window_set_bounds(struct nk_context *, const char *, struct nk_rect)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21084))), "void nk_window_set_bounds(struct nk_context *, const char *, struct nk_rect)");
             };
         };
     };
@@ -2323,7 +2323,7 @@ pub fn nk_window_set_focus(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21177))), "void nk_window_set_focus(struct nk_context *, const char *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21178))), "void nk_window_set_focus(struct nk_context *, const char *)");
             };
         };
     };
@@ -2350,7 +2350,7 @@ pub fn nk_window_set_scroll(arg_ctx: [*c]struct_nk_context, arg_offset_x: nk_uin
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21111))), "void nk_window_set_scroll(struct nk_context *, nk_uint, nk_uint)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21112))), "void nk_window_set_scroll(struct nk_context *, nk_uint, nk_uint)");
             };
         };
     };
@@ -2358,7 +2358,7 @@ pub fn nk_window_set_scroll(arg_ctx: [*c]struct_nk_context, arg_offset_x: nk_uin
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21112))), "void nk_window_set_scroll(struct nk_context *, nk_uint, nk_uint)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21113))), "void nk_window_set_scroll(struct nk_context *, nk_uint, nk_uint)");
             };
         };
     };
@@ -2378,7 +2378,7 @@ pub fn nk_window_close(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8) c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21069))), "void nk_window_close(struct nk_context *, const char *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21070))), "void nk_window_close(struct nk_context *, const char *)");
             };
         };
     };
@@ -2389,7 +2389,7 @@ pub fn nk_window_close(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8) c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((ctx.*.current != win) and (@intFromPtr("You cannot close a currently active window") != 0)) {} else {
-                __assert_fail("ctx->current != win && \"You cannot close a currently active window\"", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21073))), "void nk_window_close(struct nk_context *, const char *)");
+                __assert_fail("ctx->current != win && \"You cannot close a currently active window\"", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21074))), "void nk_window_close(struct nk_context *, const char *)");
             };
         };
     };
@@ -2414,7 +2414,7 @@ pub fn nk_window_collapse(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21126))), "void nk_window_collapse(struct nk_context *, const char *, enum nk_collapse_states)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21127))), "void nk_window_collapse(struct nk_context *, const char *, enum nk_collapse_states)");
             };
         };
     };
@@ -2442,7 +2442,7 @@ pub fn nk_window_collapse_if(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21141))), "void nk_window_collapse_if(struct nk_context *, const char *, enum nk_collapse_states, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21142))), "void nk_window_collapse_if(struct nk_context *, const char *, enum nk_collapse_states, int)");
             };
         };
     };
@@ -2466,7 +2466,7 @@ pub fn nk_window_show(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21151))), "void nk_window_show(struct nk_context *, const char *, enum nk_show_states)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21152))), "void nk_window_show(struct nk_context *, const char *, enum nk_show_states)");
             };
         };
     };
@@ -2494,7 +2494,7 @@ pub fn nk_window_show_if(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21166))), "void nk_window_show_if(struct nk_context *, const char *, enum nk_show_states, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21167))), "void nk_window_show_if(struct nk_context *, const char *, enum nk_show_states, int)");
             };
         };
     };
@@ -2546,7 +2546,7 @@ pub fn nk_layout_set_min_row_height(arg_ctx: [*c]struct_nk_context, arg_height: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22002))), "void nk_layout_set_min_row_height(struct nk_context *, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22003))), "void nk_layout_set_min_row_height(struct nk_context *, float)");
             };
         };
     };
@@ -2554,7 +2554,7 @@ pub fn nk_layout_set_min_row_height(arg_ctx: [*c]struct_nk_context, arg_height: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22003))), "void nk_layout_set_min_row_height(struct nk_context *, float)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22004))), "void nk_layout_set_min_row_height(struct nk_context *, float)");
             };
         };
     };
@@ -2562,7 +2562,7 @@ pub fn nk_layout_set_min_row_height(arg_ctx: [*c]struct_nk_context, arg_height: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22004))), "void nk_layout_set_min_row_height(struct nk_context *, float)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22005))), "void nk_layout_set_min_row_height(struct nk_context *, float)");
             };
         };
     };
@@ -2582,7 +2582,7 @@ pub fn nk_layout_reset_min_row_height(arg_ctx: [*c]struct_nk_context) callconv(.
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22018))), "void nk_layout_reset_min_row_height(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22019))), "void nk_layout_reset_min_row_height(struct nk_context *)");
             };
         };
     };
@@ -2590,7 +2590,7 @@ pub fn nk_layout_reset_min_row_height(arg_ctx: [*c]struct_nk_context) callconv(.
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22019))), "void nk_layout_reset_min_row_height(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22020))), "void nk_layout_reset_min_row_height(struct nk_context *)");
             };
         };
     };
@@ -2598,7 +2598,7 @@ pub fn nk_layout_reset_min_row_height(arg_ctx: [*c]struct_nk_context) callconv(.
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22020))), "void nk_layout_reset_min_row_height(struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22021))), "void nk_layout_reset_min_row_height(struct nk_context *)");
             };
         };
     };
@@ -2622,7 +2622,7 @@ pub fn nk_layout_widget_bounds(arg_ctx: [*c]const struct_nk_context) callconv(.c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22478))), "struct nk_rect nk_layout_widget_bounds(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22479))), "struct nk_rect nk_layout_widget_bounds(const struct nk_context *)");
             };
         };
     };
@@ -2630,7 +2630,7 @@ pub fn nk_layout_widget_bounds(arg_ctx: [*c]const struct_nk_context) callconv(.c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22479))), "struct nk_rect nk_layout_widget_bounds(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22480))), "struct nk_rect nk_layout_widget_bounds(const struct nk_context *)");
             };
         };
     };
@@ -2638,7 +2638,7 @@ pub fn nk_layout_widget_bounds(arg_ctx: [*c]const struct_nk_context) callconv(.c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22480))), "struct nk_rect nk_layout_widget_bounds(const struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22481))), "struct nk_rect nk_layout_widget_bounds(const struct nk_context *)");
             };
         };
     };
@@ -2661,7 +2661,7 @@ pub fn nk_layout_ratio_from_pixel(arg_ctx: [*c]const struct_nk_context, arg_pixe
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22127))), "float nk_layout_ratio_from_pixel(const struct nk_context *, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22128))), "float nk_layout_ratio_from_pixel(const struct nk_context *, float)");
             };
         };
     };
@@ -2669,7 +2669,7 @@ pub fn nk_layout_ratio_from_pixel(arg_ctx: [*c]const struct_nk_context, arg_pixe
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (pixel_width != 0) {} else {
-                __assert_fail("pixel_width", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22128))), "float nk_layout_ratio_from_pixel(const struct nk_context *, float)");
+                __assert_fail("pixel_width", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22129))), "float nk_layout_ratio_from_pixel(const struct nk_context *, float)");
             };
         };
     };
@@ -2714,7 +2714,7 @@ pub fn nk_layout_row_begin(arg_ctx: [*c]struct_nk_context, arg_fmt: enum_nk_layo
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22150))), "void nk_layout_row_begin(struct nk_context *, enum nk_layout_format, float, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22151))), "void nk_layout_row_begin(struct nk_context *, enum nk_layout_format, float, int)");
             };
         };
     };
@@ -2722,7 +2722,7 @@ pub fn nk_layout_row_begin(arg_ctx: [*c]struct_nk_context, arg_fmt: enum_nk_layo
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22151))), "void nk_layout_row_begin(struct nk_context *, enum nk_layout_format, float, int)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22152))), "void nk_layout_row_begin(struct nk_context *, enum nk_layout_format, float, int)");
             };
         };
     };
@@ -2730,7 +2730,7 @@ pub fn nk_layout_row_begin(arg_ctx: [*c]struct_nk_context, arg_fmt: enum_nk_layo
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22152))), "void nk_layout_row_begin(struct nk_context *, enum nk_layout_format, float, int)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22153))), "void nk_layout_row_begin(struct nk_context *, enum nk_layout_format, float, int)");
             };
         };
     };
@@ -2762,7 +2762,7 @@ pub fn nk_layout_row_push(arg_ctx: [*c]struct_nk_context, arg_ratio_or_width: f3
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22175))), "void nk_layout_row_push(struct nk_context *, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22176))), "void nk_layout_row_push(struct nk_context *, float)");
             };
         };
     };
@@ -2770,7 +2770,7 @@ pub fn nk_layout_row_push(arg_ctx: [*c]struct_nk_context, arg_ratio_or_width: f3
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22176))), "void nk_layout_row_push(struct nk_context *, float)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22177))), "void nk_layout_row_push(struct nk_context *, float)");
             };
         };
     };
@@ -2778,7 +2778,7 @@ pub fn nk_layout_row_push(arg_ctx: [*c]struct_nk_context, arg_ratio_or_width: f3
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22177))), "void nk_layout_row_push(struct nk_context *, float)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22178))), "void nk_layout_row_push(struct nk_context *, float)");
             };
         };
     };
@@ -2789,7 +2789,7 @@ pub fn nk_layout_row_push(arg_ctx: [*c]struct_nk_context, arg_ratio_or_width: f3
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((layout.*.row.type == @as(c_uint, @bitCast(NK_LAYOUT_STATIC_ROW))) or (layout.*.row.type == @as(c_uint, @bitCast(NK_LAYOUT_DYNAMIC_ROW)))) {} else {
-                __assert_fail("layout->row.type == NK_LAYOUT_STATIC_ROW || layout->row.type == NK_LAYOUT_DYNAMIC_ROW", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22183))), "void nk_layout_row_push(struct nk_context *, float)");
+                __assert_fail("layout->row.type == NK_LAYOUT_STATIC_ROW || layout->row.type == NK_LAYOUT_DYNAMIC_ROW", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22184))), "void nk_layout_row_push(struct nk_context *, float)");
             };
         };
     };
@@ -2818,7 +2818,7 @@ pub fn nk_layout_row_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22201))), "void nk_layout_row_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22202))), "void nk_layout_row_end(struct nk_context *)");
             };
         };
     };
@@ -2826,7 +2826,7 @@ pub fn nk_layout_row_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22202))), "void nk_layout_row_end(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22203))), "void nk_layout_row_end(struct nk_context *)");
             };
         };
     };
@@ -2834,7 +2834,7 @@ pub fn nk_layout_row_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22203))), "void nk_layout_row_end(struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22204))), "void nk_layout_row_end(struct nk_context *)");
             };
         };
     };
@@ -2845,7 +2845,7 @@ pub fn nk_layout_row_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((layout.*.row.type == @as(c_uint, @bitCast(NK_LAYOUT_STATIC_ROW))) or (layout.*.row.type == @as(c_uint, @bitCast(NK_LAYOUT_DYNAMIC_ROW)))) {} else {
-                __assert_fail("layout->row.type == NK_LAYOUT_STATIC_ROW || layout->row.type == NK_LAYOUT_DYNAMIC_ROW", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22209))), "void nk_layout_row_end(struct nk_context *)");
+                __assert_fail("layout->row.type == NK_LAYOUT_STATIC_ROW || layout->row.type == NK_LAYOUT_DYNAMIC_ROW", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22210))), "void nk_layout_row_end(struct nk_context *)");
             };
         };
     };
@@ -2876,7 +2876,7 @@ pub fn nk_layout_row(arg_ctx: [*c]struct_nk_context, arg_fmt: enum_nk_layout_for
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22224))), "void nk_layout_row(struct nk_context *, enum nk_layout_format, float, int, const float *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22225))), "void nk_layout_row(struct nk_context *, enum nk_layout_format, float, int, const float *)");
             };
         };
     };
@@ -2884,7 +2884,7 @@ pub fn nk_layout_row(arg_ctx: [*c]struct_nk_context, arg_fmt: enum_nk_layout_for
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22225))), "void nk_layout_row(struct nk_context *, enum nk_layout_format, float, int, const float *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22226))), "void nk_layout_row(struct nk_context *, enum nk_layout_format, float, int, const float *)");
             };
         };
     };
@@ -2892,7 +2892,7 @@ pub fn nk_layout_row(arg_ctx: [*c]struct_nk_context, arg_fmt: enum_nk_layout_for
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22226))), "void nk_layout_row(struct nk_context *, enum nk_layout_format, float, int, const float *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22227))), "void nk_layout_row(struct nk_context *, enum nk_layout_format, float, int, const float *)");
             };
         };
     };
@@ -2945,7 +2945,7 @@ pub fn nk_layout_row_template_begin(arg_ctx: [*c]struct_nk_context, arg_height: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22260))), "void nk_layout_row_template_begin(struct nk_context *, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22261))), "void nk_layout_row_template_begin(struct nk_context *, float)");
             };
         };
     };
@@ -2953,7 +2953,7 @@ pub fn nk_layout_row_template_begin(arg_ctx: [*c]struct_nk_context, arg_height: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22261))), "void nk_layout_row_template_begin(struct nk_context *, float)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22262))), "void nk_layout_row_template_begin(struct nk_context *, float)");
             };
         };
     };
@@ -2961,7 +2961,7 @@ pub fn nk_layout_row_template_begin(arg_ctx: [*c]struct_nk_context, arg_height: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22262))), "void nk_layout_row_template_begin(struct nk_context *, float)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22263))), "void nk_layout_row_template_begin(struct nk_context *, float)");
             };
         };
     };
@@ -2992,7 +2992,7 @@ pub fn nk_layout_row_template_push_dynamic(arg_ctx: [*c]struct_nk_context) callc
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22287))), "void nk_layout_row_template_push_dynamic(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22288))), "void nk_layout_row_template_push_dynamic(struct nk_context *)");
             };
         };
     };
@@ -3000,7 +3000,7 @@ pub fn nk_layout_row_template_push_dynamic(arg_ctx: [*c]struct_nk_context) callc
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22288))), "void nk_layout_row_template_push_dynamic(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22289))), "void nk_layout_row_template_push_dynamic(struct nk_context *)");
             };
         };
     };
@@ -3008,7 +3008,7 @@ pub fn nk_layout_row_template_push_dynamic(arg_ctx: [*c]struct_nk_context) callc
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22289))), "void nk_layout_row_template_push_dynamic(struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22290))), "void nk_layout_row_template_push_dynamic(struct nk_context *)");
             };
         };
     };
@@ -3019,7 +3019,7 @@ pub fn nk_layout_row_template_push_dynamic(arg_ctx: [*c]struct_nk_context) callc
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (layout.*.row.type == @as(c_uint, @bitCast(NK_LAYOUT_TEMPLATE))) {} else {
-                __assert_fail("layout->row.type == NK_LAYOUT_TEMPLATE", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22295))), "void nk_layout_row_template_push_dynamic(struct nk_context *)");
+                __assert_fail("layout->row.type == NK_LAYOUT_TEMPLATE", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22296))), "void nk_layout_row_template_push_dynamic(struct nk_context *)");
             };
         };
     };
@@ -3027,18 +3027,20 @@ pub fn nk_layout_row_template_push_dynamic(arg_ctx: [*c]struct_nk_context) callc
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (layout.*.row.columns < @as(c_int, 16)) {} else {
-                __assert_fail("layout->row.columns < 16", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22296))), "void nk_layout_row_template_push_dynamic(struct nk_context *)");
+                __assert_fail("layout->row.columns < 16", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22297))), "void nk_layout_row_template_push_dynamic(struct nk_context *)");
             };
         };
     };
     if (layout.*.row.type != @as(c_uint, @bitCast(NK_LAYOUT_TEMPLATE))) return;
     if (layout.*.row.columns >= @as(c_int, 16)) return;
-    layout.*.row.templates[@as(c_uint, @intCast(blk: {
-        const ref = &layout.*.row.columns;
-        const tmp = ref.*;
-        ref.* += 1;
-        break :blk tmp;
-    }))] = -1.0;
+    layout.*.row.templates[
+        @as(c_uint, @intCast(blk: {
+            const ref = &layout.*.row.columns;
+            const tmp = ref.*;
+            ref.* += 1;
+            break :blk tmp;
+        }))
+    ] = -1.0;
 }
 pub fn nk_layout_row_template_push_variable(arg_ctx: [*c]struct_nk_context, arg_min_width: f32) callconv(.c) void {
     var ctx = arg_ctx;
@@ -3053,7 +3055,7 @@ pub fn nk_layout_row_template_push_variable(arg_ctx: [*c]struct_nk_context, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22307))), "void nk_layout_row_template_push_variable(struct nk_context *, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22308))), "void nk_layout_row_template_push_variable(struct nk_context *, float)");
             };
         };
     };
@@ -3061,7 +3063,7 @@ pub fn nk_layout_row_template_push_variable(arg_ctx: [*c]struct_nk_context, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22308))), "void nk_layout_row_template_push_variable(struct nk_context *, float)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22309))), "void nk_layout_row_template_push_variable(struct nk_context *, float)");
             };
         };
     };
@@ -3069,7 +3071,7 @@ pub fn nk_layout_row_template_push_variable(arg_ctx: [*c]struct_nk_context, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22309))), "void nk_layout_row_template_push_variable(struct nk_context *, float)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22310))), "void nk_layout_row_template_push_variable(struct nk_context *, float)");
             };
         };
     };
@@ -3080,7 +3082,7 @@ pub fn nk_layout_row_template_push_variable(arg_ctx: [*c]struct_nk_context, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (layout.*.row.type == @as(c_uint, @bitCast(NK_LAYOUT_TEMPLATE))) {} else {
-                __assert_fail("layout->row.type == NK_LAYOUT_TEMPLATE", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22315))), "void nk_layout_row_template_push_variable(struct nk_context *, float)");
+                __assert_fail("layout->row.type == NK_LAYOUT_TEMPLATE", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22316))), "void nk_layout_row_template_push_variable(struct nk_context *, float)");
             };
         };
     };
@@ -3088,18 +3090,20 @@ pub fn nk_layout_row_template_push_variable(arg_ctx: [*c]struct_nk_context, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (layout.*.row.columns < @as(c_int, 16)) {} else {
-                __assert_fail("layout->row.columns < 16", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22316))), "void nk_layout_row_template_push_variable(struct nk_context *, float)");
+                __assert_fail("layout->row.columns < 16", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22317))), "void nk_layout_row_template_push_variable(struct nk_context *, float)");
             };
         };
     };
     if (layout.*.row.type != @as(c_uint, @bitCast(NK_LAYOUT_TEMPLATE))) return;
     if (layout.*.row.columns >= @as(c_int, 16)) return;
-    layout.*.row.templates[@as(c_uint, @intCast(blk: {
-        const ref = &layout.*.row.columns;
-        const tmp = ref.*;
-        ref.* += 1;
-        break :blk tmp;
-    }))] = -min_width;
+    layout.*.row.templates[
+        @as(c_uint, @intCast(blk: {
+            const ref = &layout.*.row.columns;
+            const tmp = ref.*;
+            ref.* += 1;
+            break :blk tmp;
+        }))
+    ] = -min_width;
 }
 pub fn nk_layout_row_template_push_static(arg_ctx: [*c]struct_nk_context, arg_width: f32) callconv(.c) void {
     var ctx = arg_ctx;
@@ -3114,7 +3118,7 @@ pub fn nk_layout_row_template_push_static(arg_ctx: [*c]struct_nk_context, arg_wi
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22327))), "void nk_layout_row_template_push_static(struct nk_context *, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22328))), "void nk_layout_row_template_push_static(struct nk_context *, float)");
             };
         };
     };
@@ -3122,7 +3126,7 @@ pub fn nk_layout_row_template_push_static(arg_ctx: [*c]struct_nk_context, arg_wi
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22328))), "void nk_layout_row_template_push_static(struct nk_context *, float)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22329))), "void nk_layout_row_template_push_static(struct nk_context *, float)");
             };
         };
     };
@@ -3130,7 +3134,7 @@ pub fn nk_layout_row_template_push_static(arg_ctx: [*c]struct_nk_context, arg_wi
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22329))), "void nk_layout_row_template_push_static(struct nk_context *, float)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22330))), "void nk_layout_row_template_push_static(struct nk_context *, float)");
             };
         };
     };
@@ -3141,7 +3145,7 @@ pub fn nk_layout_row_template_push_static(arg_ctx: [*c]struct_nk_context, arg_wi
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (layout.*.row.type == @as(c_uint, @bitCast(NK_LAYOUT_TEMPLATE))) {} else {
-                __assert_fail("layout->row.type == NK_LAYOUT_TEMPLATE", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22335))), "void nk_layout_row_template_push_static(struct nk_context *, float)");
+                __assert_fail("layout->row.type == NK_LAYOUT_TEMPLATE", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22336))), "void nk_layout_row_template_push_static(struct nk_context *, float)");
             };
         };
     };
@@ -3149,18 +3153,20 @@ pub fn nk_layout_row_template_push_static(arg_ctx: [*c]struct_nk_context, arg_wi
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (layout.*.row.columns < @as(c_int, 16)) {} else {
-                __assert_fail("layout->row.columns < 16", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22336))), "void nk_layout_row_template_push_static(struct nk_context *, float)");
+                __assert_fail("layout->row.columns < 16", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22337))), "void nk_layout_row_template_push_static(struct nk_context *, float)");
             };
         };
     };
     if (layout.*.row.type != @as(c_uint, @bitCast(NK_LAYOUT_TEMPLATE))) return;
     if (layout.*.row.columns >= @as(c_int, 16)) return;
-    layout.*.row.templates[@as(c_uint, @intCast(blk: {
-        const ref = &layout.*.row.columns;
-        const tmp = ref.*;
-        ref.* += 1;
-        break :blk tmp;
-    }))] = width;
+    layout.*.row.templates[
+        @as(c_uint, @intCast(blk: {
+            const ref = &layout.*.row.columns;
+            const tmp = ref.*;
+            ref.* += 1;
+            break :blk tmp;
+        }))
+    ] = width;
 }
 pub fn nk_layout_row_template_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
     var ctx = arg_ctx;
@@ -3185,7 +3191,7 @@ pub fn nk_layout_row_template_end(arg_ctx: [*c]struct_nk_context) callconv(.c) v
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22354))), "void nk_layout_row_template_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22355))), "void nk_layout_row_template_end(struct nk_context *)");
             };
         };
     };
@@ -3193,7 +3199,7 @@ pub fn nk_layout_row_template_end(arg_ctx: [*c]struct_nk_context) callconv(.c) v
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22355))), "void nk_layout_row_template_end(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22356))), "void nk_layout_row_template_end(struct nk_context *)");
             };
         };
     };
@@ -3201,7 +3207,7 @@ pub fn nk_layout_row_template_end(arg_ctx: [*c]struct_nk_context) callconv(.c) v
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22356))), "void nk_layout_row_template_end(struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22357))), "void nk_layout_row_template_end(struct nk_context *)");
             };
         };
     };
@@ -3212,7 +3218,7 @@ pub fn nk_layout_row_template_end(arg_ctx: [*c]struct_nk_context) callconv(.c) v
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (layout.*.row.type == @as(c_uint, @bitCast(NK_LAYOUT_TEMPLATE))) {} else {
-                __assert_fail("layout->row.type == NK_LAYOUT_TEMPLATE", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22362))), "void nk_layout_row_template_end(struct nk_context *)");
+                __assert_fail("layout->row.type == NK_LAYOUT_TEMPLATE", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22363))), "void nk_layout_row_template_end(struct nk_context *)");
             };
         };
     };
@@ -3273,7 +3279,7 @@ pub fn nk_layout_space_begin(arg_ctx: [*c]struct_nk_context, arg_fmt: enum_nk_la
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22399))), "void nk_layout_space_begin(struct nk_context *, enum nk_layout_format, float, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22400))), "void nk_layout_space_begin(struct nk_context *, enum nk_layout_format, float, int)");
             };
         };
     };
@@ -3281,7 +3287,7 @@ pub fn nk_layout_space_begin(arg_ctx: [*c]struct_nk_context, arg_fmt: enum_nk_la
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22400))), "void nk_layout_space_begin(struct nk_context *, enum nk_layout_format, float, int)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22401))), "void nk_layout_space_begin(struct nk_context *, enum nk_layout_format, float, int)");
             };
         };
     };
@@ -3289,7 +3295,7 @@ pub fn nk_layout_space_begin(arg_ctx: [*c]struct_nk_context, arg_fmt: enum_nk_la
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22401))), "void nk_layout_space_begin(struct nk_context *, enum nk_layout_format, float, int)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22402))), "void nk_layout_space_begin(struct nk_context *, enum nk_layout_format, float, int)");
             };
         };
     };
@@ -3320,7 +3326,7 @@ pub fn nk_layout_space_push(arg_ctx: [*c]struct_nk_context, arg_rect: struct_nk_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22442))), "void nk_layout_space_push(struct nk_context *, struct nk_rect)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22443))), "void nk_layout_space_push(struct nk_context *, struct nk_rect)");
             };
         };
     };
@@ -3328,7 +3334,7 @@ pub fn nk_layout_space_push(arg_ctx: [*c]struct_nk_context, arg_rect: struct_nk_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22443))), "void nk_layout_space_push(struct nk_context *, struct nk_rect)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22444))), "void nk_layout_space_push(struct nk_context *, struct nk_rect)");
             };
         };
     };
@@ -3336,7 +3342,7 @@ pub fn nk_layout_space_push(arg_ctx: [*c]struct_nk_context, arg_rect: struct_nk_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22444))), "void nk_layout_space_push(struct nk_context *, struct nk_rect)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22445))), "void nk_layout_space_push(struct nk_context *, struct nk_rect)");
             };
         };
     };
@@ -3356,7 +3362,7 @@ pub fn nk_layout_space_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22423))), "void nk_layout_space_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22424))), "void nk_layout_space_end(struct nk_context *)");
             };
         };
     };
@@ -3364,7 +3370,7 @@ pub fn nk_layout_space_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22424))), "void nk_layout_space_end(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22425))), "void nk_layout_space_end(struct nk_context *)");
             };
         };
     };
@@ -3372,7 +3378,7 @@ pub fn nk_layout_space_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22425))), "void nk_layout_space_end(struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22426))), "void nk_layout_space_end(struct nk_context *)");
             };
         };
     };
@@ -3397,7 +3403,7 @@ pub fn nk_layout_space_bounds(arg_ctx: [*c]const struct_nk_context) callconv(.c)
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22459))), "struct nk_rect nk_layout_space_bounds(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22460))), "struct nk_rect nk_layout_space_bounds(const struct nk_context *)");
             };
         };
     };
@@ -3405,7 +3411,7 @@ pub fn nk_layout_space_bounds(arg_ctx: [*c]const struct_nk_context) callconv(.c)
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22460))), "struct nk_rect nk_layout_space_bounds(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22461))), "struct nk_rect nk_layout_space_bounds(const struct nk_context *)");
             };
         };
     };
@@ -3413,7 +3419,7 @@ pub fn nk_layout_space_bounds(arg_ctx: [*c]const struct_nk_context) callconv(.c)
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22461))), "struct nk_rect nk_layout_space_bounds(const struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22462))), "struct nk_rect nk_layout_space_bounds(const struct nk_context *)");
             };
         };
     };
@@ -3438,7 +3444,7 @@ pub fn nk_layout_space_to_screen(arg_ctx: [*c]const struct_nk_context, arg_ret: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22496))), "struct nk_vec2 nk_layout_space_to_screen(const struct nk_context *, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22497))), "struct nk_vec2 nk_layout_space_to_screen(const struct nk_context *, struct nk_vec2)");
             };
         };
     };
@@ -3446,7 +3452,7 @@ pub fn nk_layout_space_to_screen(arg_ctx: [*c]const struct_nk_context, arg_ret: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22497))), "struct nk_vec2 nk_layout_space_to_screen(const struct nk_context *, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22498))), "struct nk_vec2 nk_layout_space_to_screen(const struct nk_context *, struct nk_vec2)");
             };
         };
     };
@@ -3454,7 +3460,7 @@ pub fn nk_layout_space_to_screen(arg_ctx: [*c]const struct_nk_context, arg_ret: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22498))), "struct nk_vec2 nk_layout_space_to_screen(const struct nk_context *, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22499))), "struct nk_vec2 nk_layout_space_to_screen(const struct nk_context *, struct nk_vec2)");
             };
         };
     };
@@ -3477,7 +3483,7 @@ pub fn nk_layout_space_to_local(arg_ctx: [*c]const struct_nk_context, arg_ret: s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22512))), "struct nk_vec2 nk_layout_space_to_local(const struct nk_context *, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22513))), "struct nk_vec2 nk_layout_space_to_local(const struct nk_context *, struct nk_vec2)");
             };
         };
     };
@@ -3485,7 +3491,7 @@ pub fn nk_layout_space_to_local(arg_ctx: [*c]const struct_nk_context, arg_ret: s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22513))), "struct nk_vec2 nk_layout_space_to_local(const struct nk_context *, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22514))), "struct nk_vec2 nk_layout_space_to_local(const struct nk_context *, struct nk_vec2)");
             };
         };
     };
@@ -3493,7 +3499,7 @@ pub fn nk_layout_space_to_local(arg_ctx: [*c]const struct_nk_context, arg_ret: s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22514))), "struct nk_vec2 nk_layout_space_to_local(const struct nk_context *, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22515))), "struct nk_vec2 nk_layout_space_to_local(const struct nk_context *, struct nk_vec2)");
             };
         };
     };
@@ -3516,7 +3522,7 @@ pub fn nk_layout_space_rect_to_screen(arg_ctx: [*c]const struct_nk_context, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22528))), "struct nk_rect nk_layout_space_rect_to_screen(const struct nk_context *, struct nk_rect)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22529))), "struct nk_rect nk_layout_space_rect_to_screen(const struct nk_context *, struct nk_rect)");
             };
         };
     };
@@ -3524,7 +3530,7 @@ pub fn nk_layout_space_rect_to_screen(arg_ctx: [*c]const struct_nk_context, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22529))), "struct nk_rect nk_layout_space_rect_to_screen(const struct nk_context *, struct nk_rect)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22530))), "struct nk_rect nk_layout_space_rect_to_screen(const struct nk_context *, struct nk_rect)");
             };
         };
     };
@@ -3532,7 +3538,7 @@ pub fn nk_layout_space_rect_to_screen(arg_ctx: [*c]const struct_nk_context, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22530))), "struct nk_rect nk_layout_space_rect_to_screen(const struct nk_context *, struct nk_rect)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22531))), "struct nk_rect nk_layout_space_rect_to_screen(const struct nk_context *, struct nk_rect)");
             };
         };
     };
@@ -3555,7 +3561,7 @@ pub fn nk_layout_space_rect_to_local(arg_ctx: [*c]const struct_nk_context, arg_r
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22544))), "struct nk_rect nk_layout_space_rect_to_local(const struct nk_context *, struct nk_rect)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22545))), "struct nk_rect nk_layout_space_rect_to_local(const struct nk_context *, struct nk_rect)");
             };
         };
     };
@@ -3563,7 +3569,7 @@ pub fn nk_layout_space_rect_to_local(arg_ctx: [*c]const struct_nk_context, arg_r
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22545))), "struct nk_rect nk_layout_space_rect_to_local(const struct nk_context *, struct nk_rect)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22546))), "struct nk_rect nk_layout_space_rect_to_local(const struct nk_context *, struct nk_rect)");
             };
         };
     };
@@ -3571,7 +3577,7 @@ pub fn nk_layout_space_rect_to_local(arg_ctx: [*c]const struct_nk_context, arg_r
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22546))), "struct nk_rect nk_layout_space_rect_to_local(const struct nk_context *, struct nk_rect)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22547))), "struct nk_rect nk_layout_space_rect_to_local(const struct nk_context *, struct nk_rect)");
             };
         };
     };
@@ -3625,7 +3631,7 @@ pub fn nk_group_begin_titled(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23244))), "nk_bool nk_group_begin_titled(struct nk_context *, const char *, const char *, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23245))), "nk_bool nk_group_begin_titled(struct nk_context *, const char *, const char *, nk_flags)");
             };
         };
     };
@@ -3633,7 +3639,7 @@ pub fn nk_group_begin_titled(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (id != null) {} else {
-                __assert_fail("id", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23245))), "nk_bool nk_group_begin_titled(struct nk_context *, const char *, const char *, nk_flags)");
+                __assert_fail("id", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23246))), "nk_bool nk_group_begin_titled(struct nk_context *, const char *, const char *, nk_flags)");
             };
         };
     };
@@ -3641,7 +3647,7 @@ pub fn nk_group_begin_titled(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23246))), "nk_bool nk_group_begin_titled(struct nk_context *, const char *, const char *, nk_flags)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23247))), "nk_bool nk_group_begin_titled(struct nk_context *, const char *, const char *, nk_flags)");
             };
         };
     };
@@ -3649,7 +3655,7 @@ pub fn nk_group_begin_titled(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23247))), "nk_bool nk_group_begin_titled(struct nk_context *, const char *, const char *, nk_flags)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23248))), "nk_bool nk_group_begin_titled(struct nk_context *, const char *, const char *, nk_flags)");
             };
         };
     };
@@ -3665,7 +3671,7 @@ pub fn nk_group_begin_titled(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (x_offset != null) {} else {
-                    __assert_fail("x_offset", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23260))), "nk_bool nk_group_begin_titled(struct nk_context *, const char *, const char *, nk_flags)");
+                    __assert_fail("x_offset", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23261))), "nk_bool nk_group_begin_titled(struct nk_context *, const char *, const char *, nk_flags)");
                 };
             };
         };
@@ -3673,7 +3679,7 @@ pub fn nk_group_begin_titled(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (y_offset != null) {} else {
-                    __assert_fail("y_offset", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23261))), "nk_bool nk_group_begin_titled(struct nk_context *, const char *, const char *, nk_flags)");
+                    __assert_fail("y_offset", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23262))), "nk_bool nk_group_begin_titled(struct nk_context *, const char *, const char *, nk_flags)");
                 };
             };
         };
@@ -3777,7 +3783,7 @@ pub fn nk_group_scrolled_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23177))), "void nk_group_scrolled_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23178))), "void nk_group_scrolled_end(struct nk_context *)");
             };
         };
     };
@@ -3785,7 +3791,7 @@ pub fn nk_group_scrolled_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23178))), "void nk_group_scrolled_end(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23179))), "void nk_group_scrolled_end(struct nk_context *)");
             };
         };
     };
@@ -3794,7 +3800,7 @@ pub fn nk_group_scrolled_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23183))), "void nk_group_scrolled_end(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23184))), "void nk_group_scrolled_end(struct nk_context *)");
             };
         };
     };
@@ -3803,7 +3809,7 @@ pub fn nk_group_scrolled_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (win.*.layout != null) {} else {
-                __assert_fail("win->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23185))), "void nk_group_scrolled_end(struct nk_context *)");
+                __assert_fail("win->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23186))), "void nk_group_scrolled_end(struct nk_context *)");
             };
         };
     };
@@ -3812,7 +3818,7 @@ pub fn nk_group_scrolled_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (g.*.parent != null) {} else {
-                __assert_fail("g->parent", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23187))), "void nk_group_scrolled_end(struct nk_context *)");
+                __assert_fail("g->parent", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23188))), "void nk_group_scrolled_end(struct nk_context *)");
             };
         };
     };
@@ -3873,7 +3879,7 @@ pub fn nk_group_get_scroll(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23286))), "void nk_group_get_scroll(struct nk_context *, const char *, nk_uint *, nk_uint *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23287))), "void nk_group_get_scroll(struct nk_context *, const char *, nk_uint *, nk_uint *)");
             };
         };
     };
@@ -3881,7 +3887,7 @@ pub fn nk_group_get_scroll(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (id != null) {} else {
-                __assert_fail("id", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23287))), "void nk_group_get_scroll(struct nk_context *, const char *, nk_uint *, nk_uint *)");
+                __assert_fail("id", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23288))), "void nk_group_get_scroll(struct nk_context *, const char *, nk_uint *, nk_uint *)");
             };
         };
     };
@@ -3889,7 +3895,7 @@ pub fn nk_group_get_scroll(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23288))), "void nk_group_get_scroll(struct nk_context *, const char *, nk_uint *, nk_uint *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23289))), "void nk_group_get_scroll(struct nk_context *, const char *, nk_uint *, nk_uint *)");
             };
         };
     };
@@ -3897,7 +3903,7 @@ pub fn nk_group_get_scroll(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23289))), "void nk_group_get_scroll(struct nk_context *, const char *, nk_uint *, nk_uint *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23290))), "void nk_group_get_scroll(struct nk_context *, const char *, nk_uint *, nk_uint *)");
             };
         };
     };
@@ -3913,7 +3919,7 @@ pub fn nk_group_get_scroll(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (x_offset_ptr != null) {} else {
-                    __assert_fail("x_offset_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23302))), "void nk_group_get_scroll(struct nk_context *, const char *, nk_uint *, nk_uint *)");
+                    __assert_fail("x_offset_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23303))), "void nk_group_get_scroll(struct nk_context *, const char *, nk_uint *, nk_uint *)");
                 };
             };
         };
@@ -3921,7 +3927,7 @@ pub fn nk_group_get_scroll(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (y_offset_ptr != null) {} else {
-                    __assert_fail("y_offset_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23303))), "void nk_group_get_scroll(struct nk_context *, const char *, nk_uint *, nk_uint *)");
+                    __assert_fail("y_offset_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23304))), "void nk_group_get_scroll(struct nk_context *, const char *, nk_uint *, nk_uint *)");
                 };
             };
         };
@@ -3964,7 +3970,7 @@ pub fn nk_group_set_scroll(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23321))), "void nk_group_set_scroll(struct nk_context *, const char *, nk_uint, nk_uint)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23322))), "void nk_group_set_scroll(struct nk_context *, const char *, nk_uint, nk_uint)");
             };
         };
     };
@@ -3972,7 +3978,7 @@ pub fn nk_group_set_scroll(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (id != null) {} else {
-                __assert_fail("id", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23322))), "void nk_group_set_scroll(struct nk_context *, const char *, nk_uint, nk_uint)");
+                __assert_fail("id", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23323))), "void nk_group_set_scroll(struct nk_context *, const char *, nk_uint, nk_uint)");
             };
         };
     };
@@ -3980,7 +3986,7 @@ pub fn nk_group_set_scroll(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23323))), "void nk_group_set_scroll(struct nk_context *, const char *, nk_uint, nk_uint)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23324))), "void nk_group_set_scroll(struct nk_context *, const char *, nk_uint, nk_uint)");
             };
         };
     };
@@ -3988,7 +3994,7 @@ pub fn nk_group_set_scroll(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23324))), "void nk_group_set_scroll(struct nk_context *, const char *, nk_uint, nk_uint)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23325))), "void nk_group_set_scroll(struct nk_context *, const char *, nk_uint, nk_uint)");
             };
         };
     };
@@ -4004,7 +4010,7 @@ pub fn nk_group_set_scroll(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (x_offset_ptr != null) {} else {
-                    __assert_fail("x_offset_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23337))), "void nk_group_set_scroll(struct nk_context *, const char *, nk_uint, nk_uint)");
+                    __assert_fail("x_offset_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23338))), "void nk_group_set_scroll(struct nk_context *, const char *, nk_uint, nk_uint)");
                 };
             };
         };
@@ -4012,7 +4018,7 @@ pub fn nk_group_set_scroll(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (y_offset_ptr != null) {} else {
-                    __assert_fail("y_offset_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23338))), "void nk_group_set_scroll(struct nk_context *, const char *, nk_uint, nk_uint)");
+                    __assert_fail("y_offset_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23339))), "void nk_group_set_scroll(struct nk_context *, const char *, nk_uint, nk_uint)");
                 };
             };
         };
@@ -4104,7 +4110,7 @@ pub fn nk_tree_state_pop(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22918))), "void nk_tree_state_pop(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22919))), "void nk_tree_state_pop(struct nk_context *)");
             };
         };
     };
@@ -4112,7 +4118,7 @@ pub fn nk_tree_state_pop(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22919))), "void nk_tree_state_pop(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22920))), "void nk_tree_state_pop(struct nk_context *)");
             };
         };
     };
@@ -4120,7 +4126,7 @@ pub fn nk_tree_state_pop(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22920))), "void nk_tree_state_pop(struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22921))), "void nk_tree_state_pop(struct nk_context *)");
             };
         };
     };
@@ -4133,7 +4139,7 @@ pub fn nk_tree_state_pop(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (layout.*.row.tree_depth != 0) {} else {
-                __assert_fail("layout->row.tree_depth", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22928))), "void nk_tree_state_pop(struct nk_context *)");
+                __assert_fail("layout->row.tree_depth", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22929))), "void nk_tree_state_pop(struct nk_context *)");
             };
         };
     };
@@ -4228,7 +4234,7 @@ pub fn nk_list_view_begin(arg_ctx: [*c]struct_nk_context, arg_view: [*c]struct_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23369))), "nk_bool nk_list_view_begin(struct nk_context *, struct nk_list_view *, const char *, nk_flags, int, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23370))), "nk_bool nk_list_view_begin(struct nk_context *, struct nk_list_view *, const char *, nk_flags, int, int)");
             };
         };
     };
@@ -4236,7 +4242,7 @@ pub fn nk_list_view_begin(arg_ctx: [*c]struct_nk_context, arg_view: [*c]struct_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (view != null) {} else {
-                __assert_fail("view", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23370))), "nk_bool nk_list_view_begin(struct nk_context *, struct nk_list_view *, const char *, nk_flags, int, int)");
+                __assert_fail("view", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23371))), "nk_bool nk_list_view_begin(struct nk_context *, struct nk_list_view *, const char *, nk_flags, int, int)");
             };
         };
     };
@@ -4244,7 +4250,7 @@ pub fn nk_list_view_begin(arg_ctx: [*c]struct_nk_context, arg_view: [*c]struct_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (title != null) {} else {
-                __assert_fail("title", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23371))), "nk_bool nk_list_view_begin(struct nk_context *, struct nk_list_view *, const char *, nk_flags, int, int)");
+                __assert_fail("title", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23372))), "nk_bool nk_list_view_begin(struct nk_context *, struct nk_list_view *, const char *, nk_flags, int, int)");
             };
         };
     };
@@ -4263,7 +4269,7 @@ pub fn nk_list_view_begin(arg_ctx: [*c]struct_nk_context, arg_view: [*c]struct_n
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (x_offset != null) {} else {
-                    __assert_fail("x_offset", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23387))), "nk_bool nk_list_view_begin(struct nk_context *, struct nk_list_view *, const char *, nk_flags, int, int)");
+                    __assert_fail("x_offset", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23388))), "nk_bool nk_list_view_begin(struct nk_context *, struct nk_list_view *, const char *, nk_flags, int, int)");
                 };
             };
         };
@@ -4271,7 +4277,7 @@ pub fn nk_list_view_begin(arg_ctx: [*c]struct_nk_context, arg_view: [*c]struct_n
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (y_offset != null) {} else {
-                    __assert_fail("y_offset", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23388))), "nk_bool nk_list_view_begin(struct nk_context *, struct nk_list_view *, const char *, nk_flags, int, int)");
+                    __assert_fail("y_offset", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23389))), "nk_bool nk_list_view_begin(struct nk_context *, struct nk_list_view *, const char *, nk_flags, int, int)");
                 };
             };
         };
@@ -4311,7 +4317,7 @@ pub fn nk_list_view_end(arg_view: [*c]struct_nk_list_view) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (view != null) {} else {
-                __assert_fail("view", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23415))), "void nk_list_view_end(struct nk_list_view *)");
+                __assert_fail("view", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23416))), "void nk_list_view_end(struct nk_list_view *)");
             };
         };
     };
@@ -4319,7 +4325,7 @@ pub fn nk_list_view_end(arg_view: [*c]struct_nk_list_view) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (view.*.ctx != null) {} else {
-                __assert_fail("view->ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23416))), "void nk_list_view_end(struct nk_list_view *)");
+                __assert_fail("view->ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23417))), "void nk_list_view_end(struct nk_list_view *)");
             };
         };
     };
@@ -4327,7 +4333,7 @@ pub fn nk_list_view_end(arg_view: [*c]struct_nk_list_view) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (view.*.scroll_pointer != null) {} else {
-                __assert_fail("view->scroll_pointer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23417))), "void nk_list_view_end(struct nk_list_view *)");
+                __assert_fail("view->scroll_pointer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23418))), "void nk_list_view_end(struct nk_list_view *)");
             };
         };
     };
@@ -4367,7 +4373,7 @@ pub fn nk_widget(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23570))), "enum nk_widget_layout_states nk_widget(struct nk_rect *, const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23571))), "enum nk_widget_layout_states nk_widget(struct nk_rect *, const struct nk_context *)");
             };
         };
     };
@@ -4375,7 +4381,7 @@ pub fn nk_widget(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23571))), "enum nk_widget_layout_states nk_widget(struct nk_rect *, const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23572))), "enum nk_widget_layout_states nk_widget(struct nk_rect *, const struct nk_context *)");
             };
         };
     };
@@ -4383,7 +4389,7 @@ pub fn nk_widget(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23572))), "enum nk_widget_layout_states nk_widget(struct nk_rect *, const struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23573))), "enum nk_widget_layout_states nk_widget(struct nk_rect *, const struct nk_context *)");
             };
         };
     };
@@ -4397,7 +4403,7 @@ pub fn nk_widget(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (!((layout.*.flags & @as(nk_flags, @bitCast(NK_WINDOW_MINIMIZED))) != 0)) {} else {
-                __assert_fail("!(layout->flags & NK_WINDOW_MINIMIZED)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23588))), "enum nk_widget_layout_states nk_widget(struct nk_rect *, const struct nk_context *)");
+                __assert_fail("!(layout->flags & NK_WINDOW_MINIMIZED)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23589))), "enum nk_widget_layout_states nk_widget(struct nk_rect *, const struct nk_context *)");
             };
         };
     };
@@ -4405,7 +4411,7 @@ pub fn nk_widget(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (!((layout.*.flags & @as(nk_flags, @bitCast(NK_WINDOW_HIDDEN))) != 0)) {} else {
-                __assert_fail("!(layout->flags & NK_WINDOW_HIDDEN)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23589))), "enum nk_widget_layout_states nk_widget(struct nk_rect *, const struct nk_context *)");
+                __assert_fail("!(layout->flags & NK_WINDOW_HIDDEN)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23590))), "enum nk_widget_layout_states nk_widget(struct nk_rect *, const struct nk_context *)");
             };
         };
     };
@@ -4413,7 +4419,7 @@ pub fn nk_widget(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (!((layout.*.flags & @as(nk_flags, @bitCast(NK_WINDOW_CLOSED))) != 0)) {} else {
-                __assert_fail("!(layout->flags & NK_WINDOW_CLOSED)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23590))), "enum nk_widget_layout_states nk_widget(struct nk_rect *, const struct nk_context *)");
+                __assert_fail("!(layout->flags & NK_WINDOW_CLOSED)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23591))), "enum nk_widget_layout_states nk_widget(struct nk_rect *, const struct nk_context *)");
             };
         };
     };
@@ -4445,7 +4451,7 @@ pub fn nk_widget_fitting(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const stru
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23620))), "enum nk_widget_layout_states nk_widget_fitting(struct nk_rect *, const struct nk_context *, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23621))), "enum nk_widget_layout_states nk_widget_fitting(struct nk_rect *, const struct nk_context *, struct nk_vec2)");
             };
         };
     };
@@ -4453,7 +4459,7 @@ pub fn nk_widget_fitting(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const stru
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23621))), "enum nk_widget_layout_states nk_widget_fitting(struct nk_rect *, const struct nk_context *, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23622))), "enum nk_widget_layout_states nk_widget_fitting(struct nk_rect *, const struct nk_context *, struct nk_vec2)");
             };
         };
     };
@@ -4461,7 +4467,7 @@ pub fn nk_widget_fitting(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const stru
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23622))), "enum nk_widget_layout_states nk_widget_fitting(struct nk_rect *, const struct nk_context *, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23623))), "enum nk_widget_layout_states nk_widget_fitting(struct nk_rect *, const struct nk_context *, struct nk_vec2)");
             };
         };
     };
@@ -4478,7 +4484,7 @@ pub fn nk_widget_bounds(arg_ctx: [*c]const struct_nk_context) callconv(.c) struc
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23441))), "struct nk_rect nk_widget_bounds(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23442))), "struct nk_rect nk_widget_bounds(const struct nk_context *)");
             };
         };
     };
@@ -4486,7 +4492,7 @@ pub fn nk_widget_bounds(arg_ctx: [*c]const struct_nk_context) callconv(.c) struc
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23442))), "struct nk_rect nk_widget_bounds(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23443))), "struct nk_rect nk_widget_bounds(const struct nk_context *)");
             };
         };
     };
@@ -4503,7 +4509,7 @@ pub fn nk_widget_position(arg_ctx: [*c]const struct_nk_context) callconv(.c) str
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23452))), "struct nk_vec2 nk_widget_position(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23453))), "struct nk_vec2 nk_widget_position(const struct nk_context *)");
             };
         };
     };
@@ -4511,7 +4517,7 @@ pub fn nk_widget_position(arg_ctx: [*c]const struct_nk_context) callconv(.c) str
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23453))), "struct nk_vec2 nk_widget_position(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23454))), "struct nk_vec2 nk_widget_position(const struct nk_context *)");
             };
         };
     };
@@ -4528,7 +4534,7 @@ pub fn nk_widget_size(arg_ctx: [*c]const struct_nk_context) callconv(.c) struct_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23464))), "struct nk_vec2 nk_widget_size(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23465))), "struct nk_vec2 nk_widget_size(const struct nk_context *)");
             };
         };
     };
@@ -4536,7 +4542,7 @@ pub fn nk_widget_size(arg_ctx: [*c]const struct_nk_context) callconv(.c) struct_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23465))), "struct nk_vec2 nk_widget_size(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23466))), "struct nk_vec2 nk_widget_size(const struct nk_context *)");
             };
         };
     };
@@ -4553,7 +4559,7 @@ pub fn nk_widget_width(arg_ctx: [*c]const struct_nk_context) callconv(.c) f32 {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23476))), "float nk_widget_width(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23477))), "float nk_widget_width(const struct nk_context *)");
             };
         };
     };
@@ -4561,7 +4567,7 @@ pub fn nk_widget_width(arg_ctx: [*c]const struct_nk_context) callconv(.c) f32 {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23477))), "float nk_widget_width(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23478))), "float nk_widget_width(const struct nk_context *)");
             };
         };
     };
@@ -4578,7 +4584,7 @@ pub fn nk_widget_height(arg_ctx: [*c]const struct_nk_context) callconv(.c) f32 {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23488))), "float nk_widget_height(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23489))), "float nk_widget_height(const struct nk_context *)");
             };
         };
     };
@@ -4586,7 +4592,7 @@ pub fn nk_widget_height(arg_ctx: [*c]const struct_nk_context) callconv(.c) f32 {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23489))), "float nk_widget_height(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23490))), "float nk_widget_height(const struct nk_context *)");
             };
         };
     };
@@ -4607,7 +4613,7 @@ pub fn nk_widget_is_hovered(arg_ctx: [*c]const struct_nk_context) callconv(.c) n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23501))), "nk_bool nk_widget_is_hovered(const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23502))), "nk_bool nk_widget_is_hovered(const struct nk_context *)");
             };
         };
     };
@@ -4615,7 +4621,7 @@ pub fn nk_widget_is_hovered(arg_ctx: [*c]const struct_nk_context) callconv(.c) n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23502))), "nk_bool nk_widget_is_hovered(const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23503))), "nk_bool nk_widget_is_hovered(const struct nk_context *)");
             };
         };
     };
@@ -4645,7 +4651,7 @@ pub fn nk_widget_is_mouse_clicked(arg_ctx: [*c]const struct_nk_context, arg_btn:
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23523))), "nk_bool nk_widget_is_mouse_clicked(const struct nk_context *, enum nk_buttons)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23524))), "nk_bool nk_widget_is_mouse_clicked(const struct nk_context *, enum nk_buttons)");
             };
         };
     };
@@ -4653,7 +4659,7 @@ pub fn nk_widget_is_mouse_clicked(arg_ctx: [*c]const struct_nk_context, arg_btn:
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23524))), "nk_bool nk_widget_is_mouse_clicked(const struct nk_context *, enum nk_buttons)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23525))), "nk_bool nk_widget_is_mouse_clicked(const struct nk_context *, enum nk_buttons)");
             };
         };
     };
@@ -4685,7 +4691,7 @@ pub fn nk_widget_has_mouse_click_down(arg_ctx: [*c]const struct_nk_context, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23545))), "nk_bool nk_widget_has_mouse_click_down(const struct nk_context *, enum nk_buttons, nk_bool)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23546))), "nk_bool nk_widget_has_mouse_click_down(const struct nk_context *, enum nk_buttons, nk_bool)");
             };
         };
     };
@@ -4693,7 +4699,7 @@ pub fn nk_widget_has_mouse_click_down(arg_ctx: [*c]const struct_nk_context, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23546))), "nk_bool nk_widget_has_mouse_click_down(const struct nk_context *, enum nk_buttons, nk_bool)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23547))), "nk_bool nk_widget_has_mouse_click_down(const struct nk_context *, enum nk_buttons, nk_bool)");
             };
         };
     };
@@ -4729,7 +4735,7 @@ pub fn nk_spacing(arg_ctx: [*c]struct_nk_context, arg_cols: c_int) callconv(.c) 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23637))), "void nk_spacing(struct nk_context *, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23638))), "void nk_spacing(struct nk_context *, int)");
             };
         };
     };
@@ -4737,7 +4743,7 @@ pub fn nk_spacing(arg_ctx: [*c]struct_nk_context, arg_cols: c_int) callconv(.c) 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23638))), "void nk_spacing(struct nk_context *, int)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23639))), "void nk_spacing(struct nk_context *, int)");
             };
         };
     };
@@ -4745,7 +4751,7 @@ pub fn nk_spacing(arg_ctx: [*c]struct_nk_context, arg_cols: c_int) callconv(.c) 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23639))), "void nk_spacing(struct nk_context *, int)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23640))), "void nk_spacing(struct nk_context *, int)");
             };
         };
     };
@@ -4784,7 +4790,7 @@ pub fn nk_widget_disable_begin(arg_ctx: [*c]struct_nk_context) callconv(.c) void
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23666))), "void nk_widget_disable_begin(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23667))), "void nk_widget_disable_begin(struct nk_context *)");
             };
         };
     };
@@ -4792,7 +4798,7 @@ pub fn nk_widget_disable_begin(arg_ctx: [*c]struct_nk_context) callconv(.c) void
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23667))), "void nk_widget_disable_begin(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23668))), "void nk_widget_disable_begin(struct nk_context *)");
             };
         };
     };
@@ -4857,7 +4863,7 @@ pub fn nk_widget_disable_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23729))), "void nk_widget_disable_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23730))), "void nk_widget_disable_end(struct nk_context *)");
             };
         };
     };
@@ -4865,7 +4871,7 @@ pub fn nk_widget_disable_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23730))), "void nk_widget_disable_end(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23731))), "void nk_widget_disable_end(struct nk_context *)");
             };
         };
     };
@@ -4943,7 +4949,7 @@ pub fn nk_text(arg_ctx: [*c]struct_nk_context, arg_str: [*c]const u8, arg_len: c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24046))), "void nk_text(struct nk_context *, const char *, int, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24047))), "void nk_text(struct nk_context *, const char *, int, nk_flags)");
             };
         };
     };
@@ -4980,7 +4986,7 @@ pub fn nk_text_colored(arg_ctx: [*c]struct_nk_context, arg_str: [*c]const u8, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23890))), "void nk_text_colored(struct nk_context *, const char *, int, nk_flags, struct nk_color)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23891))), "void nk_text_colored(struct nk_context *, const char *, int, nk_flags, struct nk_color)");
             };
         };
     };
@@ -4988,7 +4994,7 @@ pub fn nk_text_colored(arg_ctx: [*c]struct_nk_context, arg_str: [*c]const u8, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23891))), "void nk_text_colored(struct nk_context *, const char *, int, nk_flags, struct nk_color)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23892))), "void nk_text_colored(struct nk_context *, const char *, int, nk_flags, struct nk_color)");
             };
         };
     };
@@ -4996,7 +5002,7 @@ pub fn nk_text_colored(arg_ctx: [*c]struct_nk_context, arg_str: [*c]const u8, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23892))), "void nk_text_colored(struct nk_context *, const char *, int, nk_flags, struct nk_color)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23893))), "void nk_text_colored(struct nk_context *, const char *, int, nk_flags, struct nk_color)");
             };
         };
     };
@@ -5022,7 +5028,7 @@ pub fn nk_text_wrap(arg_ctx: [*c]struct_nk_context, arg_str: [*c]const u8, arg_l
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24053))), "void nk_text_wrap(struct nk_context *, const char *, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24054))), "void nk_text_wrap(struct nk_context *, const char *, int)");
             };
         };
     };
@@ -5052,7 +5058,7 @@ pub fn nk_text_wrap_colored(arg_ctx: [*c]struct_nk_context, arg_str: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23917))), "void nk_text_wrap_colored(struct nk_context *, const char *, int, struct nk_color)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23918))), "void nk_text_wrap_colored(struct nk_context *, const char *, int, struct nk_color)");
             };
         };
     };
@@ -5060,7 +5066,7 @@ pub fn nk_text_wrap_colored(arg_ctx: [*c]struct_nk_context, arg_str: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23918))), "void nk_text_wrap_colored(struct nk_context *, const char *, int, struct nk_color)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23919))), "void nk_text_wrap_colored(struct nk_context *, const char *, int, struct nk_color)");
             };
         };
     };
@@ -5068,7 +5074,7 @@ pub fn nk_text_wrap_colored(arg_ctx: [*c]struct_nk_context, arg_str: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23919))), "void nk_text_wrap_colored(struct nk_context *, const char *, int, struct nk_color)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23920))), "void nk_text_wrap_colored(struct nk_context *, const char *, int, struct nk_color)");
             };
         };
     };
@@ -5132,7 +5138,7 @@ pub fn nk_image(arg_ctx: [*c]struct_nk_context, arg_img: struct_nk_image) callco
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24194))), "void nk_image(struct nk_context *, struct nk_image)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24195))), "void nk_image(struct nk_context *, struct nk_image)");
             };
         };
     };
@@ -5140,7 +5146,7 @@ pub fn nk_image(arg_ctx: [*c]struct_nk_context, arg_img: struct_nk_image) callco
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24195))), "void nk_image(struct nk_context *, struct nk_image)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24196))), "void nk_image(struct nk_context *, struct nk_image)");
             };
         };
     };
@@ -5148,7 +5154,7 @@ pub fn nk_image(arg_ctx: [*c]struct_nk_context, arg_img: struct_nk_image) callco
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24196))), "void nk_image(struct nk_context *, struct nk_image)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24197))), "void nk_image(struct nk_context *, struct nk_image)");
             };
         };
     };
@@ -5172,7 +5178,7 @@ pub fn nk_image_color(arg_ctx: [*c]struct_nk_context, arg_img: struct_nk_image, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24209))), "void nk_image_color(struct nk_context *, struct nk_image, struct nk_color)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24210))), "void nk_image_color(struct nk_context *, struct nk_image, struct nk_color)");
             };
         };
     };
@@ -5180,7 +5186,7 @@ pub fn nk_image_color(arg_ctx: [*c]struct_nk_context, arg_img: struct_nk_image, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24210))), "void nk_image_color(struct nk_context *, struct nk_image, struct nk_color)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24211))), "void nk_image_color(struct nk_context *, struct nk_image, struct nk_color)");
             };
         };
     };
@@ -5188,7 +5194,7 @@ pub fn nk_image_color(arg_ctx: [*c]struct_nk_context, arg_img: struct_nk_image, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24211))), "void nk_image_color(struct nk_context *, struct nk_image, struct nk_color)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24212))), "void nk_image_color(struct nk_context *, struct nk_image, struct nk_color)");
             };
         };
     };
@@ -5208,7 +5214,7 @@ pub fn nk_button_text(arg_ctx: [*c]struct_nk_context, arg_title: [*c]const u8, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24813))), "nk_bool nk_button_text(struct nk_context *, const char *, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24814))), "nk_bool nk_button_text(struct nk_context *, const char *, int)");
             };
         };
     };
@@ -5247,7 +5253,7 @@ pub fn nk_button_color(arg_ctx: [*c]struct_nk_context, arg_color: struct_nk_colo
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24839))), "nk_bool nk_button_color(struct nk_context *, struct nk_color)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24840))), "nk_bool nk_button_color(struct nk_context *, struct nk_color)");
             };
         };
     };
@@ -5255,7 +5261,7 @@ pub fn nk_button_color(arg_ctx: [*c]struct_nk_context, arg_color: struct_nk_colo
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24840))), "nk_bool nk_button_color(struct nk_context *, struct nk_color)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24841))), "nk_bool nk_button_color(struct nk_context *, struct nk_color)");
             };
         };
     };
@@ -5263,7 +5269,7 @@ pub fn nk_button_color(arg_ctx: [*c]struct_nk_context, arg_color: struct_nk_colo
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24841))), "nk_bool nk_button_color(struct nk_context *, struct nk_color)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24842))), "nk_bool nk_button_color(struct nk_context *, struct nk_color)");
             };
         };
     };
@@ -5290,7 +5296,7 @@ pub fn nk_button_symbol(arg_ctx: [*c]struct_nk_context, arg_symbol: enum_nk_symb
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24889))), "nk_bool nk_button_symbol(struct nk_context *, enum nk_symbol_type)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24890))), "nk_bool nk_button_symbol(struct nk_context *, enum nk_symbol_type)");
             };
         };
     };
@@ -5306,7 +5312,7 @@ pub fn nk_button_image(arg_ctx: [*c]struct_nk_context, arg_img: struct_nk_image)
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24922))), "nk_bool nk_button_image(struct nk_context *, struct nk_image)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24923))), "nk_bool nk_button_image(struct nk_context *, struct nk_image)");
             };
         };
     };
@@ -5339,7 +5345,7 @@ pub fn nk_button_symbol_text(arg_ctx: [*c]struct_nk_context, arg_symbol: enum_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24958))), "nk_bool nk_button_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24959))), "nk_bool nk_button_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags)");
             };
         };
     };
@@ -5393,7 +5399,7 @@ pub fn nk_button_text_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*c]cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24794))), "nk_bool nk_button_text_styled(struct nk_context *, const struct nk_style_button *, const char *, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24795))), "nk_bool nk_button_text_styled(struct nk_context *, const struct nk_style_button *, const char *, int)");
             };
         };
     };
@@ -5401,7 +5407,7 @@ pub fn nk_button_text_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*c]cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24795))), "nk_bool nk_button_text_styled(struct nk_context *, const struct nk_style_button *, const char *, int)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24796))), "nk_bool nk_button_text_styled(struct nk_context *, const struct nk_style_button *, const char *, int)");
             };
         };
     };
@@ -5409,7 +5415,7 @@ pub fn nk_button_text_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*c]cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24796))), "nk_bool nk_button_text_styled(struct nk_context *, const struct nk_style_button *, const char *, int)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24797))), "nk_bool nk_button_text_styled(struct nk_context *, const struct nk_style_button *, const char *, int)");
             };
         };
     };
@@ -5417,7 +5423,7 @@ pub fn nk_button_text_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*c]cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24797))), "nk_bool nk_button_text_styled(struct nk_context *, const struct nk_style_button *, const char *, int)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24798))), "nk_bool nk_button_text_styled(struct nk_context *, const struct nk_style_button *, const char *, int)");
             };
         };
     };
@@ -5459,7 +5465,7 @@ pub fn nk_button_symbol_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*c]co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24872))), "nk_bool nk_button_symbol_styled(struct nk_context *, const struct nk_style_button *, enum nk_symbol_type)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24873))), "nk_bool nk_button_symbol_styled(struct nk_context *, const struct nk_style_button *, enum nk_symbol_type)");
             };
         };
     };
@@ -5467,7 +5473,7 @@ pub fn nk_button_symbol_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*c]co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24873))), "nk_bool nk_button_symbol_styled(struct nk_context *, const struct nk_style_button *, enum nk_symbol_type)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24874))), "nk_bool nk_button_symbol_styled(struct nk_context *, const struct nk_style_button *, enum nk_symbol_type)");
             };
         };
     };
@@ -5475,7 +5481,7 @@ pub fn nk_button_symbol_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*c]co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24874))), "nk_bool nk_button_symbol_styled(struct nk_context *, const struct nk_style_button *, enum nk_symbol_type)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24875))), "nk_bool nk_button_symbol_styled(struct nk_context *, const struct nk_style_button *, enum nk_symbol_type)");
             };
         };
     };
@@ -5508,7 +5514,7 @@ pub fn nk_button_image_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*c]con
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24904))), "nk_bool nk_button_image_styled(struct nk_context *, const struct nk_style_button *, struct nk_image)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24905))), "nk_bool nk_button_image_styled(struct nk_context *, const struct nk_style_button *, struct nk_image)");
             };
         };
     };
@@ -5516,7 +5522,7 @@ pub fn nk_button_image_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*c]con
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24905))), "nk_bool nk_button_image_styled(struct nk_context *, const struct nk_style_button *, struct nk_image)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24906))), "nk_bool nk_button_image_styled(struct nk_context *, const struct nk_style_button *, struct nk_image)");
             };
         };
     };
@@ -5524,7 +5530,7 @@ pub fn nk_button_image_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*c]con
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24906))), "nk_bool nk_button_image_styled(struct nk_context *, const struct nk_style_button *, struct nk_image)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24907))), "nk_bool nk_button_image_styled(struct nk_context *, const struct nk_style_button *, struct nk_image)");
             };
         };
     };
@@ -5563,7 +5569,7 @@ pub fn nk_button_symbol_text_styled(arg_ctx: [*c]struct_nk_context, arg_style: [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24938))), "nk_bool nk_button_symbol_text_styled(struct nk_context *, const struct nk_style_button *, enum nk_symbol_type, const char *, int, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24939))), "nk_bool nk_button_symbol_text_styled(struct nk_context *, const struct nk_style_button *, enum nk_symbol_type, const char *, int, nk_flags)");
             };
         };
     };
@@ -5571,7 +5577,7 @@ pub fn nk_button_symbol_text_styled(arg_ctx: [*c]struct_nk_context, arg_style: [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24939))), "nk_bool nk_button_symbol_text_styled(struct nk_context *, const struct nk_style_button *, enum nk_symbol_type, const char *, int, nk_flags)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24940))), "nk_bool nk_button_symbol_text_styled(struct nk_context *, const struct nk_style_button *, enum nk_symbol_type, const char *, int, nk_flags)");
             };
         };
     };
@@ -5579,7 +5585,7 @@ pub fn nk_button_symbol_text_styled(arg_ctx: [*c]struct_nk_context, arg_style: [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24940))), "nk_bool nk_button_symbol_text_styled(struct nk_context *, const struct nk_style_button *, enum nk_symbol_type, const char *, int, nk_flags)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24941))), "nk_bool nk_button_symbol_text_styled(struct nk_context *, const struct nk_style_button *, enum nk_symbol_type, const char *, int, nk_flags)");
             };
         };
     };
@@ -5644,7 +5650,7 @@ pub fn nk_button_image_text_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24985))), "nk_bool nk_button_image_text_styled(struct nk_context *, const struct nk_style_button *, struct nk_image, const char *, int, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24986))), "nk_bool nk_button_image_text_styled(struct nk_context *, const struct nk_style_button *, struct nk_image, const char *, int, nk_flags)");
             };
         };
     };
@@ -5652,7 +5658,7 @@ pub fn nk_button_image_text_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24986))), "nk_bool nk_button_image_text_styled(struct nk_context *, const struct nk_style_button *, struct nk_image, const char *, int, nk_flags)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24987))), "nk_bool nk_button_image_text_styled(struct nk_context *, const struct nk_style_button *, struct nk_image, const char *, int, nk_flags)");
             };
         };
     };
@@ -5660,7 +5666,7 @@ pub fn nk_button_image_text_styled(arg_ctx: [*c]struct_nk_context, arg_style: [*
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24987))), "nk_bool nk_button_image_text_styled(struct nk_context *, const struct nk_style_button *, struct nk_image, const char *, int, nk_flags)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24988))), "nk_bool nk_button_image_text_styled(struct nk_context *, const struct nk_style_button *, struct nk_image, const char *, int, nk_flags)");
             };
         };
     };
@@ -5681,7 +5687,7 @@ pub fn nk_button_set_behavior(arg_ctx: [*c]struct_nk_context, arg_behavior: enum
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24741))), "void nk_button_set_behavior(struct nk_context *, enum nk_button_behavior)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24742))), "void nk_button_set_behavior(struct nk_context *, enum nk_button_behavior)");
             };
         };
     };
@@ -5701,7 +5707,7 @@ pub fn nk_button_push_behavior(arg_ctx: [*c]struct_nk_context, arg_behavior: enu
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24751))), "nk_bool nk_button_push_behavior(struct nk_context *, enum nk_button_behavior)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24752))), "nk_bool nk_button_push_behavior(struct nk_context *, enum nk_button_behavior)");
             };
         };
     };
@@ -5711,17 +5717,19 @@ pub fn nk_button_push_behavior(arg_ctx: [*c]struct_nk_context, arg_behavior: enu
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (button_stack.*.head < @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([8]struct_nk_config_stack_button_behavior_element) / @sizeOf(struct_nk_config_stack_button_behavior_element)))))) {} else {
-                __assert_fail("button_stack->head < (int)(sizeof(button_stack->elements)/sizeof(button_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24755))), "nk_bool nk_button_push_behavior(struct nk_context *, enum nk_button_behavior)");
+                __assert_fail("button_stack->head < (int)(sizeof(button_stack->elements)/sizeof(button_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24756))), "nk_bool nk_button_push_behavior(struct nk_context *, enum nk_button_behavior)");
             };
         };
     };
     if (button_stack.*.head >= @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([8]struct_nk_config_stack_button_behavior_element) / @sizeOf(struct_nk_config_stack_button_behavior_element)))))) return 0;
-    element = &button_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &button_stack.*.head;
-        const tmp = ref.*;
-        ref.* += 1;
-        break :blk tmp;
-    }))];
+    element = &button_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &button_stack.*.head;
+            const tmp = ref.*;
+            ref.* += 1;
+            break :blk tmp;
+        }))
+    ];
     element.*.address = &ctx.*.button_behavior;
     element.*.old_value = ctx.*.button_behavior;
     ctx.*.button_behavior = behavior;
@@ -5738,7 +5746,7 @@ pub fn nk_button_pop_behavior(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_bo
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24771))), "nk_bool nk_button_pop_behavior(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24772))), "nk_bool nk_button_pop_behavior(struct nk_context *)");
             };
         };
     };
@@ -5748,16 +5756,18 @@ pub fn nk_button_pop_behavior(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_bo
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (button_stack.*.head > @as(c_int, 0)) {} else {
-                __assert_fail("button_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24775))), "nk_bool nk_button_pop_behavior(struct nk_context *)");
+                __assert_fail("button_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24776))), "nk_bool nk_button_pop_behavior(struct nk_context *)");
             };
         };
     };
     if (button_stack.*.head < @as(c_int, 1)) return 0;
-    element = &button_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &button_stack.*.head;
-        ref.* -= 1;
-        break :blk ref.*;
-    }))];
+    element = &button_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &button_stack.*.head;
+            ref.* -= 1;
+            break :blk ref.*;
+        }))
+    ];
     element.*.address.* = element.*.old_value;
     return 1;
 }
@@ -5795,7 +5805,7 @@ pub fn nk_check_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25230))), "nk_bool nk_check_text(struct nk_context *, const char *, int, nk_bool)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25231))), "nk_bool nk_check_text(struct nk_context *, const char *, int, nk_bool)");
             };
         };
     };
@@ -5803,7 +5813,7 @@ pub fn nk_check_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25231))), "nk_bool nk_check_text(struct nk_context *, const char *, int, nk_bool)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25232))), "nk_bool nk_check_text(struct nk_context *, const char *, int, nk_bool)");
             };
         };
     };
@@ -5811,7 +5821,7 @@ pub fn nk_check_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25232))), "nk_bool nk_check_text(struct nk_context *, const char *, int, nk_bool)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25233))), "nk_bool nk_check_text(struct nk_context *, const char *, int, nk_bool)");
             };
         };
     };
@@ -5854,7 +5864,7 @@ pub fn nk_check_text_align(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25258))), "nk_bool nk_check_text_align(struct nk_context *, const char *, int, nk_bool, nk_flags, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25259))), "nk_bool nk_check_text_align(struct nk_context *, const char *, int, nk_bool, nk_flags, nk_flags)");
             };
         };
     };
@@ -5862,7 +5872,7 @@ pub fn nk_check_text_align(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25259))), "nk_bool nk_check_text_align(struct nk_context *, const char *, int, nk_bool, nk_flags, nk_flags)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25260))), "nk_bool nk_check_text_align(struct nk_context *, const char *, int, nk_bool, nk_flags, nk_flags)");
             };
         };
     };
@@ -5870,7 +5880,7 @@ pub fn nk_check_text_align(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25260))), "nk_bool nk_check_text_align(struct nk_context *, const char *, int, nk_bool, nk_flags, nk_flags)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25261))), "nk_bool nk_check_text_align(struct nk_context *, const char *, int, nk_bool, nk_flags, nk_flags)");
             };
         };
     };
@@ -5912,7 +5922,7 @@ pub fn nk_check_flags_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25280))), "unsigned int nk_check_flags_text(struct nk_context *, const char *, int, unsigned int, unsigned int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25281))), "unsigned int nk_check_flags_text(struct nk_context *, const char *, int, unsigned int, unsigned int)");
             };
         };
     };
@@ -5920,7 +5930,7 @@ pub fn nk_check_flags_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (text != null) {} else {
-                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25281))), "unsigned int nk_check_flags_text(struct nk_context *, const char *, int, unsigned int, unsigned int)");
+                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25282))), "unsigned int nk_check_flags_text(struct nk_context *, const char *, int, unsigned int, unsigned int)");
             };
         };
     };
@@ -5970,7 +5980,7 @@ pub fn nk_checkbox_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25293))), "nk_bool nk_checkbox_text(struct nk_context *, const char *, int, nk_bool *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25294))), "nk_bool nk_checkbox_text(struct nk_context *, const char *, int, nk_bool *)");
             };
         };
     };
@@ -5978,7 +5988,7 @@ pub fn nk_checkbox_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (text != null) {} else {
-                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25294))), "nk_bool nk_checkbox_text(struct nk_context *, const char *, int, nk_bool *)");
+                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25295))), "nk_bool nk_checkbox_text(struct nk_context *, const char *, int, nk_bool *)");
             };
         };
     };
@@ -5986,7 +5996,7 @@ pub fn nk_checkbox_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (active != null) {} else {
-                __assert_fail("active", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25295))), "nk_bool nk_checkbox_text(struct nk_context *, const char *, int, nk_bool *)");
+                __assert_fail("active", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25296))), "nk_bool nk_checkbox_text(struct nk_context *, const char *, int, nk_bool *)");
             };
         };
     };
@@ -6014,7 +6024,7 @@ pub fn nk_checkbox_text_align(arg_ctx: [*c]struct_nk_context, arg_text: [*c]cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25305))), "nk_bool nk_checkbox_text_align(struct nk_context *, const char *, int, nk_bool *, nk_flags, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25306))), "nk_bool nk_checkbox_text_align(struct nk_context *, const char *, int, nk_bool *, nk_flags, nk_flags)");
             };
         };
     };
@@ -6022,7 +6032,7 @@ pub fn nk_checkbox_text_align(arg_ctx: [*c]struct_nk_context, arg_text: [*c]cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (text != null) {} else {
-                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25306))), "nk_bool nk_checkbox_text_align(struct nk_context *, const char *, int, nk_bool *, nk_flags, nk_flags)");
+                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25307))), "nk_bool nk_checkbox_text_align(struct nk_context *, const char *, int, nk_bool *, nk_flags, nk_flags)");
             };
         };
     };
@@ -6030,7 +6040,7 @@ pub fn nk_checkbox_text_align(arg_ctx: [*c]struct_nk_context, arg_text: [*c]cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (active != null) {} else {
-                __assert_fail("active", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25307))), "nk_bool nk_checkbox_text_align(struct nk_context *, const char *, int, nk_bool *, nk_flags, nk_flags)");
+                __assert_fail("active", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25308))), "nk_bool nk_checkbox_text_align(struct nk_context *, const char *, int, nk_bool *, nk_flags, nk_flags)");
             };
         };
     };
@@ -6067,7 +6077,7 @@ pub fn nk_checkbox_flags_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25318))), "nk_bool nk_checkbox_flags_text(struct nk_context *, const char *, int, unsigned int *, unsigned int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25319))), "nk_bool nk_checkbox_flags_text(struct nk_context *, const char *, int, unsigned int *, unsigned int)");
             };
         };
     };
@@ -6075,7 +6085,7 @@ pub fn nk_checkbox_flags_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (text != null) {} else {
-                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25319))), "nk_bool nk_checkbox_flags_text(struct nk_context *, const char *, int, unsigned int *, unsigned int)");
+                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25320))), "nk_bool nk_checkbox_flags_text(struct nk_context *, const char *, int, unsigned int *, unsigned int)");
             };
         };
     };
@@ -6083,7 +6093,7 @@ pub fn nk_checkbox_flags_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (flags != null) {} else {
-                __assert_fail("flags", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25320))), "nk_bool nk_checkbox_flags_text(struct nk_context *, const char *, int, unsigned int *, unsigned int)");
+                __assert_fail("flags", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25321))), "nk_bool nk_checkbox_flags_text(struct nk_context *, const char *, int, unsigned int *, unsigned int)");
             };
         };
     };
@@ -6136,7 +6146,7 @@ pub fn nk_radio_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25418))), "nk_bool nk_radio_text(struct nk_context *, const char *, int, nk_bool *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25419))), "nk_bool nk_radio_text(struct nk_context *, const char *, int, nk_bool *)");
             };
         };
     };
@@ -6144,7 +6154,7 @@ pub fn nk_radio_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (text != null) {} else {
-                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25419))), "nk_bool nk_radio_text(struct nk_context *, const char *, int, nk_bool *)");
+                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25420))), "nk_bool nk_radio_text(struct nk_context *, const char *, int, nk_bool *)");
             };
         };
     };
@@ -6152,7 +6162,7 @@ pub fn nk_radio_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (active != null) {} else {
-                __assert_fail("active", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25420))), "nk_bool nk_radio_text(struct nk_context *, const char *, int, nk_bool *)");
+                __assert_fail("active", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25421))), "nk_bool nk_radio_text(struct nk_context *, const char *, int, nk_bool *)");
             };
         };
     };
@@ -6180,7 +6190,7 @@ pub fn nk_radio_text_align(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25430))), "nk_bool nk_radio_text_align(struct nk_context *, const char *, int, nk_bool *, nk_flags, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25431))), "nk_bool nk_radio_text_align(struct nk_context *, const char *, int, nk_bool *, nk_flags, nk_flags)");
             };
         };
     };
@@ -6188,7 +6198,7 @@ pub fn nk_radio_text_align(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (text != null) {} else {
-                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25431))), "nk_bool nk_radio_text_align(struct nk_context *, const char *, int, nk_bool *, nk_flags, nk_flags)");
+                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25432))), "nk_bool nk_radio_text_align(struct nk_context *, const char *, int, nk_bool *, nk_flags, nk_flags)");
             };
         };
     };
@@ -6196,7 +6206,7 @@ pub fn nk_radio_text_align(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (active != null) {} else {
-                __assert_fail("active", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25432))), "nk_bool nk_radio_text_align(struct nk_context *, const char *, int, nk_bool *, nk_flags, nk_flags)");
+                __assert_fail("active", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25433))), "nk_bool nk_radio_text_align(struct nk_context *, const char *, int, nk_bool *, nk_flags, nk_flags)");
             };
         };
     };
@@ -6252,7 +6262,7 @@ pub fn nk_option_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25369))), "nk_bool nk_option_text(struct nk_context *, const char *, int, nk_bool)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25370))), "nk_bool nk_option_text(struct nk_context *, const char *, int, nk_bool)");
             };
         };
     };
@@ -6260,7 +6270,7 @@ pub fn nk_option_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25370))), "nk_bool nk_option_text(struct nk_context *, const char *, int, nk_bool)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25371))), "nk_bool nk_option_text(struct nk_context *, const char *, int, nk_bool)");
             };
         };
     };
@@ -6268,7 +6278,7 @@ pub fn nk_option_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25371))), "nk_bool nk_option_text(struct nk_context *, const char *, int, nk_bool)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25372))), "nk_bool nk_option_text(struct nk_context *, const char *, int, nk_bool)");
             };
         };
     };
@@ -6311,7 +6321,7 @@ pub fn nk_option_text_align(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25397))), "nk_bool nk_option_text_align(struct nk_context *, const char *, int, nk_bool, nk_flags, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25398))), "nk_bool nk_option_text_align(struct nk_context *, const char *, int, nk_bool, nk_flags, nk_flags)");
             };
         };
     };
@@ -6319,7 +6329,7 @@ pub fn nk_option_text_align(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25398))), "nk_bool nk_option_text_align(struct nk_context *, const char *, int, nk_bool, nk_flags, nk_flags)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25399))), "nk_bool nk_option_text_align(struct nk_context *, const char *, int, nk_bool, nk_flags, nk_flags)");
             };
         };
     };
@@ -6327,7 +6337,7 @@ pub fn nk_option_text_align(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25399))), "nk_bool nk_option_text_align(struct nk_context *, const char *, int, nk_bool, nk_flags, nk_flags)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25400))), "nk_bool nk_option_text_align(struct nk_context *, const char *, int, nk_bool, nk_flags, nk_flags)");
             };
         };
     };
@@ -6379,7 +6389,7 @@ pub fn nk_selectable_text(arg_ctx: [*c]struct_nk_context, arg_str: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25670))), "nk_bool nk_selectable_text(struct nk_context *, const char *, int, nk_flags, nk_bool *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25671))), "nk_bool nk_selectable_text(struct nk_context *, const char *, int, nk_flags, nk_bool *)");
             };
         };
     };
@@ -6387,7 +6397,7 @@ pub fn nk_selectable_text(arg_ctx: [*c]struct_nk_context, arg_str: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (value != null) {} else {
-                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25671))), "nk_bool nk_selectable_text(struct nk_context *, const char *, int, nk_flags, nk_bool *)");
+                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25672))), "nk_bool nk_selectable_text(struct nk_context *, const char *, int, nk_flags, nk_bool *)");
             };
         };
     };
@@ -6395,7 +6405,7 @@ pub fn nk_selectable_text(arg_ctx: [*c]struct_nk_context, arg_str: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25672))), "nk_bool nk_selectable_text(struct nk_context *, const char *, int, nk_flags, nk_bool *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25673))), "nk_bool nk_selectable_text(struct nk_context *, const char *, int, nk_flags, nk_bool *)");
             };
         };
     };
@@ -6403,7 +6413,7 @@ pub fn nk_selectable_text(arg_ctx: [*c]struct_nk_context, arg_str: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25673))), "nk_bool nk_selectable_text(struct nk_context *, const char *, int, nk_flags, nk_bool *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25674))), "nk_bool nk_selectable_text(struct nk_context *, const char *, int, nk_flags, nk_bool *)");
             };
         };
     };
@@ -6458,7 +6468,7 @@ pub fn nk_selectable_image_text(arg_ctx: [*c]struct_nk_context, arg_img: struct_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25699))), "nk_bool nk_selectable_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags, nk_bool *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25700))), "nk_bool nk_selectable_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags, nk_bool *)");
             };
         };
     };
@@ -6466,7 +6476,7 @@ pub fn nk_selectable_image_text(arg_ctx: [*c]struct_nk_context, arg_img: struct_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (value != null) {} else {
-                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25700))), "nk_bool nk_selectable_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags, nk_bool *)");
+                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25701))), "nk_bool nk_selectable_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags, nk_bool *)");
             };
         };
     };
@@ -6474,7 +6484,7 @@ pub fn nk_selectable_image_text(arg_ctx: [*c]struct_nk_context, arg_img: struct_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25701))), "nk_bool nk_selectable_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags, nk_bool *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25702))), "nk_bool nk_selectable_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags, nk_bool *)");
             };
         };
     };
@@ -6482,7 +6492,7 @@ pub fn nk_selectable_image_text(arg_ctx: [*c]struct_nk_context, arg_img: struct_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25702))), "nk_bool nk_selectable_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags, nk_bool *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25703))), "nk_bool nk_selectable_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags, nk_bool *)");
             };
         };
     };
@@ -6537,7 +6547,7 @@ pub fn nk_selectable_symbol_text(arg_ctx: [*c]struct_nk_context, arg_sym: enum_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25728))), "nk_bool nk_selectable_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags, nk_bool *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25729))), "nk_bool nk_selectable_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags, nk_bool *)");
             };
         };
     };
@@ -6545,7 +6555,7 @@ pub fn nk_selectable_symbol_text(arg_ctx: [*c]struct_nk_context, arg_sym: enum_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (value != null) {} else {
-                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25729))), "nk_bool nk_selectable_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags, nk_bool *)");
+                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25730))), "nk_bool nk_selectable_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags, nk_bool *)");
             };
         };
     };
@@ -6553,7 +6563,7 @@ pub fn nk_selectable_symbol_text(arg_ctx: [*c]struct_nk_context, arg_sym: enum_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25730))), "nk_bool nk_selectable_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags, nk_bool *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25731))), "nk_bool nk_selectable_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags, nk_bool *)");
             };
         };
     };
@@ -6561,7 +6571,7 @@ pub fn nk_selectable_symbol_text(arg_ctx: [*c]struct_nk_context, arg_sym: enum_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25731))), "nk_bool nk_selectable_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags, nk_bool *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25732))), "nk_bool nk_selectable_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags, nk_bool *)");
             };
         };
     };
@@ -6720,7 +6730,7 @@ pub fn nk_slider_float(arg_ctx: [*c]struct_nk_context, arg_min_value: f32, arg_v
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26013))), "nk_bool nk_slider_float(struct nk_context *, float, float *, float, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26014))), "nk_bool nk_slider_float(struct nk_context *, float, float *, float, float)");
             };
         };
     };
@@ -6728,7 +6738,7 @@ pub fn nk_slider_float(arg_ctx: [*c]struct_nk_context, arg_min_value: f32, arg_v
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26014))), "nk_bool nk_slider_float(struct nk_context *, float, float *, float, float)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26015))), "nk_bool nk_slider_float(struct nk_context *, float, float *, float, float)");
             };
         };
     };
@@ -6736,7 +6746,7 @@ pub fn nk_slider_float(arg_ctx: [*c]struct_nk_context, arg_min_value: f32, arg_v
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26015))), "nk_bool nk_slider_float(struct nk_context *, float, float *, float, float)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26016))), "nk_bool nk_slider_float(struct nk_context *, float, float *, float, float)");
             };
         };
     };
@@ -6744,7 +6754,7 @@ pub fn nk_slider_float(arg_ctx: [*c]struct_nk_context, arg_min_value: f32, arg_v
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (value != null) {} else {
-                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26016))), "nk_bool nk_slider_float(struct nk_context *, float, float *, float, float)");
+                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26017))), "nk_bool nk_slider_float(struct nk_context *, float, float *, float, float)");
             };
         };
     };
@@ -6813,7 +6823,7 @@ pub fn nk_knob_float(arg_ctx: [*c]struct_nk_context, arg_min_value: f32, arg_val
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26276))), "nk_bool nk_knob_float(struct nk_context *, float, float *, float, float, enum nk_heading, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26277))), "nk_bool nk_knob_float(struct nk_context *, float, float *, float, float, enum nk_heading, float)");
             };
         };
     };
@@ -6821,7 +6831,7 @@ pub fn nk_knob_float(arg_ctx: [*c]struct_nk_context, arg_min_value: f32, arg_val
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26277))), "nk_bool nk_knob_float(struct nk_context *, float, float *, float, float, enum nk_heading, float)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26278))), "nk_bool nk_knob_float(struct nk_context *, float, float *, float, float, enum nk_heading, float)");
             };
         };
     };
@@ -6829,7 +6839,7 @@ pub fn nk_knob_float(arg_ctx: [*c]struct_nk_context, arg_min_value: f32, arg_val
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26278))), "nk_bool nk_knob_float(struct nk_context *, float, float *, float, float, enum nk_heading, float)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26279))), "nk_bool nk_knob_float(struct nk_context *, float, float *, float, float, enum nk_heading, float)");
             };
         };
     };
@@ -6837,7 +6847,7 @@ pub fn nk_knob_float(arg_ctx: [*c]struct_nk_context, arg_min_value: f32, arg_val
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (value != null) {} else {
-                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26279))), "nk_bool nk_knob_float(struct nk_context *, float, float *, float, float, enum nk_heading, float)");
+                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26280))), "nk_bool nk_knob_float(struct nk_context *, float, float *, float, float, enum nk_heading, float)");
             };
         };
     };
@@ -6845,7 +6855,7 @@ pub fn nk_knob_float(arg_ctx: [*c]struct_nk_context, arg_min_value: f32, arg_val
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((0.0 <= dead_zone_degrees) and (dead_zone_degrees < 360.0)) {} else {
-                __assert_fail("((0.0f) <= (dead_zone_degrees) && (dead_zone_degrees) < (360.0f))", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26280))), "nk_bool nk_knob_float(struct nk_context *, float, float *, float, float, enum nk_heading, float)");
+                __assert_fail("((0.0f) <= (dead_zone_degrees) && (dead_zone_degrees) < (360.0f))", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26281))), "nk_bool nk_knob_float(struct nk_context *, float, float *, float, float, enum nk_heading, float)");
             };
         };
     };
@@ -6910,7 +6920,7 @@ pub fn nk_progress(arg_ctx: [*c]struct_nk_context, arg_cur: [*c]nk_size, arg_max
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26441))), "nk_bool nk_progress(struct nk_context *, nk_size *, nk_size, nk_bool)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26442))), "nk_bool nk_progress(struct nk_context *, nk_size *, nk_size, nk_bool)");
             };
         };
     };
@@ -6918,7 +6928,7 @@ pub fn nk_progress(arg_ctx: [*c]struct_nk_context, arg_cur: [*c]nk_size, arg_max
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (cur != null) {} else {
-                __assert_fail("cur", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26442))), "nk_bool nk_progress(struct nk_context *, nk_size *, nk_size, nk_bool)");
+                __assert_fail("cur", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26443))), "nk_bool nk_progress(struct nk_context *, nk_size *, nk_size, nk_bool)");
             };
         };
     };
@@ -6926,7 +6936,7 @@ pub fn nk_progress(arg_ctx: [*c]struct_nk_context, arg_cur: [*c]nk_size, arg_max
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26443))), "nk_bool nk_progress(struct nk_context *, nk_size *, nk_size, nk_bool)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26444))), "nk_bool nk_progress(struct nk_context *, nk_size *, nk_size, nk_bool)");
             };
         };
     };
@@ -6934,7 +6944,7 @@ pub fn nk_progress(arg_ctx: [*c]struct_nk_context, arg_cur: [*c]nk_size, arg_max
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26444))), "nk_bool nk_progress(struct nk_context *, nk_size *, nk_size, nk_bool)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26445))), "nk_bool nk_progress(struct nk_context *, nk_size *, nk_size, nk_bool)");
             };
         };
     };
@@ -6994,7 +7004,7 @@ pub fn nk_color_pick(arg_ctx: [*c]struct_nk_context, arg_color: [*c]struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29679))), "nk_bool nk_color_pick(struct nk_context *, struct nk_colorf *, enum nk_color_format)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29680))), "nk_bool nk_color_pick(struct nk_context *, struct nk_colorf *, enum nk_color_format)");
             };
         };
     };
@@ -7002,7 +7012,7 @@ pub fn nk_color_pick(arg_ctx: [*c]struct_nk_context, arg_color: [*c]struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (color != null) {} else {
-                __assert_fail("color", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29680))), "nk_bool nk_color_pick(struct nk_context *, struct nk_colorf *, enum nk_color_format)");
+                __assert_fail("color", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29681))), "nk_bool nk_color_pick(struct nk_context *, struct nk_colorf *, enum nk_color_format)");
             };
         };
     };
@@ -7010,7 +7020,7 @@ pub fn nk_color_pick(arg_ctx: [*c]struct_nk_context, arg_color: [*c]struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29681))), "nk_bool nk_color_pick(struct nk_context *, struct nk_colorf *, enum nk_color_format)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29682))), "nk_bool nk_color_pick(struct nk_context *, struct nk_colorf *, enum nk_color_format)");
             };
         };
     };
@@ -7018,7 +7028,7 @@ pub fn nk_color_pick(arg_ctx: [*c]struct_nk_context, arg_color: [*c]struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29682))), "nk_bool nk_color_pick(struct nk_context *, struct nk_colorf *, enum nk_color_format)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29683))), "nk_bool nk_color_pick(struct nk_context *, struct nk_colorf *, enum nk_color_format)");
             };
         };
     };
@@ -7068,7 +7078,7 @@ pub fn nk_property_int(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29085))), "void nk_property_int(struct nk_context *, const char *, int, int *, int, int, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29086))), "void nk_property_int(struct nk_context *, const char *, int, int *, int, int, float)");
             };
         };
     };
@@ -7076,7 +7086,7 @@ pub fn nk_property_int(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (name != null) {} else {
-                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29086))), "void nk_property_int(struct nk_context *, const char *, int, int *, int, int, float)");
+                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29087))), "void nk_property_int(struct nk_context *, const char *, int, int *, int, int, float)");
             };
         };
     };
@@ -7084,7 +7094,7 @@ pub fn nk_property_int(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (val != null) {} else {
-                __assert_fail("val", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29087))), "void nk_property_int(struct nk_context *, const char *, int, int *, int, int, float)");
+                __assert_fail("val", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29088))), "void nk_property_int(struct nk_context *, const char *, int, int *, int, int, float)");
             };
         };
     };
@@ -7114,7 +7124,7 @@ pub fn nk_property_float(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29099))), "void nk_property_float(struct nk_context *, const char *, float, float *, float, float, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29100))), "void nk_property_float(struct nk_context *, const char *, float, float *, float, float, float)");
             };
         };
     };
@@ -7122,7 +7132,7 @@ pub fn nk_property_float(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (name != null) {} else {
-                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29100))), "void nk_property_float(struct nk_context *, const char *, float, float *, float, float, float)");
+                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29101))), "void nk_property_float(struct nk_context *, const char *, float, float *, float, float, float)");
             };
         };
     };
@@ -7130,7 +7140,7 @@ pub fn nk_property_float(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (val != null) {} else {
-                __assert_fail("val", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29101))), "void nk_property_float(struct nk_context *, const char *, float, float *, float, float, float)");
+                __assert_fail("val", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29102))), "void nk_property_float(struct nk_context *, const char *, float, float *, float, float, float)");
             };
         };
     };
@@ -7160,7 +7170,7 @@ pub fn nk_property_double(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29113))), "void nk_property_double(struct nk_context *, const char *, double, double *, double, double, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29114))), "void nk_property_double(struct nk_context *, const char *, double, double *, double, double, float)");
             };
         };
     };
@@ -7168,7 +7178,7 @@ pub fn nk_property_double(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (name != null) {} else {
-                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29114))), "void nk_property_double(struct nk_context *, const char *, double, double *, double, double, float)");
+                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29115))), "void nk_property_double(struct nk_context *, const char *, double, double *, double, double, float)");
             };
         };
     };
@@ -7176,7 +7186,7 @@ pub fn nk_property_double(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (val != null) {} else {
-                __assert_fail("val", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29115))), "void nk_property_double(struct nk_context *, const char *, double, double *, double, double, float)");
+                __assert_fail("val", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29116))), "void nk_property_double(struct nk_context *, const char *, double, double *, double, double, float)");
             };
         };
     };
@@ -7206,7 +7216,7 @@ pub fn nk_propertyi(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29127))), "int nk_propertyi(struct nk_context *, const char *, int, int, int, int, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29128))), "int nk_propertyi(struct nk_context *, const char *, int, int, int, int, float)");
             };
         };
     };
@@ -7214,7 +7224,7 @@ pub fn nk_propertyi(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (name != null) {} else {
-                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29128))), "int nk_propertyi(struct nk_context *, const char *, int, int, int, int, float)");
+                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29129))), "int nk_propertyi(struct nk_context *, const char *, int, int, int, int, float)");
             };
         };
     };
@@ -7245,7 +7255,7 @@ pub fn nk_propertyf(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29141))), "float nk_propertyf(struct nk_context *, const char *, float, float, float, float, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29142))), "float nk_propertyf(struct nk_context *, const char *, float, float, float, float, float)");
             };
         };
     };
@@ -7253,7 +7263,7 @@ pub fn nk_propertyf(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (name != null) {} else {
-                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29142))), "float nk_propertyf(struct nk_context *, const char *, float, float, float, float, float)");
+                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29143))), "float nk_propertyf(struct nk_context *, const char *, float, float, float, float, float)");
             };
         };
     };
@@ -7284,7 +7294,7 @@ pub fn nk_propertyd(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29155))), "double nk_propertyd(struct nk_context *, const char *, double, double, double, double, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29156))), "double nk_propertyd(struct nk_context *, const char *, double, double, double, double, float)");
             };
         };
     };
@@ -7292,7 +7302,7 @@ pub fn nk_propertyd(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (name != null) {} else {
-                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29156))), "double nk_propertyd(struct nk_context *, const char *, double, double, double, double, float)");
+                __assert_fail("name", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29157))), "double nk_propertyd(struct nk_context *, const char *, double, double, double, double, float)");
             };
         };
     };
@@ -7352,7 +7362,7 @@ pub fn nk_edit_string(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, arg_m
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28534))), "nk_flags nk_edit_string(struct nk_context *, nk_flags, char *, int *, int, nk_plugin_filter)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28535))), "nk_flags nk_edit_string(struct nk_context *, nk_flags, char *, int *, int, nk_plugin_filter)");
             };
         };
     };
@@ -7360,7 +7370,7 @@ pub fn nk_edit_string(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, arg_m
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (memory != null) {} else {
-                __assert_fail("memory", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28535))), "nk_flags nk_edit_string(struct nk_context *, nk_flags, char *, int *, int, nk_plugin_filter)");
+                __assert_fail("memory", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28536))), "nk_flags nk_edit_string(struct nk_context *, nk_flags, char *, int *, int, nk_plugin_filter)");
             };
         };
     };
@@ -7368,7 +7378,7 @@ pub fn nk_edit_string(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, arg_m
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (len != null) {} else {
-                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28536))), "nk_flags nk_edit_string(struct nk_context *, nk_flags, char *, int *, int, nk_plugin_filter)");
+                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28537))), "nk_flags nk_edit_string(struct nk_context *, nk_flags, char *, int *, int, nk_plugin_filter)");
             };
         };
     };
@@ -7466,7 +7476,7 @@ pub fn nk_edit_buffer(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, arg_e
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28597))), "nk_flags nk_edit_buffer(struct nk_context *, nk_flags, struct nk_text_edit *, nk_plugin_filter)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28598))), "nk_flags nk_edit_buffer(struct nk_context *, nk_flags, struct nk_text_edit *, nk_plugin_filter)");
             };
         };
     };
@@ -7474,7 +7484,7 @@ pub fn nk_edit_buffer(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, arg_e
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (edit != null) {} else {
-                __assert_fail("edit", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28598))), "nk_flags nk_edit_buffer(struct nk_context *, nk_flags, struct nk_text_edit *, nk_plugin_filter)");
+                __assert_fail("edit", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28599))), "nk_flags nk_edit_buffer(struct nk_context *, nk_flags, struct nk_text_edit *, nk_plugin_filter)");
             };
         };
     };
@@ -7482,7 +7492,7 @@ pub fn nk_edit_buffer(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, arg_e
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28599))), "nk_flags nk_edit_buffer(struct nk_context *, nk_flags, struct nk_text_edit *, nk_plugin_filter)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28600))), "nk_flags nk_edit_buffer(struct nk_context *, nk_flags, struct nk_text_edit *, nk_plugin_filter)");
             };
         };
     };
@@ -7490,7 +7500,7 @@ pub fn nk_edit_buffer(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, arg_e
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28600))), "nk_flags nk_edit_buffer(struct nk_context *, nk_flags, struct nk_text_edit *, nk_plugin_filter)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28601))), "nk_flags nk_edit_buffer(struct nk_context *, nk_flags, struct nk_text_edit *, nk_plugin_filter)");
             };
         };
     };
@@ -7552,7 +7562,7 @@ pub fn nk_edit_focus(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags) callco
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28502))), "void nk_edit_focus(struct nk_context *, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28503))), "void nk_edit_focus(struct nk_context *, nk_flags)");
             };
         };
     };
@@ -7560,7 +7570,7 @@ pub fn nk_edit_focus(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags) callco
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28503))), "void nk_edit_focus(struct nk_context *, nk_flags)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28504))), "void nk_edit_focus(struct nk_context *, nk_flags)");
             };
         };
     };
@@ -7582,7 +7592,7 @@ pub fn nk_edit_unfocus(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28517))), "void nk_edit_unfocus(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28518))), "void nk_edit_unfocus(struct nk_context *)");
             };
         };
     };
@@ -7590,7 +7600,7 @@ pub fn nk_edit_unfocus(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28518))), "void nk_edit_unfocus(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28519))), "void nk_edit_unfocus(struct nk_context *)");
             };
         };
     };
@@ -7647,7 +7657,7 @@ pub fn nk_chart_begin_colored(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29187))), "nk_bool nk_chart_begin_colored(struct nk_context *, enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29188))), "nk_bool nk_chart_begin_colored(struct nk_context *, enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
             };
         };
     };
@@ -7655,7 +7665,7 @@ pub fn nk_chart_begin_colored(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29188))), "nk_bool nk_chart_begin_colored(struct nk_context *, enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29189))), "nk_bool nk_chart_begin_colored(struct nk_context *, enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
             };
         };
     };
@@ -7663,7 +7673,7 @@ pub fn nk_chart_begin_colored(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29189))), "nk_bool nk_chart_begin_colored(struct nk_context *, enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29190))), "nk_bool nk_chart_begin_colored(struct nk_context *, enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
             };
         };
     };
@@ -7685,12 +7695,14 @@ pub fn nk_chart_begin_colored(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_
     chart.*.w = if (chart.*.w < (@as(f32, @floatFromInt(@as(c_int, 2))) * style.*.padding.x)) @as(f32, @floatFromInt(@as(c_int, 2))) * style.*.padding.x else chart.*.w;
     chart.*.h = if (chart.*.h < (@as(f32, @floatFromInt(@as(c_int, 2))) * style.*.padding.y)) @as(f32, @floatFromInt(@as(c_int, 2))) * style.*.padding.y else chart.*.h;
     {
-        var slot: [*c]struct_nk_chart_slot = &chart.*.slots[@as(c_uint, @intCast(blk: {
-            const ref = &chart.*.slot;
-            const tmp = ref.*;
-            ref.* += 1;
-            break :blk tmp;
-        }))];
+        var slot: [*c]struct_nk_chart_slot = &chart.*.slots[
+            @as(c_uint, @intCast(blk: {
+                const ref = &chart.*.slot;
+                const tmp = ref.*;
+                ref.* += 1;
+                break :blk tmp;
+            }))
+        ];
         _ = &slot;
         slot.*.type = @"type";
         slot.*.count = count;
@@ -7755,7 +7767,7 @@ pub fn nk_chart_add_slot_colored(arg_ctx: [*c]struct_nk_context, @"type": enum_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29255))), "void nk_chart_add_slot_colored(struct nk_context *, const enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29256))), "void nk_chart_add_slot_colored(struct nk_context *, const enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
             };
         };
     };
@@ -7763,7 +7775,7 @@ pub fn nk_chart_add_slot_colored(arg_ctx: [*c]struct_nk_context, @"type": enum_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29256))), "void nk_chart_add_slot_colored(struct nk_context *, const enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29257))), "void nk_chart_add_slot_colored(struct nk_context *, const enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
             };
         };
     };
@@ -7771,7 +7783,7 @@ pub fn nk_chart_add_slot_colored(arg_ctx: [*c]struct_nk_context, @"type": enum_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29257))), "void nk_chart_add_slot_colored(struct nk_context *, const enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29258))), "void nk_chart_add_slot_colored(struct nk_context *, const enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
             };
         };
     };
@@ -7779,7 +7791,7 @@ pub fn nk_chart_add_slot_colored(arg_ctx: [*c]struct_nk_context, @"type": enum_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout.*.chart.slot < @as(c_int, 4)) {} else {
-                __assert_fail("ctx->current->layout->chart.slot < 4", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29258))), "void nk_chart_add_slot_colored(struct nk_context *, const enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
+                __assert_fail("ctx->current->layout->chart.slot < 4", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29259))), "void nk_chart_add_slot_colored(struct nk_context *, const enum nk_chart_type, struct nk_color, struct nk_color, int, float, float)");
             };
         };
     };
@@ -7789,12 +7801,14 @@ pub fn nk_chart_add_slot_colored(arg_ctx: [*c]struct_nk_context, @"type": enum_n
     {
         var chart: [*c]struct_nk_chart = &ctx.*.current.*.layout.*.chart;
         _ = &chart;
-        var slot: [*c]struct_nk_chart_slot = &chart.*.slots[@as(c_uint, @intCast(blk: {
-            const ref = &chart.*.slot;
-            const tmp = ref.*;
-            ref.* += 1;
-            break :blk tmp;
-        }))];
+        var slot: [*c]struct_nk_chart_slot = &chart.*.slots[
+            @as(c_uint, @intCast(blk: {
+                const ref = &chart.*.slot;
+                const tmp = ref.*;
+                ref.* += 1;
+                break :blk tmp;
+            }))
+        ];
         _ = &slot;
         slot.*.type = @"type";
         slot.*.count = count;
@@ -7828,7 +7842,7 @@ pub fn nk_chart_push_slot(arg_ctx: [*c]struct_nk_context, arg_value: f32, arg_sl
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29409))), "nk_flags nk_chart_push_slot(struct nk_context *, float, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29410))), "nk_flags nk_chart_push_slot(struct nk_context *, float, int)");
             };
         };
     };
@@ -7836,7 +7850,7 @@ pub fn nk_chart_push_slot(arg_ctx: [*c]struct_nk_context, arg_value: f32, arg_sl
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29410))), "nk_flags nk_chart_push_slot(struct nk_context *, float, int)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29411))), "nk_flags nk_chart_push_slot(struct nk_context *, float, int)");
             };
         };
     };
@@ -7844,7 +7858,7 @@ pub fn nk_chart_push_slot(arg_ctx: [*c]struct_nk_context, arg_value: f32, arg_sl
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((slot >= @as(c_int, 0)) and (slot < @as(c_int, 4))) {} else {
-                __assert_fail("slot >= 0 && slot < 4", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29411))), "nk_flags nk_chart_push_slot(struct nk_context *, float, int)");
+                __assert_fail("slot >= 0 && slot < 4", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29412))), "nk_flags nk_chart_push_slot(struct nk_context *, float, int)");
             };
         };
     };
@@ -7852,7 +7866,7 @@ pub fn nk_chart_push_slot(arg_ctx: [*c]struct_nk_context, arg_value: f32, arg_sl
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (slot < ctx.*.current.*.layout.*.chart.slot) {} else {
-                __assert_fail("slot < ctx->current->layout->chart.slot", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29412))), "nk_flags nk_chart_push_slot(struct nk_context *, float, int)");
+                __assert_fail("slot < ctx->current->layout->chart.slot", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29413))), "nk_flags nk_chart_push_slot(struct nk_context *, float, int)");
             };
         };
     };
@@ -7889,7 +7903,7 @@ pub fn nk_chart_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29440))), "void nk_chart_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29441))), "void nk_chart_end(struct nk_context *)");
             };
         };
     };
@@ -7897,7 +7911,7 @@ pub fn nk_chart_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29441))), "void nk_chart_end(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29442))), "void nk_chart_end(struct nk_context *)");
             };
         };
     };
@@ -7928,7 +7942,7 @@ pub fn nk_plot(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_chart_type, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29458))), "void nk_plot(struct nk_context *, enum nk_chart_type, const float *, int, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29459))), "void nk_plot(struct nk_context *, enum nk_chart_type, const float *, int, int)");
             };
         };
     };
@@ -7936,7 +7950,7 @@ pub fn nk_plot(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_chart_type, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (values != null) {} else {
-                __assert_fail("values", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29459))), "void nk_plot(struct nk_context *, enum nk_chart_type, const float *, int, int)");
+                __assert_fail("values", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29460))), "void nk_plot(struct nk_context *, enum nk_chart_type, const float *, int, int)");
             };
         };
     };
@@ -8004,7 +8018,7 @@ pub fn nk_plot_function(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_chart_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29483))), "void nk_plot_function(struct nk_context *, enum nk_chart_type, void *, float (*)(void *, int), int, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29484))), "void nk_plot_function(struct nk_context *, enum nk_chart_type, void *, float (*)(void *, int), int, int)");
             };
         };
     };
@@ -8012,7 +8026,7 @@ pub fn nk_plot_function(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_chart_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (value_getter != null) {} else {
-                __assert_fail("value_getter", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29484))), "void nk_plot_function(struct nk_context *, enum nk_chart_type, void *, float (*)(void *, int), int, int)");
+                __assert_fail("value_getter", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29485))), "void nk_plot_function(struct nk_context *, enum nk_chart_type, void *, float (*)(void *, int), int, int)");
             };
         };
     };
@@ -8068,7 +8082,7 @@ pub fn nk_popup_begin(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_popup_ty
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21219))), "nk_bool nk_popup_begin(struct nk_context *, enum nk_popup_type, const char *, nk_flags, struct nk_rect)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21220))), "nk_bool nk_popup_begin(struct nk_context *, enum nk_popup_type, const char *, nk_flags, struct nk_rect)");
             };
         };
     };
@@ -8076,7 +8090,7 @@ pub fn nk_popup_begin(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_popup_ty
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (title != null) {} else {
-                __assert_fail("title", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21220))), "nk_bool nk_popup_begin(struct nk_context *, enum nk_popup_type, const char *, nk_flags, struct nk_rect)");
+                __assert_fail("title", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21221))), "nk_bool nk_popup_begin(struct nk_context *, enum nk_popup_type, const char *, nk_flags, struct nk_rect)");
             };
         };
     };
@@ -8084,7 +8098,7 @@ pub fn nk_popup_begin(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_popup_ty
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21221))), "nk_bool nk_popup_begin(struct nk_context *, enum nk_popup_type, const char *, nk_flags, struct nk_rect)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21222))), "nk_bool nk_popup_begin(struct nk_context *, enum nk_popup_type, const char *, nk_flags, struct nk_rect)");
             };
         };
     };
@@ -8092,7 +8106,7 @@ pub fn nk_popup_begin(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_popup_ty
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21222))), "nk_bool nk_popup_begin(struct nk_context *, enum nk_popup_type, const char *, nk_flags, struct nk_rect)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21223))), "nk_bool nk_popup_begin(struct nk_context *, enum nk_popup_type, const char *, nk_flags, struct nk_rect)");
             };
         };
     };
@@ -8103,7 +8117,7 @@ pub fn nk_popup_begin(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_popup_ty
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (!((@as(c_int, @bitCast(panel.*.type)) & NK_PANEL_SET_POPUP) != 0) and (@intFromPtr("popups are not allowed to have popups") != 0)) {} else {
-                __assert_fail("!((int)panel->type & (int)NK_PANEL_SET_POPUP) && \"popups are not allowed to have popups\"", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21228))), "nk_bool nk_popup_begin(struct nk_context *, enum nk_popup_type, const char *, nk_flags, struct nk_rect)");
+                __assert_fail("!((int)panel->type & (int)NK_PANEL_SET_POPUP) && \"popups are not allowed to have popups\"", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21229))), "nk_bool nk_popup_begin(struct nk_context *, enum nk_popup_type, const char *, nk_flags, struct nk_rect)");
             };
         };
     };
@@ -8183,7 +8197,7 @@ pub fn nk_popup_close(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21390))), "void nk_popup_close(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21391))), "void nk_popup_close(struct nk_context *)");
             };
         };
     };
@@ -8193,7 +8207,7 @@ pub fn nk_popup_close(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (popup.*.parent != null) {} else {
-                __assert_fail("popup->parent", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21394))), "void nk_popup_close(struct nk_context *)");
+                __assert_fail("popup->parent", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21395))), "void nk_popup_close(struct nk_context *)");
             };
         };
     };
@@ -8201,7 +8215,7 @@ pub fn nk_popup_close(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((@as(c_int, @bitCast(popup.*.layout.*.type)) & NK_PANEL_SET_POPUP) != 0) {} else {
-                __assert_fail("(int)popup->layout->type & (int)NK_PANEL_SET_POPUP", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21395))), "void nk_popup_close(struct nk_context *)");
+                __assert_fail("(int)popup->layout->type & (int)NK_PANEL_SET_POPUP", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21396))), "void nk_popup_close(struct nk_context *)");
             };
         };
     };
@@ -8218,7 +8232,7 @@ pub fn nk_popup_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21404))), "void nk_popup_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21405))), "void nk_popup_end(struct nk_context *)");
             };
         };
     };
@@ -8226,7 +8240,7 @@ pub fn nk_popup_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21405))), "void nk_popup_end(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21406))), "void nk_popup_end(struct nk_context *)");
             };
         };
     };
@@ -8234,7 +8248,7 @@ pub fn nk_popup_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21406))), "void nk_popup_end(struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21407))), "void nk_popup_end(struct nk_context *)");
             };
         };
     };
@@ -8272,7 +8286,7 @@ pub fn nk_popup_get_scroll(arg_ctx: [*c]const struct_nk_context, arg_offset_x: [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21435))), "void nk_popup_get_scroll(const struct nk_context *, nk_uint *, nk_uint *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21436))), "void nk_popup_get_scroll(const struct nk_context *, nk_uint *, nk_uint *)");
             };
         };
     };
@@ -8280,7 +8294,7 @@ pub fn nk_popup_get_scroll(arg_ctx: [*c]const struct_nk_context, arg_offset_x: [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21436))), "void nk_popup_get_scroll(const struct nk_context *, nk_uint *, nk_uint *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21437))), "void nk_popup_get_scroll(const struct nk_context *, nk_uint *, nk_uint *)");
             };
         };
     };
@@ -8288,7 +8302,7 @@ pub fn nk_popup_get_scroll(arg_ctx: [*c]const struct_nk_context, arg_offset_x: [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21437))), "void nk_popup_get_scroll(const struct nk_context *, nk_uint *, nk_uint *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21438))), "void nk_popup_get_scroll(const struct nk_context *, nk_uint *, nk_uint *)");
             };
         };
     };
@@ -8314,7 +8328,7 @@ pub fn nk_popup_set_scroll(arg_ctx: [*c]struct_nk_context, arg_offset_x: nk_uint
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21452))), "void nk_popup_set_scroll(struct nk_context *, nk_uint, nk_uint)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21453))), "void nk_popup_set_scroll(struct nk_context *, nk_uint, nk_uint)");
             };
         };
     };
@@ -8322,7 +8336,7 @@ pub fn nk_popup_set_scroll(arg_ctx: [*c]struct_nk_context, arg_offset_x: nk_uint
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21453))), "void nk_popup_set_scroll(struct nk_context *, nk_uint, nk_uint)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21454))), "void nk_popup_set_scroll(struct nk_context *, nk_uint, nk_uint)");
             };
         };
     };
@@ -8330,7 +8344,7 @@ pub fn nk_popup_set_scroll(arg_ctx: [*c]struct_nk_context, arg_offset_x: nk_uint
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21454))), "void nk_popup_set_scroll(struct nk_context *, nk_uint, nk_uint)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21455))), "void nk_popup_set_scroll(struct nk_context *, nk_uint, nk_uint)");
             };
         };
     };
@@ -8364,7 +8378,7 @@ pub fn nk_combo(arg_ctx: [*c]struct_nk_context, arg_items: [*c]const [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30416))), "int nk_combo(struct nk_context *, const char *const *, int, int, int, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30417))), "int nk_combo(struct nk_context *, const char *const *, int, int, int, struct nk_vec2)");
             };
         };
     };
@@ -8372,7 +8386,7 @@ pub fn nk_combo(arg_ctx: [*c]struct_nk_context, arg_items: [*c]const [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (items != null) {} else {
-                __assert_fail("items", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30417))), "int nk_combo(struct nk_context *, const char *const *, int, int, int, struct nk_vec2)");
+                __assert_fail("items", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30418))), "int nk_combo(struct nk_context *, const char *const *, int, int, int, struct nk_vec2)");
             };
         };
     };
@@ -8380,7 +8394,7 @@ pub fn nk_combo(arg_ctx: [*c]struct_nk_context, arg_items: [*c]const [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30418))), "int nk_combo(struct nk_context *, const char *const *, int, int, int, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30419))), "int nk_combo(struct nk_context *, const char *const *, int, int, int, struct nk_vec2)");
             };
         };
     };
@@ -8443,7 +8457,7 @@ pub fn nk_combo_separator(arg_ctx: [*c]struct_nk_context, arg_items_separated_by
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30449))), "int nk_combo_separator(struct nk_context *, const char *, int, int, int, int, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30450))), "int nk_combo_separator(struct nk_context *, const char *, int, int, int, int, struct nk_vec2)");
             };
         };
     };
@@ -8451,7 +8465,7 @@ pub fn nk_combo_separator(arg_ctx: [*c]struct_nk_context, arg_items_separated_by
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (items_separated_by_separator != null) {} else {
-                __assert_fail("items_separated_by_separator", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30450))), "int nk_combo_separator(struct nk_context *, const char *, int, int, int, int, struct nk_vec2)");
+                __assert_fail("items_separated_by_separator", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30451))), "int nk_combo_separator(struct nk_context *, const char *, int, int, int, int, struct nk_vec2)");
             };
         };
     };
@@ -8539,7 +8553,7 @@ pub fn nk_combo_callback(arg_ctx: [*c]struct_nk_context, arg_item_getter: ?*cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30502))), "int nk_combo_callback(struct nk_context *, void (*)(void *, int, const char **), void *, int, int, int, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30503))), "int nk_combo_callback(struct nk_context *, void (*)(void *, int, const char **), void *, int, int, int, struct nk_vec2)");
             };
         };
     };
@@ -8547,7 +8561,7 @@ pub fn nk_combo_callback(arg_ctx: [*c]struct_nk_context, arg_item_getter: ?*cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (item_getter != null) {} else {
-                __assert_fail("item_getter", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30503))), "int nk_combo_callback(struct nk_context *, void (*)(void *, int, const char **), void *, int, int, int, struct nk_vec2)");
+                __assert_fail("item_getter", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30504))), "int nk_combo_callback(struct nk_context *, void (*)(void *, int, const char **), void *, int, int, int, struct nk_vec2)");
             };
         };
     };
@@ -8666,7 +8680,7 @@ pub fn nk_combo_begin_text(arg_ctx: [*c]struct_nk_context, arg_selected: [*c]con
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29760))), "nk_bool nk_combo_begin_text(struct nk_context *, const char *, int, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29761))), "nk_bool nk_combo_begin_text(struct nk_context *, const char *, int, struct nk_vec2)");
             };
         };
     };
@@ -8674,7 +8688,7 @@ pub fn nk_combo_begin_text(arg_ctx: [*c]struct_nk_context, arg_selected: [*c]con
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (selected != null) {} else {
-                __assert_fail("selected", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29761))), "nk_bool nk_combo_begin_text(struct nk_context *, const char *, int, struct nk_vec2)");
+                __assert_fail("selected", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29762))), "nk_bool nk_combo_begin_text(struct nk_context *, const char *, int, struct nk_vec2)");
             };
         };
     };
@@ -8682,7 +8696,7 @@ pub fn nk_combo_begin_text(arg_ctx: [*c]struct_nk_context, arg_selected: [*c]con
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29762))), "nk_bool nk_combo_begin_text(struct nk_context *, const char *, int, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29763))), "nk_bool nk_combo_begin_text(struct nk_context *, const char *, int, struct nk_vec2)");
             };
         };
     };
@@ -8690,7 +8704,7 @@ pub fn nk_combo_begin_text(arg_ctx: [*c]struct_nk_context, arg_selected: [*c]con
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29763))), "nk_bool nk_combo_begin_text(struct nk_context *, const char *, int, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29764))), "nk_bool nk_combo_begin_text(struct nk_context *, const char *, int, struct nk_vec2)");
             };
         };
     };
@@ -8813,7 +8827,7 @@ pub fn nk_combo_begin_color(arg_ctx: [*c]struct_nk_context, arg_color: struct_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29871))), "nk_bool nk_combo_begin_color(struct nk_context *, struct nk_color, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29872))), "nk_bool nk_combo_begin_color(struct nk_context *, struct nk_color, struct nk_vec2)");
             };
         };
     };
@@ -8821,7 +8835,7 @@ pub fn nk_combo_begin_color(arg_ctx: [*c]struct_nk_context, arg_color: struct_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29872))), "nk_bool nk_combo_begin_color(struct nk_context *, struct nk_color, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29873))), "nk_bool nk_combo_begin_color(struct nk_context *, struct nk_color, struct nk_vec2)");
             };
         };
     };
@@ -8829,7 +8843,7 @@ pub fn nk_combo_begin_color(arg_ctx: [*c]struct_nk_context, arg_color: struct_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29873))), "nk_bool nk_combo_begin_color(struct nk_context *, struct nk_color, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29874))), "nk_bool nk_combo_begin_color(struct nk_context *, struct nk_color, struct nk_vec2)");
             };
         };
     };
@@ -8939,7 +8953,7 @@ pub fn nk_combo_begin_symbol(arg_ctx: [*c]struct_nk_context, arg_symbol: enum_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29964))), "nk_bool nk_combo_begin_symbol(struct nk_context *, enum nk_symbol_type, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29965))), "nk_bool nk_combo_begin_symbol(struct nk_context *, enum nk_symbol_type, struct nk_vec2)");
             };
         };
     };
@@ -8947,7 +8961,7 @@ pub fn nk_combo_begin_symbol(arg_ctx: [*c]struct_nk_context, arg_symbol: enum_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29965))), "nk_bool nk_combo_begin_symbol(struct nk_context *, enum nk_symbol_type, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29966))), "nk_bool nk_combo_begin_symbol(struct nk_context *, enum nk_symbol_type, struct nk_vec2)");
             };
         };
     };
@@ -8955,7 +8969,7 @@ pub fn nk_combo_begin_symbol(arg_ctx: [*c]struct_nk_context, arg_symbol: enum_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29966))), "nk_bool nk_combo_begin_symbol(struct nk_context *, enum nk_symbol_type, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29967))), "nk_bool nk_combo_begin_symbol(struct nk_context *, enum nk_symbol_type, struct nk_vec2)");
             };
         };
     };
@@ -9083,7 +9097,7 @@ pub fn nk_combo_begin_symbol_text(arg_ctx: [*c]struct_nk_context, arg_selected: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30061))), "nk_bool nk_combo_begin_symbol_text(struct nk_context *, const char *, int, enum nk_symbol_type, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30062))), "nk_bool nk_combo_begin_symbol_text(struct nk_context *, const char *, int, enum nk_symbol_type, struct nk_vec2)");
             };
         };
     };
@@ -9091,7 +9105,7 @@ pub fn nk_combo_begin_symbol_text(arg_ctx: [*c]struct_nk_context, arg_selected: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30062))), "nk_bool nk_combo_begin_symbol_text(struct nk_context *, const char *, int, enum nk_symbol_type, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30063))), "nk_bool nk_combo_begin_symbol_text(struct nk_context *, const char *, int, enum nk_symbol_type, struct nk_vec2)");
             };
         };
     };
@@ -9099,7 +9113,7 @@ pub fn nk_combo_begin_symbol_text(arg_ctx: [*c]struct_nk_context, arg_selected: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30063))), "nk_bool nk_combo_begin_symbol_text(struct nk_context *, const char *, int, enum nk_symbol_type, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30064))), "nk_bool nk_combo_begin_symbol_text(struct nk_context *, const char *, int, enum nk_symbol_type, struct nk_vec2)");
             };
         };
     };
@@ -9215,7 +9229,7 @@ pub fn nk_combo_begin_image(arg_ctx: [*c]struct_nk_context, arg_img: struct_nk_i
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30165))), "nk_bool nk_combo_begin_image(struct nk_context *, struct nk_image, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30166))), "nk_bool nk_combo_begin_image(struct nk_context *, struct nk_image, struct nk_vec2)");
             };
         };
     };
@@ -9223,7 +9237,7 @@ pub fn nk_combo_begin_image(arg_ctx: [*c]struct_nk_context, arg_img: struct_nk_i
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30166))), "nk_bool nk_combo_begin_image(struct nk_context *, struct nk_image, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30167))), "nk_bool nk_combo_begin_image(struct nk_context *, struct nk_image, struct nk_vec2)");
             };
         };
     };
@@ -9231,7 +9245,7 @@ pub fn nk_combo_begin_image(arg_ctx: [*c]struct_nk_context, arg_img: struct_nk_i
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30167))), "nk_bool nk_combo_begin_image(struct nk_context *, struct nk_image, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30168))), "nk_bool nk_combo_begin_image(struct nk_context *, struct nk_image, struct nk_vec2)");
             };
         };
     };
@@ -9359,7 +9373,7 @@ pub fn nk_combo_begin_image_text(arg_ctx: [*c]struct_nk_context, arg_selected: [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30258))), "nk_bool nk_combo_begin_image_text(struct nk_context *, const char *, int, struct nk_image, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30259))), "nk_bool nk_combo_begin_image_text(struct nk_context *, const char *, int, struct nk_image, struct nk_vec2)");
             };
         };
     };
@@ -9367,7 +9381,7 @@ pub fn nk_combo_begin_image_text(arg_ctx: [*c]struct_nk_context, arg_selected: [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30259))), "nk_bool nk_combo_begin_image_text(struct nk_context *, const char *, int, struct nk_image, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30260))), "nk_bool nk_combo_begin_image_text(struct nk_context *, const char *, int, struct nk_image, struct nk_vec2)");
             };
         };
     };
@@ -9375,7 +9389,7 @@ pub fn nk_combo_begin_image_text(arg_ctx: [*c]struct_nk_context, arg_selected: [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30260))), "nk_bool nk_combo_begin_image_text(struct nk_context *, const char *, int, struct nk_image, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30261))), "nk_bool nk_combo_begin_image_text(struct nk_context *, const char *, int, struct nk_image, struct nk_vec2)");
             };
         };
     };
@@ -9585,7 +9599,7 @@ pub fn nk_contextual_begin(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21485))), "nk_bool nk_contextual_begin(struct nk_context *, nk_flags, struct nk_vec2, struct nk_rect)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21486))), "nk_bool nk_contextual_begin(struct nk_context *, nk_flags, struct nk_vec2, struct nk_rect)");
             };
         };
     };
@@ -9593,7 +9607,7 @@ pub fn nk_contextual_begin(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21486))), "nk_bool nk_contextual_begin(struct nk_context *, nk_flags, struct nk_vec2, struct nk_rect)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21487))), "nk_bool nk_contextual_begin(struct nk_context *, nk_flags, struct nk_vec2, struct nk_rect)");
             };
         };
     };
@@ -9601,7 +9615,7 @@ pub fn nk_contextual_begin(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21487))), "nk_bool nk_contextual_begin(struct nk_context *, nk_flags, struct nk_vec2, struct nk_rect)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21488))), "nk_bool nk_contextual_begin(struct nk_context *, nk_flags, struct nk_vec2, struct nk_rect)");
             };
         };
     };
@@ -9665,7 +9679,7 @@ pub fn nk_contextual_item_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]con
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21546))), "nk_bool nk_contextual_item_text(struct nk_context *, const char *, int, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21547))), "nk_bool nk_contextual_item_text(struct nk_context *, const char *, int, nk_flags)");
             };
         };
     };
@@ -9673,7 +9687,7 @@ pub fn nk_contextual_item_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]con
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21547))), "nk_bool nk_contextual_item_text(struct nk_context *, const char *, int, nk_flags)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21548))), "nk_bool nk_contextual_item_text(struct nk_context *, const char *, int, nk_flags)");
             };
         };
     };
@@ -9681,7 +9695,7 @@ pub fn nk_contextual_item_text(arg_ctx: [*c]struct_nk_context, arg_text: [*c]con
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21548))), "nk_bool nk_contextual_item_text(struct nk_context *, const char *, int, nk_flags)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21549))), "nk_bool nk_contextual_item_text(struct nk_context *, const char *, int, nk_flags)");
             };
         };
     };
@@ -9742,7 +9756,7 @@ pub fn nk_contextual_item_image_text(arg_ctx: [*c]struct_nk_context, arg_img: st
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21581))), "nk_bool nk_contextual_item_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21582))), "nk_bool nk_contextual_item_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags)");
             };
         };
     };
@@ -9750,7 +9764,7 @@ pub fn nk_contextual_item_image_text(arg_ctx: [*c]struct_nk_context, arg_img: st
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21582))), "nk_bool nk_contextual_item_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21583))), "nk_bool nk_contextual_item_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags)");
             };
         };
     };
@@ -9758,7 +9772,7 @@ pub fn nk_contextual_item_image_text(arg_ctx: [*c]struct_nk_context, arg_img: st
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21583))), "nk_bool nk_contextual_item_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21584))), "nk_bool nk_contextual_item_image_text(struct nk_context *, struct nk_image, const char *, int, nk_flags)");
             };
         };
     };
@@ -9810,7 +9824,7 @@ pub fn nk_contextual_item_symbol_text(arg_ctx: [*c]struct_nk_context, arg_symbol
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21617))), "nk_bool nk_contextual_item_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21618))), "nk_bool nk_contextual_item_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags)");
             };
         };
     };
@@ -9818,7 +9832,7 @@ pub fn nk_contextual_item_symbol_text(arg_ctx: [*c]struct_nk_context, arg_symbol
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21618))), "nk_bool nk_contextual_item_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21619))), "nk_bool nk_contextual_item_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags)");
             };
         };
     };
@@ -9826,7 +9840,7 @@ pub fn nk_contextual_item_symbol_text(arg_ctx: [*c]struct_nk_context, arg_symbol
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21619))), "nk_bool nk_contextual_item_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21620))), "nk_bool nk_contextual_item_symbol_text(struct nk_context *, enum nk_symbol_type, const char *, int, nk_flags)");
             };
         };
     };
@@ -9849,7 +9863,7 @@ pub fn nk_contextual_close(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21645))), "void nk_contextual_close(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21646))), "void nk_contextual_close(struct nk_context *)");
             };
         };
     };
@@ -9857,7 +9871,7 @@ pub fn nk_contextual_close(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21646))), "void nk_contextual_close(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21647))), "void nk_contextual_close(struct nk_context *)");
             };
         };
     };
@@ -9865,7 +9879,7 @@ pub fn nk_contextual_close(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21647))), "void nk_contextual_close(struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21648))), "void nk_contextual_close(struct nk_context *)");
             };
         };
     };
@@ -9883,7 +9897,7 @@ pub fn nk_contextual_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21656))), "void nk_contextual_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21657))), "void nk_contextual_end(struct nk_context *)");
             };
         };
     };
@@ -9891,7 +9905,7 @@ pub fn nk_contextual_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21657))), "void nk_contextual_end(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21658))), "void nk_contextual_end(struct nk_context *)");
             };
         };
     };
@@ -9902,7 +9916,7 @@ pub fn nk_contextual_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (popup.*.parent != null) {} else {
-                __assert_fail("popup->parent", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21662))), "void nk_contextual_end(struct nk_context *)");
+                __assert_fail("popup->parent", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21663))), "void nk_contextual_end(struct nk_context *)");
             };
         };
     };
@@ -9910,7 +9924,7 @@ pub fn nk_contextual_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((@as(c_int, @bitCast(panel.*.type)) & NK_PANEL_SET_POPUP) != 0) {} else {
-                __assert_fail("(int)panel->type & (int)NK_PANEL_SET_POPUP", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21663))), "void nk_contextual_end(struct nk_context *)");
+                __assert_fail("(int)panel->type & (int)NK_PANEL_SET_POPUP", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21664))), "void nk_contextual_end(struct nk_context *)");
             };
         };
     };
@@ -9964,7 +9978,7 @@ pub fn nk_tooltip(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8) callco
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30619))), "void nk_tooltip(struct nk_context *, const char *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30620))), "void nk_tooltip(struct nk_context *, const char *)");
             };
         };
     };
@@ -9972,7 +9986,7 @@ pub fn nk_tooltip(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8) callco
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30620))), "void nk_tooltip(struct nk_context *, const char *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30621))), "void nk_tooltip(struct nk_context *, const char *)");
             };
         };
     };
@@ -9980,7 +9994,7 @@ pub fn nk_tooltip(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8) callco
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30621))), "void nk_tooltip(struct nk_context *, const char *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30622))), "void nk_tooltip(struct nk_context *, const char *)");
             };
         };
     };
@@ -9988,7 +10002,7 @@ pub fn nk_tooltip(arg_ctx: [*c]struct_nk_context, arg_text: [*c]const u8) callco
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (text != null) {} else {
-                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30622))), "void nk_tooltip(struct nk_context *, const char *)");
+                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30623))), "void nk_tooltip(struct nk_context *, const char *)");
             };
         };
     };
@@ -10030,7 +10044,7 @@ pub fn nk_tooltip_begin(arg_ctx: [*c]struct_nk_context, arg_width: f32) callconv
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30569))), "nk_bool nk_tooltip_begin(struct nk_context *, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30570))), "nk_bool nk_tooltip_begin(struct nk_context *, float)");
             };
         };
     };
@@ -10038,7 +10052,7 @@ pub fn nk_tooltip_begin(arg_ctx: [*c]struct_nk_context, arg_width: f32) callconv
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30570))), "nk_bool nk_tooltip_begin(struct nk_context *, float)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30571))), "nk_bool nk_tooltip_begin(struct nk_context *, float)");
             };
         };
     };
@@ -10046,7 +10060,7 @@ pub fn nk_tooltip_begin(arg_ctx: [*c]struct_nk_context, arg_width: f32) callconv
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30571))), "nk_bool nk_tooltip_begin(struct nk_context *, float)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30572))), "nk_bool nk_tooltip_begin(struct nk_context *, float)");
             };
         };
     };
@@ -10077,7 +10091,7 @@ pub fn nk_tooltip_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30602))), "void nk_tooltip_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30603))), "void nk_tooltip_end(struct nk_context *)");
             };
         };
     };
@@ -10085,7 +10099,7 @@ pub fn nk_tooltip_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30603))), "void nk_tooltip_end(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 30604))), "void nk_tooltip_end(struct nk_context *)");
             };
         };
     };
@@ -10103,7 +10117,7 @@ pub fn nk_menubar_begin(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21702))), "void nk_menubar_begin(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21703))), "void nk_menubar_begin(struct nk_context *)");
             };
         };
     };
@@ -10111,7 +10125,7 @@ pub fn nk_menubar_begin(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21703))), "void nk_menubar_begin(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21704))), "void nk_menubar_begin(struct nk_context *)");
             };
         };
     };
@@ -10119,7 +10133,7 @@ pub fn nk_menubar_begin(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21704))), "void nk_menubar_begin(struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21705))), "void nk_menubar_begin(struct nk_context *)");
             };
         };
     };
@@ -10129,7 +10143,7 @@ pub fn nk_menubar_begin(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (layout.*.at_y == layout.*.bounds.y) {} else {
-                __assert_fail("layout->at_y == layout->bounds.y", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21709))), "void nk_menubar_begin(struct nk_context *)");
+                __assert_fail("layout->at_y == layout->bounds.y", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21710))), "void nk_menubar_begin(struct nk_context *)");
             };
         };
     };
@@ -10154,7 +10168,7 @@ pub fn nk_menubar_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21742))), "void nk_menubar_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21743))), "void nk_menubar_end(struct nk_context *)");
             };
         };
     };
@@ -10162,7 +10176,7 @@ pub fn nk_menubar_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21743))), "void nk_menubar_end(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21744))), "void nk_menubar_end(struct nk_context *)");
             };
         };
     };
@@ -10170,7 +10184,7 @@ pub fn nk_menubar_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21744))), "void nk_menubar_end(struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21745))), "void nk_menubar_end(struct nk_context *)");
             };
         };
     };
@@ -10215,7 +10229,7 @@ pub fn nk_menu_begin_text(arg_ctx: [*c]struct_nk_context, arg_title: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21811))), "nk_bool nk_menu_begin_text(struct nk_context *, const char *, int, nk_flags, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21812))), "nk_bool nk_menu_begin_text(struct nk_context *, const char *, int, nk_flags, struct nk_vec2)");
             };
         };
     };
@@ -10223,7 +10237,7 @@ pub fn nk_menu_begin_text(arg_ctx: [*c]struct_nk_context, arg_title: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21812))), "nk_bool nk_menu_begin_text(struct nk_context *, const char *, int, nk_flags, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21813))), "nk_bool nk_menu_begin_text(struct nk_context *, const char *, int, nk_flags, struct nk_vec2)");
             };
         };
     };
@@ -10231,7 +10245,7 @@ pub fn nk_menu_begin_text(arg_ctx: [*c]struct_nk_context, arg_title: [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21813))), "nk_bool nk_menu_begin_text(struct nk_context *, const char *, int, nk_flags, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21814))), "nk_bool nk_menu_begin_text(struct nk_context *, const char *, int, nk_flags, struct nk_vec2)");
             };
         };
     };
@@ -10279,7 +10293,7 @@ pub fn nk_menu_begin_image(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21841))), "nk_bool nk_menu_begin_image(struct nk_context *, const char *, struct nk_image, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21842))), "nk_bool nk_menu_begin_image(struct nk_context *, const char *, struct nk_image, struct nk_vec2)");
             };
         };
     };
@@ -10287,7 +10301,7 @@ pub fn nk_menu_begin_image(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21842))), "nk_bool nk_menu_begin_image(struct nk_context *, const char *, struct nk_image, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21843))), "nk_bool nk_menu_begin_image(struct nk_context *, const char *, struct nk_image, struct nk_vec2)");
             };
         };
     };
@@ -10295,7 +10309,7 @@ pub fn nk_menu_begin_image(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21843))), "nk_bool nk_menu_begin_image(struct nk_context *, const char *, struct nk_image, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21844))), "nk_bool nk_menu_begin_image(struct nk_context *, const char *, struct nk_image, struct nk_vec2)");
             };
         };
     };
@@ -10336,7 +10350,7 @@ pub fn nk_menu_begin_image_text(arg_ctx: [*c]struct_nk_context, arg_title: [*c]c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21891))), "nk_bool nk_menu_begin_image_text(struct nk_context *, const char *, int, nk_flags, struct nk_image, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21892))), "nk_bool nk_menu_begin_image_text(struct nk_context *, const char *, int, nk_flags, struct nk_image, struct nk_vec2)");
             };
         };
     };
@@ -10344,7 +10358,7 @@ pub fn nk_menu_begin_image_text(arg_ctx: [*c]struct_nk_context, arg_title: [*c]c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21892))), "nk_bool nk_menu_begin_image_text(struct nk_context *, const char *, int, nk_flags, struct nk_image, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21893))), "nk_bool nk_menu_begin_image_text(struct nk_context *, const char *, int, nk_flags, struct nk_image, struct nk_vec2)");
             };
         };
     };
@@ -10352,7 +10366,7 @@ pub fn nk_menu_begin_image_text(arg_ctx: [*c]struct_nk_context, arg_title: [*c]c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21893))), "nk_bool nk_menu_begin_image_text(struct nk_context *, const char *, int, nk_flags, struct nk_image, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21894))), "nk_bool nk_menu_begin_image_text(struct nk_context *, const char *, int, nk_flags, struct nk_image, struct nk_vec2)");
             };
         };
     };
@@ -10402,7 +10416,7 @@ pub fn nk_menu_begin_symbol(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21866))), "nk_bool nk_menu_begin_symbol(struct nk_context *, const char *, enum nk_symbol_type, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21867))), "nk_bool nk_menu_begin_symbol(struct nk_context *, const char *, enum nk_symbol_type, struct nk_vec2)");
             };
         };
     };
@@ -10410,7 +10424,7 @@ pub fn nk_menu_begin_symbol(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21867))), "nk_bool nk_menu_begin_symbol(struct nk_context *, const char *, enum nk_symbol_type, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21868))), "nk_bool nk_menu_begin_symbol(struct nk_context *, const char *, enum nk_symbol_type, struct nk_vec2)");
             };
         };
     };
@@ -10418,7 +10432,7 @@ pub fn nk_menu_begin_symbol(arg_ctx: [*c]struct_nk_context, arg_id: [*c]const u8
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21868))), "nk_bool nk_menu_begin_symbol(struct nk_context *, const char *, enum nk_symbol_type, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21869))), "nk_bool nk_menu_begin_symbol(struct nk_context *, const char *, enum nk_symbol_type, struct nk_vec2)");
             };
         };
     };
@@ -10459,7 +10473,7 @@ pub fn nk_menu_begin_symbol_text(arg_ctx: [*c]struct_nk_context, arg_title: [*c]
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21923))), "nk_bool nk_menu_begin_symbol_text(struct nk_context *, const char *, int, nk_flags, enum nk_symbol_type, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21924))), "nk_bool nk_menu_begin_symbol_text(struct nk_context *, const char *, int, nk_flags, enum nk_symbol_type, struct nk_vec2)");
             };
         };
     };
@@ -10467,7 +10481,7 @@ pub fn nk_menu_begin_symbol_text(arg_ctx: [*c]struct_nk_context, arg_title: [*c]
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21924))), "nk_bool nk_menu_begin_symbol_text(struct nk_context *, const char *, int, nk_flags, enum nk_symbol_type, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21925))), "nk_bool nk_menu_begin_symbol_text(struct nk_context *, const char *, int, nk_flags, enum nk_symbol_type, struct nk_vec2)");
             };
         };
     };
@@ -10475,7 +10489,7 @@ pub fn nk_menu_begin_symbol_text(arg_ctx: [*c]struct_nk_context, arg_title: [*c]
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21925))), "nk_bool nk_menu_begin_symbol_text(struct nk_context *, const char *, int, nk_flags, enum nk_symbol_type, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21926))), "nk_bool nk_menu_begin_symbol_text(struct nk_context *, const char *, int, nk_flags, enum nk_symbol_type, struct nk_vec2)");
             };
         };
     };
@@ -10667,7 +10681,7 @@ pub fn nk_style_from_table(arg_ctx: [*c]struct_nk_context, arg_table: [*c]const 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18578))), "void nk_style_from_table(struct nk_context *, const struct nk_color *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 18579))), "void nk_style_from_table(struct nk_context *, const struct nk_color *)");
             };
         };
     };
@@ -11808,7 +11822,7 @@ pub fn nk_style_load_cursor(arg_ctx: [*c]struct_nk_context, arg_cursor: enum_nk_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19313))), "void nk_style_load_cursor(struct nk_context *, enum nk_style_cursor, const struct nk_cursor *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19314))), "void nk_style_load_cursor(struct nk_context *, enum nk_style_cursor, const struct nk_cursor *)");
             };
         };
     };
@@ -11829,7 +11843,7 @@ pub fn nk_style_load_all_cursors(arg_ctx: [*c]struct_nk_context, arg_cursors: [*
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19323))), "void nk_style_load_all_cursors(struct nk_context *, const struct nk_cursor *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19324))), "void nk_style_load_all_cursors(struct nk_context *, const struct nk_cursor *)");
             };
         };
     };
@@ -11862,7 +11876,7 @@ pub fn nk_style_set_font(arg_ctx: [*c]struct_nk_context, arg_font: [*c]const str
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19194))), "void nk_style_set_font(struct nk_context *, const struct nk_user_font *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19195))), "void nk_style_set_font(struct nk_context *, const struct nk_user_font *)");
             };
         };
     };
@@ -11885,7 +11899,7 @@ pub fn nk_style_set_cursor(arg_ctx: [*c]struct_nk_context, arg_c: enum_nk_style_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19289))), "nk_bool nk_style_set_cursor(struct nk_context *, enum nk_style_cursor)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19290))), "nk_bool nk_style_set_cursor(struct nk_context *, enum nk_style_cursor)");
             };
         };
     };
@@ -11920,7 +11934,7 @@ pub fn nk_style_push_font(arg_ctx: [*c]struct_nk_context, arg_font: [*c]const st
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19209))), "nk_bool nk_style_push_font(struct nk_context *, const struct nk_user_font *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19210))), "nk_bool nk_style_push_font(struct nk_context *, const struct nk_user_font *)");
             };
         };
     };
@@ -11930,17 +11944,19 @@ pub fn nk_style_push_font(arg_ctx: [*c]struct_nk_context, arg_font: [*c]const st
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font_stack.*.head < @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([8]struct_nk_config_stack_user_font_element) / @sizeOf(struct_nk_config_stack_user_font_element)))))) {} else {
-                __assert_fail("font_stack->head < (int)(sizeof(font_stack->elements)/sizeof(font_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19213))), "nk_bool nk_style_push_font(struct nk_context *, const struct nk_user_font *)");
+                __assert_fail("font_stack->head < (int)(sizeof(font_stack->elements)/sizeof(font_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19214))), "nk_bool nk_style_push_font(struct nk_context *, const struct nk_user_font *)");
             };
         };
     };
     if (font_stack.*.head >= @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([8]struct_nk_config_stack_user_font_element) / @sizeOf(struct_nk_config_stack_user_font_element)))))) return 0;
-    element = &font_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &font_stack.*.head;
-        const tmp = ref.*;
-        ref.* += 1;
-        break :blk tmp;
-    }))];
+    element = &font_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &font_stack.*.head;
+            const tmp = ref.*;
+            ref.* += 1;
+            break :blk tmp;
+        }))
+    ];
     element.*.address = &ctx.*.style.font;
     element.*.old_value = ctx.*.style.font;
     ctx.*.style.font = font;
@@ -11961,7 +11977,7 @@ pub fn nk_style_push_float(arg_ctx: [*c]struct_nk_context, arg_address: [*c]f32,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19274))), "nk_bool nk_style_push_float(struct nk_context *, float *, float)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19275))), "nk_bool nk_style_push_float(struct nk_context *, float *, float)");
             };
         };
     };
@@ -11971,17 +11987,19 @@ pub fn nk_style_push_float(arg_ctx: [*c]struct_nk_context, arg_address: [*c]f32,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (type_stack.*.head < @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([32]struct_nk_config_stack_float_element) / @sizeOf(struct_nk_config_stack_float_element)))))) {} else {
-                __assert_fail("type_stack->head < (int)(sizeof(type_stack->elements)/sizeof(type_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19274))), "nk_bool nk_style_push_float(struct nk_context *, float *, float)");
+                __assert_fail("type_stack->head < (int)(sizeof(type_stack->elements)/sizeof(type_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19275))), "nk_bool nk_style_push_float(struct nk_context *, float *, float)");
             };
         };
     };
     if (type_stack.*.head >= @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([32]struct_nk_config_stack_float_element) / @sizeOf(struct_nk_config_stack_float_element)))))) return 0;
-    element = &type_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &type_stack.*.head;
-        const tmp = ref.*;
-        ref.* += 1;
-        break :blk tmp;
-    }))];
+    element = &type_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &type_stack.*.head;
+            const tmp = ref.*;
+            ref.* += 1;
+            break :blk tmp;
+        }))
+    ];
     element.*.address = address;
     element.*.old_value = address.*;
     address.* = value;
@@ -12002,7 +12020,7 @@ pub fn nk_style_push_vec2(arg_ctx: [*c]struct_nk_context, arg_address: [*c]struc
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19275))), "nk_bool nk_style_push_vec2(struct nk_context *, struct nk_vec2 *, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19276))), "nk_bool nk_style_push_vec2(struct nk_context *, struct nk_vec2 *, struct nk_vec2)");
             };
         };
     };
@@ -12012,17 +12030,19 @@ pub fn nk_style_push_vec2(arg_ctx: [*c]struct_nk_context, arg_address: [*c]struc
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (type_stack.*.head < @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([16]struct_nk_config_stack_vec2_element) / @sizeOf(struct_nk_config_stack_vec2_element)))))) {} else {
-                __assert_fail("type_stack->head < (int)(sizeof(type_stack->elements)/sizeof(type_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19275))), "nk_bool nk_style_push_vec2(struct nk_context *, struct nk_vec2 *, struct nk_vec2)");
+                __assert_fail("type_stack->head < (int)(sizeof(type_stack->elements)/sizeof(type_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19276))), "nk_bool nk_style_push_vec2(struct nk_context *, struct nk_vec2 *, struct nk_vec2)");
             };
         };
     };
     if (type_stack.*.head >= @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([16]struct_nk_config_stack_vec2_element) / @sizeOf(struct_nk_config_stack_vec2_element)))))) return 0;
-    element = &type_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &type_stack.*.head;
-        const tmp = ref.*;
-        ref.* += 1;
-        break :blk tmp;
-    }))];
+    element = &type_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &type_stack.*.head;
+            const tmp = ref.*;
+            ref.* += 1;
+            break :blk tmp;
+        }))
+    ];
     element.*.address = address;
     element.*.old_value = address.*;
     address.* = value;
@@ -12043,7 +12063,7 @@ pub fn nk_style_push_style_item(arg_ctx: [*c]struct_nk_context, arg_address: [*c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19273))), "nk_bool nk_style_push_style_item(struct nk_context *, struct nk_style_item *, struct nk_style_item)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19274))), "nk_bool nk_style_push_style_item(struct nk_context *, struct nk_style_item *, struct nk_style_item)");
             };
         };
     };
@@ -12053,17 +12073,19 @@ pub fn nk_style_push_style_item(arg_ctx: [*c]struct_nk_context, arg_address: [*c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (type_stack.*.head < @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([16]struct_nk_config_stack_style_item_element) / @sizeOf(struct_nk_config_stack_style_item_element)))))) {} else {
-                __assert_fail("type_stack->head < (int)(sizeof(type_stack->elements)/sizeof(type_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19273))), "nk_bool nk_style_push_style_item(struct nk_context *, struct nk_style_item *, struct nk_style_item)");
+                __assert_fail("type_stack->head < (int)(sizeof(type_stack->elements)/sizeof(type_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19274))), "nk_bool nk_style_push_style_item(struct nk_context *, struct nk_style_item *, struct nk_style_item)");
             };
         };
     };
     if (type_stack.*.head >= @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([16]struct_nk_config_stack_style_item_element) / @sizeOf(struct_nk_config_stack_style_item_element)))))) return 0;
-    element = &type_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &type_stack.*.head;
-        const tmp = ref.*;
-        ref.* += 1;
-        break :blk tmp;
-    }))];
+    element = &type_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &type_stack.*.head;
+            const tmp = ref.*;
+            ref.* += 1;
+            break :blk tmp;
+        }))
+    ];
     element.*.address = address;
     element.*.old_value = address.*;
     address.* = value;
@@ -12084,7 +12106,7 @@ pub fn nk_style_push_flags(arg_ctx: [*c]struct_nk_context, arg_address: [*c]nk_f
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19276))), "nk_bool nk_style_push_flags(struct nk_context *, nk_flags *, nk_flags)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19277))), "nk_bool nk_style_push_flags(struct nk_context *, nk_flags *, nk_flags)");
             };
         };
     };
@@ -12094,17 +12116,19 @@ pub fn nk_style_push_flags(arg_ctx: [*c]struct_nk_context, arg_address: [*c]nk_f
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (type_stack.*.head < @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([32]struct_nk_config_stack_flags_element) / @sizeOf(struct_nk_config_stack_flags_element)))))) {} else {
-                __assert_fail("type_stack->head < (int)(sizeof(type_stack->elements)/sizeof(type_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19276))), "nk_bool nk_style_push_flags(struct nk_context *, nk_flags *, nk_flags)");
+                __assert_fail("type_stack->head < (int)(sizeof(type_stack->elements)/sizeof(type_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19277))), "nk_bool nk_style_push_flags(struct nk_context *, nk_flags *, nk_flags)");
             };
         };
     };
     if (type_stack.*.head >= @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([32]struct_nk_config_stack_flags_element) / @sizeOf(struct_nk_config_stack_flags_element)))))) return 0;
-    element = &type_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &type_stack.*.head;
-        const tmp = ref.*;
-        ref.* += 1;
-        break :blk tmp;
-    }))];
+    element = &type_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &type_stack.*.head;
+            const tmp = ref.*;
+            ref.* += 1;
+            break :blk tmp;
+        }))
+    ];
     element.*.address = address;
     element.*.old_value = address.*;
     address.* = value;
@@ -12125,7 +12149,7 @@ pub fn nk_style_push_color(arg_ctx: [*c]struct_nk_context, arg_address: [*c]stru
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19277))), "nk_bool nk_style_push_color(struct nk_context *, struct nk_color *, struct nk_color)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19278))), "nk_bool nk_style_push_color(struct nk_context *, struct nk_color *, struct nk_color)");
             };
         };
     };
@@ -12135,17 +12159,19 @@ pub fn nk_style_push_color(arg_ctx: [*c]struct_nk_context, arg_address: [*c]stru
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (type_stack.*.head < @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([32]struct_nk_config_stack_color_element) / @sizeOf(struct_nk_config_stack_color_element)))))) {} else {
-                __assert_fail("type_stack->head < (int)(sizeof(type_stack->elements)/sizeof(type_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19277))), "nk_bool nk_style_push_color(struct nk_context *, struct nk_color *, struct nk_color)");
+                __assert_fail("type_stack->head < (int)(sizeof(type_stack->elements)/sizeof(type_stack->elements)[0])", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19278))), "nk_bool nk_style_push_color(struct nk_context *, struct nk_color *, struct nk_color)");
             };
         };
     };
     if (type_stack.*.head >= @as(c_int, @bitCast(@as(c_uint, @truncate(@sizeOf([32]struct_nk_config_stack_color_element) / @sizeOf(struct_nk_config_stack_color_element)))))) return 0;
-    element = &type_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &type_stack.*.head;
-        const tmp = ref.*;
-        ref.* += 1;
-        break :blk tmp;
-    }))];
+    element = &type_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &type_stack.*.head;
+            const tmp = ref.*;
+            ref.* += 1;
+            break :blk tmp;
+        }))
+    ];
     element.*.address = address;
     element.*.old_value = address.*;
     address.* = value;
@@ -12162,7 +12188,7 @@ pub fn nk_style_pop_font(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_bool {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19229))), "nk_bool nk_style_pop_font(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19230))), "nk_bool nk_style_pop_font(struct nk_context *)");
             };
         };
     };
@@ -12172,16 +12198,18 @@ pub fn nk_style_pop_font(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_bool {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font_stack.*.head > @as(c_int, 0)) {} else {
-                __assert_fail("font_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19233))), "nk_bool nk_style_pop_font(struct nk_context *)");
+                __assert_fail("font_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19234))), "nk_bool nk_style_pop_font(struct nk_context *)");
             };
         };
     };
     if (font_stack.*.head < @as(c_int, 1)) return 0;
-    element = &font_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &font_stack.*.head;
-        ref.* -= 1;
-        break :blk ref.*;
-    }))];
+    element = &font_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &font_stack.*.head;
+            ref.* -= 1;
+            break :blk ref.*;
+        }))
+    ];
     element.*.address.* = element.*.old_value;
     return 1;
 }
@@ -12196,7 +12224,7 @@ pub fn nk_style_pop_float(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_bool {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19280))), "nk_bool nk_style_pop_float(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19281))), "nk_bool nk_style_pop_float(struct nk_context *)");
             };
         };
     };
@@ -12206,16 +12234,18 @@ pub fn nk_style_pop_float(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_bool {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (type_stack.*.head > @as(c_int, 0)) {} else {
-                __assert_fail("type_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19280))), "nk_bool nk_style_pop_float(struct nk_context *)");
+                __assert_fail("type_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19281))), "nk_bool nk_style_pop_float(struct nk_context *)");
             };
         };
     };
     if (type_stack.*.head < @as(c_int, 1)) return 0;
-    element = &type_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &type_stack.*.head;
-        ref.* -= 1;
-        break :blk ref.*;
-    }))];
+    element = &type_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &type_stack.*.head;
+            ref.* -= 1;
+            break :blk ref.*;
+        }))
+    ];
     element.*.address.* = element.*.old_value;
     return 1;
 }
@@ -12230,7 +12260,7 @@ pub fn nk_style_pop_vec2(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_bool {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19281))), "nk_bool nk_style_pop_vec2(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19282))), "nk_bool nk_style_pop_vec2(struct nk_context *)");
             };
         };
     };
@@ -12240,16 +12270,18 @@ pub fn nk_style_pop_vec2(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_bool {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (type_stack.*.head > @as(c_int, 0)) {} else {
-                __assert_fail("type_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19281))), "nk_bool nk_style_pop_vec2(struct nk_context *)");
+                __assert_fail("type_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19282))), "nk_bool nk_style_pop_vec2(struct nk_context *)");
             };
         };
     };
     if (type_stack.*.head < @as(c_int, 1)) return 0;
-    element = &type_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &type_stack.*.head;
-        ref.* -= 1;
-        break :blk ref.*;
-    }))];
+    element = &type_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &type_stack.*.head;
+            ref.* -= 1;
+            break :blk ref.*;
+        }))
+    ];
     element.*.address.* = element.*.old_value;
     return 1;
 }
@@ -12264,7 +12296,7 @@ pub fn nk_style_pop_style_item(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_b
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19279))), "nk_bool nk_style_pop_style_item(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19280))), "nk_bool nk_style_pop_style_item(struct nk_context *)");
             };
         };
     };
@@ -12274,16 +12306,18 @@ pub fn nk_style_pop_style_item(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_b
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (type_stack.*.head > @as(c_int, 0)) {} else {
-                __assert_fail("type_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19279))), "nk_bool nk_style_pop_style_item(struct nk_context *)");
+                __assert_fail("type_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19280))), "nk_bool nk_style_pop_style_item(struct nk_context *)");
             };
         };
     };
     if (type_stack.*.head < @as(c_int, 1)) return 0;
-    element = &type_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &type_stack.*.head;
-        ref.* -= 1;
-        break :blk ref.*;
-    }))];
+    element = &type_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &type_stack.*.head;
+            ref.* -= 1;
+            break :blk ref.*;
+        }))
+    ];
     element.*.address.* = element.*.old_value;
     return 1;
 }
@@ -12298,7 +12332,7 @@ pub fn nk_style_pop_flags(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_bool {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19282))), "nk_bool nk_style_pop_flags(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19283))), "nk_bool nk_style_pop_flags(struct nk_context *)");
             };
         };
     };
@@ -12308,16 +12342,18 @@ pub fn nk_style_pop_flags(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_bool {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (type_stack.*.head > @as(c_int, 0)) {} else {
-                __assert_fail("type_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19282))), "nk_bool nk_style_pop_flags(struct nk_context *)");
+                __assert_fail("type_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19283))), "nk_bool nk_style_pop_flags(struct nk_context *)");
             };
         };
     };
     if (type_stack.*.head < @as(c_int, 1)) return 0;
-    element = &type_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &type_stack.*.head;
-        ref.* -= 1;
-        break :blk ref.*;
-    }))];
+    element = &type_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &type_stack.*.head;
+            ref.* -= 1;
+            break :blk ref.*;
+        }))
+    ];
     element.*.address.* = element.*.old_value;
     return 1;
 }
@@ -12332,7 +12368,7 @@ pub fn nk_style_pop_color(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_bool {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19283))), "nk_bool nk_style_pop_color(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19284))), "nk_bool nk_style_pop_color(struct nk_context *)");
             };
         };
     };
@@ -12342,16 +12378,18 @@ pub fn nk_style_pop_color(arg_ctx: [*c]struct_nk_context) callconv(.c) nk_bool {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (type_stack.*.head > @as(c_int, 0)) {} else {
-                __assert_fail("type_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19283))), "nk_bool nk_style_pop_color(struct nk_context *)");
+                __assert_fail("type_stack->head > 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19284))), "nk_bool nk_style_pop_color(struct nk_context *)");
             };
         };
     };
     if (type_stack.*.head < @as(c_int, 1)) return 0;
-    element = &type_stack.*.elements[@as(c_uint, @intCast(blk: {
-        const ref = &type_stack.*.head;
-        ref.* -= 1;
-        break :blk ref.*;
-    }))];
+    element = &type_stack.*.elements[
+        @as(c_uint, @intCast(blk: {
+            const ref = &type_stack.*.head;
+            ref.* -= 1;
+            break :blk ref.*;
+        }))
+    ];
     element.*.address.* = element.*.old_value;
     return 1;
 }
@@ -13024,7 +13062,7 @@ pub fn nk_image_ptr(arg_ptr: ?*anyopaque) callconv(.c) struct_nk_image {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ptr != null) {} else {
-                __assert_fail("ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24160))), "struct nk_image nk_image_ptr(void *)");
+                __assert_fail("ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24161))), "struct nk_image nk_image_ptr(void *)");
             };
         };
     };
@@ -13059,7 +13097,7 @@ pub fn nk_image_is_subimage(arg_img: [*c]const struct_nk_image) callconv(.c) nk_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (img != null) {} else {
-                __assert_fail("img", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24185))), "nk_bool nk_image_is_subimage(const struct nk_image *)");
+                __assert_fail("img", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24186))), "nk_bool nk_image_is_subimage(const struct nk_image *)");
             };
         };
     };
@@ -13177,7 +13215,7 @@ pub fn nk_nine_slice_ptr(arg_ptr: ?*anyopaque, arg_l: nk_ushort, arg_t: nk_ushor
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ptr != null) {} else {
-                __assert_fail("ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24294))), "struct nk_nine_slice nk_nine_slice_ptr(void *, nk_ushort, nk_ushort, nk_ushort, nk_ushort)");
+                __assert_fail("ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24295))), "struct nk_nine_slice nk_nine_slice_ptr(void *, nk_ushort, nk_ushort, nk_ushort, nk_ushort)");
             };
         };
     };
@@ -13230,7 +13268,7 @@ pub fn nk_nine_slice_is_sub9slice(arg_slice: [*c]const struct_nk_nine_slice) cal
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (slice != null) {} else {
-                __assert_fail("slice", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24322))), "int nk_nine_slice_is_sub9slice(const struct nk_nine_slice *)");
+                __assert_fail("slice", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24323))), "int nk_nine_slice_is_sub9slice(const struct nk_nine_slice *)");
             };
         };
     };
@@ -13456,7 +13494,7 @@ pub fn nk_triangle_from_direction(arg_result: [*c]struct_nk_vec2, arg_r: struct_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (result != null) {} else {
-                __assert_fail("result", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6751))), "void nk_triangle_from_direction(struct nk_vec2 *, struct nk_rect, float, float, enum nk_heading)");
+                __assert_fail("result", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6752))), "void nk_triangle_from_direction(struct nk_vec2 *, struct nk_rect, float, float, enum nk_heading)");
             };
         };
     };
@@ -13599,7 +13637,7 @@ pub fn nk_strlen(arg_str: [*c]const u8) callconv(.c) c_int {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6922))), "int nk_strlen(const char *)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6923))), "int nk_strlen(const char *)");
             };
         };
     };
@@ -13670,7 +13708,7 @@ pub fn nk_stricmpn(arg_s1: [*c]const u8, arg_s2: [*c]const u8, arg_n: c_int) cal
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (n >= @as(c_int, 0)) {} else {
-                __assert_fail("n >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 7042))), "int nk_stricmpn(const char *, const char *, int)");
+                __assert_fail("n >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 7043))), "int nk_stricmpn(const char *, const char *, int)");
             };
         };
     };
@@ -13703,7 +13741,9 @@ pub fn nk_stricmpn(arg_s1: [*c]const u8, arg_s2: [*c]const u8, arg_n: c_int) cal
                 d -= @as(c_int, 'a') - @as(c_int, 'A');
                 if (!(d != 0)) break;
             }
-            return ((d >= @as(c_int, 0)) << @intCast(1)) - @as(c_int, 1);
+
+            //return ((d >= @as(c_int, 0)) << @intCast(1)) - @as(c_int, 1);
+            return (@intFromBool(d >= @as(c_int, 0)) << @as(u32, 1)) - @as(c_int, 1);
         }
         if (!(c1 != 0)) break;
     }
@@ -13724,7 +13764,7 @@ pub fn nk_strtoi(arg_str: [*c]const u8, arg_endptr: [*c][*c]u8) callconv(.c) c_i
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6933))), "int nk_strtoi(const char *, char **)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6934))), "int nk_strtoi(const char *, char **)");
             };
         };
     };
@@ -13777,7 +13817,7 @@ pub fn nk_strtod(arg_str: [*c]const u8, arg_endptr: [*c][*c]u8) callconv(.c) f64
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6959))), "double nk_strtod(const char *, char **)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6960))), "double nk_strtod(const char *, char **)");
             };
         };
     };
@@ -13906,7 +13946,7 @@ pub fn nk_strmatch_fuzzy_text(arg_str: [*c]const u8, arg_str_len: c_int, arg_pat
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 7137))), "int nk_strmatch_fuzzy_text(const char *, int, const char *, int *)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 7138))), "int nk_strmatch_fuzzy_text(const char *, int, const char *, int *)");
             };
         };
     };
@@ -13914,7 +13954,7 @@ pub fn nk_strmatch_fuzzy_text(arg_str: [*c]const u8, arg_str_len: c_int, arg_pat
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (pattern != null) {} else {
-                __assert_fail("pattern", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 7138))), "int nk_strmatch_fuzzy_text(const char *, int, const char *, int *)");
+                __assert_fail("pattern", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 7139))), "int nk_strmatch_fuzzy_text(const char *, int, const char *, int *)");
             };
         };
     };
@@ -14018,7 +14058,7 @@ pub fn nk_utf_decode(arg_c: [*c]const u8, arg_u: [*c]nk_rune, arg_clen: c_int) c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (c != null) {} else {
-                __assert_fail("c", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8378))), "int nk_utf_decode(const char *, nk_rune *, int)");
+                __assert_fail("c", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8379))), "int nk_utf_decode(const char *, nk_rune *, int)");
             };
         };
     };
@@ -14026,7 +14066,7 @@ pub fn nk_utf_decode(arg_c: [*c]const u8, arg_u: [*c]nk_rune, arg_clen: c_int) c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (u != null) {} else {
-                __assert_fail("u", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8379))), "int nk_utf_decode(const char *, nk_rune *, int)");
+                __assert_fail("u", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8380))), "int nk_utf_decode(const char *, nk_rune *, int)");
             };
         };
     };
@@ -14111,7 +14151,7 @@ pub fn nk_utf_len(arg_str: [*c]const u8, arg_len: c_int) callconv(.c) c_int {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8430))), "int nk_utf_len(const char *, int)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8431))), "int nk_utf_len(const char *, int)");
             };
         };
     };
@@ -14151,7 +14191,7 @@ pub fn nk_utf_at(arg_buffer: [*c]const u8, arg_length: c_int, arg_index: c_int, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (buffer != null) {} else {
-                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8453))), "const char *nk_utf_at(const char *, int, int, nk_rune *, int *)");
+                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8454))), "const char *nk_utf_at(const char *, int, int, nk_rune *, int *)");
             };
         };
     };
@@ -14159,7 +14199,7 @@ pub fn nk_utf_at(arg_buffer: [*c]const u8, arg_length: c_int, arg_index: c_int, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (unicode != null) {} else {
-                __assert_fail("unicode", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8454))), "const char *nk_utf_at(const char *, int, int, nk_rune *, int *)");
+                __assert_fail("unicode", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8455))), "const char *nk_utf_at(const char *, int, int, nk_rune *, int *)");
             };
         };
     };
@@ -14167,7 +14207,7 @@ pub fn nk_utf_at(arg_buffer: [*c]const u8, arg_length: c_int, arg_index: c_int, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (len != null) {} else {
-                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8455))), "const char *nk_utf_at(const char *, int, int, nk_rune *, int *)");
+                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8456))), "const char *nk_utf_at(const char *, int, int, nk_rune *, int *)");
             };
         };
     };
@@ -14217,7 +14257,7 @@ pub fn nk_buffer_init(arg_b: [*c]struct_nk_buffer, arg_a: [*c]const struct_nk_al
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8519))), "void nk_buffer_init(struct nk_buffer *, const struct nk_allocator *, nk_size)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8520))), "void nk_buffer_init(struct nk_buffer *, const struct nk_allocator *, nk_size)");
             };
         };
     };
@@ -14225,7 +14265,7 @@ pub fn nk_buffer_init(arg_b: [*c]struct_nk_buffer, arg_a: [*c]const struct_nk_al
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (a != null) {} else {
-                __assert_fail("a", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8520))), "void nk_buffer_init(struct nk_buffer *, const struct nk_allocator *, nk_size)");
+                __assert_fail("a", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8521))), "void nk_buffer_init(struct nk_buffer *, const struct nk_allocator *, nk_size)");
             };
         };
     };
@@ -14233,7 +14273,7 @@ pub fn nk_buffer_init(arg_b: [*c]struct_nk_buffer, arg_a: [*c]const struct_nk_al
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (initial_size != 0) {} else {
-                __assert_fail("initial_size", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8521))), "void nk_buffer_init(struct nk_buffer *, const struct nk_allocator *, nk_size)");
+                __assert_fail("initial_size", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8522))), "void nk_buffer_init(struct nk_buffer *, const struct nk_allocator *, nk_size)");
             };
         };
     };
@@ -14257,7 +14297,7 @@ pub fn nk_buffer_init_fixed(arg_b: [*c]struct_nk_buffer, arg_m: ?*anyopaque, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8535))), "void nk_buffer_init_fixed(struct nk_buffer *, void *, nk_size)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8536))), "void nk_buffer_init_fixed(struct nk_buffer *, void *, nk_size)");
             };
         };
     };
@@ -14265,7 +14305,7 @@ pub fn nk_buffer_init_fixed(arg_b: [*c]struct_nk_buffer, arg_m: ?*anyopaque, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (m != null) {} else {
-                __assert_fail("m", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8536))), "void nk_buffer_init_fixed(struct nk_buffer *, void *, nk_size)");
+                __assert_fail("m", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8537))), "void nk_buffer_init_fixed(struct nk_buffer *, void *, nk_size)");
             };
         };
     };
@@ -14273,7 +14313,7 @@ pub fn nk_buffer_init_fixed(arg_b: [*c]struct_nk_buffer, arg_m: ?*anyopaque, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (size != 0) {} else {
-                __assert_fail("size", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8537))), "void nk_buffer_init_fixed(struct nk_buffer *, void *, nk_size)");
+                __assert_fail("size", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8538))), "void nk_buffer_init_fixed(struct nk_buffer *, void *, nk_size)");
             };
         };
     };
@@ -14293,7 +14333,7 @@ pub fn nk_buffer_info(arg_s: [*c]struct_nk_memory_status, arg_b: [*c]const struc
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8728))), "void nk_buffer_info(struct nk_memory_status *, const struct nk_buffer *)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8729))), "void nk_buffer_info(struct nk_memory_status *, const struct nk_buffer *)");
             };
         };
     };
@@ -14301,7 +14341,7 @@ pub fn nk_buffer_info(arg_s: [*c]struct_nk_memory_status, arg_b: [*c]const struc
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8729))), "void nk_buffer_info(struct nk_memory_status *, const struct nk_buffer *)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8730))), "void nk_buffer_info(struct nk_memory_status *, const struct nk_buffer *)");
             };
         };
     };
@@ -14337,7 +14377,7 @@ pub fn nk_buffer_mark(arg_buffer: [*c]struct_nk_buffer, arg_type: enum_nk_buffer
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (buffer != null) {} else {
-                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8677))), "void nk_buffer_mark(struct nk_buffer *, enum nk_buffer_allocation_type)");
+                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8678))), "void nk_buffer_mark(struct nk_buffer *, enum nk_buffer_allocation_type)");
             };
         };
     };
@@ -14358,7 +14398,7 @@ pub fn nk_buffer_reset(arg_buffer: [*c]struct_nk_buffer, arg_type: enum_nk_buffe
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (buffer != null) {} else {
-                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8687))), "void nk_buffer_reset(struct nk_buffer *, enum nk_buffer_allocation_type)");
+                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8688))), "void nk_buffer_reset(struct nk_buffer *, enum nk_buffer_allocation_type)");
             };
         };
     };
@@ -14388,7 +14428,7 @@ pub fn nk_buffer_clear(arg_b: [*c]struct_nk_buffer) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8708))), "void nk_buffer_clear(struct nk_buffer *)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8709))), "void nk_buffer_clear(struct nk_buffer *)");
             };
         };
     };
@@ -14405,7 +14445,7 @@ pub fn nk_buffer_free(arg_b: [*c]struct_nk_buffer) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8718))), "void nk_buffer_free(struct nk_buffer *)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8719))), "void nk_buffer_free(struct nk_buffer *)");
             };
         };
     };
@@ -14416,7 +14456,7 @@ pub fn nk_buffer_free(arg_b: [*c]struct_nk_buffer) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b.*.pool.free != null) {} else {
-                __assert_fail("b->pool.free", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8722))), "void nk_buffer_free(struct nk_buffer *)");
+                __assert_fail("b->pool.free", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8723))), "void nk_buffer_free(struct nk_buffer *)");
             };
         };
     };
@@ -14429,7 +14469,7 @@ pub fn nk_buffer_memory(arg_buffer: [*c]struct_nk_buffer) callconv(.c) ?*anyopaq
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (buffer != null) {} else {
-                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8740))), "void *nk_buffer_memory(struct nk_buffer *)");
+                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8741))), "void *nk_buffer_memory(struct nk_buffer *)");
             };
         };
     };
@@ -14443,7 +14483,7 @@ pub fn nk_buffer_memory_const(arg_buffer: [*c]const struct_nk_buffer) callconv(.
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (buffer != null) {} else {
-                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8747))), "const void *nk_buffer_memory_const(const struct nk_buffer *)");
+                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8748))), "const void *nk_buffer_memory_const(const struct nk_buffer *)");
             };
         };
     };
@@ -14457,7 +14497,7 @@ pub fn nk_buffer_total(arg_buffer: [*c]const struct_nk_buffer) callconv(.c) nk_s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (buffer != null) {} else {
-                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8754))), "nk_size nk_buffer_total(const struct nk_buffer *)");
+                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8755))), "nk_size nk_buffer_total(const struct nk_buffer *)");
             };
         };
     };
@@ -14491,7 +14531,7 @@ pub fn nk_str_clear(arg_str: [*c]struct_nk_str) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9196))), "void nk_str_clear(struct nk_str *)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9197))), "void nk_str_clear(struct nk_str *)");
             };
         };
     };
@@ -14505,7 +14545,7 @@ pub fn nk_str_free(arg_str: [*c]struct_nk_str) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9203))), "void nk_str_free(struct nk_str *)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9204))), "void nk_str_free(struct nk_str *)");
             };
         };
     };
@@ -14525,7 +14565,7 @@ pub fn nk_str_append_text_char(arg_s: [*c]struct_nk_str, arg_str: [*c]const u8, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8796))), "int nk_str_append_text_char(struct nk_str *, const char *, int)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8797))), "int nk_str_append_text_char(struct nk_str *, const char *, int)");
             };
         };
     };
@@ -14533,7 +14573,7 @@ pub fn nk_str_append_text_char(arg_s: [*c]struct_nk_str, arg_str: [*c]const u8, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8797))), "int nk_str_append_text_char(struct nk_str *, const char *, int)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8798))), "int nk_str_append_text_char(struct nk_str *, const char *, int)");
             };
         };
     };
@@ -14618,7 +14658,7 @@ pub fn nk_str_append_text_runes(arg_str: [*c]struct_nk_str, arg_text: [*c]const 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8847))), "int nk_str_append_text_runes(struct nk_str *, const nk_rune *, int)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8848))), "int nk_str_append_text_runes(struct nk_str *, const nk_rune *, int)");
             };
         };
     };
@@ -14651,7 +14691,7 @@ pub fn nk_str_append_str_runes(arg_str: [*c]struct_nk_str, arg_runes: [*c]const 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8862))), "int nk_str_append_str_runes(struct nk_str *, const nk_rune *)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8863))), "int nk_str_append_str_runes(struct nk_str *, const nk_rune *)");
             };
         };
     };
@@ -14692,7 +14732,7 @@ pub fn nk_str_insert_at_char(arg_s: [*c]struct_nk_str, arg_pos: c_int, arg_str: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8880))), "int nk_str_insert_at_char(struct nk_str *, int, const char *, int)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8881))), "int nk_str_insert_at_char(struct nk_str *, int, const char *, int)");
             };
         };
     };
@@ -14700,7 +14740,7 @@ pub fn nk_str_insert_at_char(arg_s: [*c]struct_nk_str, arg_pos: c_int, arg_str: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8881))), "int nk_str_insert_at_char(struct nk_str *, int, const char *, int)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8882))), "int nk_str_insert_at_char(struct nk_str *, int, const char *, int)");
             };
         };
     };
@@ -14708,7 +14748,7 @@ pub fn nk_str_insert_at_char(arg_s: [*c]struct_nk_str, arg_pos: c_int, arg_str: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (len >= @as(c_int, 0)) {} else {
-                __assert_fail("len >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8882))), "int nk_str_insert_at_char(struct nk_str *, int, const char *, int)");
+                __assert_fail("len >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8883))), "int nk_str_insert_at_char(struct nk_str *, int, const char *, int)");
             };
         };
     };
@@ -14725,7 +14765,7 @@ pub fn nk_str_insert_at_char(arg_s: [*c]struct_nk_str, arg_pos: c_int, arg_str: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (((pos + len) + (copylen - @as(c_int, 1))) >= @as(c_int, 0)) {} else {
-                __assert_fail("((int)pos + (int)len + ((int)copylen - 1)) >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8896))), "int nk_str_insert_at_char(struct nk_str *, int, const char *, int)");
+                __assert_fail("((int)pos + (int)len + ((int)copylen - 1)) >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8897))), "int nk_str_insert_at_char(struct nk_str *, int, const char *, int)");
             };
         };
     };
@@ -14733,7 +14773,7 @@ pub fn nk_str_insert_at_char(arg_s: [*c]struct_nk_str, arg_pos: c_int, arg_str: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((pos + (copylen - @as(c_int, 1))) >= @as(c_int, 0)) {} else {
-                __assert_fail("((int)pos + ((int)copylen - 1)) >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8897))), "int nk_str_insert_at_char(struct nk_str *, int, const char *, int)");
+                __assert_fail("((int)pos + ((int)copylen - 1)) >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8898))), "int nk_str_insert_at_char(struct nk_str *, int, const char *, int)");
             };
         };
     };
@@ -14781,7 +14821,7 @@ pub fn nk_str_insert_at_rune(arg_str: [*c]struct_nk_str, arg_pos: c_int, arg_cst
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8914))), "int nk_str_insert_at_rune(struct nk_str *, int, const char *, int)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8915))), "int nk_str_insert_at_rune(struct nk_str *, int, const char *, int)");
             };
         };
     };
@@ -14789,7 +14829,7 @@ pub fn nk_str_insert_at_rune(arg_str: [*c]struct_nk_str, arg_pos: c_int, arg_cst
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (cstr != null) {} else {
-                __assert_fail("cstr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8915))), "int nk_str_insert_at_rune(struct nk_str *, int, const char *, int)");
+                __assert_fail("cstr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8916))), "int nk_str_insert_at_rune(struct nk_str *, int, const char *, int)");
             };
         };
     };
@@ -14797,7 +14837,7 @@ pub fn nk_str_insert_at_rune(arg_str: [*c]struct_nk_str, arg_pos: c_int, arg_cst
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (len != 0) {} else {
-                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8916))), "int nk_str_insert_at_rune(struct nk_str *, int, const char *, int)");
+                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8917))), "int nk_str_insert_at_rune(struct nk_str *, int, const char *, int)");
             };
         };
     };
@@ -14847,7 +14887,7 @@ pub fn nk_str_insert_text_utf8(arg_str: [*c]struct_nk_str, arg_pos: c_int, arg_t
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8942))), "int nk_str_insert_text_utf8(struct nk_str *, int, const char *, int)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8943))), "int nk_str_insert_text_utf8(struct nk_str *, int, const char *, int)");
             };
         };
     };
@@ -14855,7 +14895,7 @@ pub fn nk_str_insert_text_utf8(arg_str: [*c]struct_nk_str, arg_pos: c_int, arg_t
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (text != null) {} else {
-                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8943))), "int nk_str_insert_text_utf8(struct nk_str *, int, const char *, int)");
+                __assert_fail("text", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8944))), "int nk_str_insert_text_utf8(struct nk_str *, int, const char *, int)");
             };
         };
     };
@@ -14917,7 +14957,7 @@ pub fn nk_str_insert_text_runes(arg_str: [*c]struct_nk_str, arg_pos: c_int, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8975))), "int nk_str_insert_text_runes(struct nk_str *, int, const nk_rune *, int)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8976))), "int nk_str_insert_text_runes(struct nk_str *, int, const nk_rune *, int)");
             };
         };
     };
@@ -14952,7 +14992,7 @@ pub fn nk_str_insert_str_runes(arg_str: [*c]struct_nk_str, arg_pos: c_int, arg_r
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8990))), "int nk_str_insert_str_runes(struct nk_str *, int, const nk_rune *)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8991))), "int nk_str_insert_str_runes(struct nk_str *, int, const nk_rune *)");
             };
         };
     };
@@ -14979,7 +15019,7 @@ pub fn nk_str_remove_chars(arg_s: [*c]struct_nk_str, arg_len: c_int) callconv(.c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9002))), "void nk_str_remove_chars(struct nk_str *, int)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9003))), "void nk_str_remove_chars(struct nk_str *, int)");
             };
         };
     };
@@ -14987,7 +15027,7 @@ pub fn nk_str_remove_chars(arg_s: [*c]struct_nk_str, arg_len: c_int) callconv(.c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (len >= @as(c_int, 0)) {} else {
-                __assert_fail("len >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9003))), "void nk_str_remove_chars(struct nk_str *, int)");
+                __assert_fail("len >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9004))), "void nk_str_remove_chars(struct nk_str *, int)");
             };
         };
     };
@@ -14996,7 +15036,7 @@ pub fn nk_str_remove_chars(arg_s: [*c]struct_nk_str, arg_len: c_int) callconv(.c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((@as(c_int, @bitCast(@as(c_uint, @truncate(s.*.buffer.allocated)))) - len) >= @as(c_int, 0)) {} else {
-                __assert_fail("((int)s->buffer.allocated - (int)len) >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9005))), "void nk_str_remove_chars(struct nk_str *, int)");
+                __assert_fail("((int)s->buffer.allocated - (int)len) >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9006))), "void nk_str_remove_chars(struct nk_str *, int)");
             };
         };
     };
@@ -15020,7 +15060,7 @@ pub fn nk_str_remove_runes(arg_str: [*c]struct_nk_str, arg_len: c_int) callconv(
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9017))), "void nk_str_remove_runes(struct nk_str *, int)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9018))), "void nk_str_remove_runes(struct nk_str *, int)");
             };
         };
     };
@@ -15028,7 +15068,7 @@ pub fn nk_str_remove_runes(arg_str: [*c]struct_nk_str, arg_len: c_int) callconv(
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (len >= @as(c_int, 0)) {} else {
-                __assert_fail("len >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9018))), "void nk_str_remove_runes(struct nk_str *, int)");
+                __assert_fail("len >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9019))), "void nk_str_remove_runes(struct nk_str *, int)");
             };
         };
     };
@@ -15053,7 +15093,7 @@ pub fn nk_str_delete_chars(arg_s: [*c]struct_nk_str, arg_pos: c_int, arg_len: c_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9033))), "void nk_str_delete_chars(struct nk_str *, int, int)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9034))), "void nk_str_delete_chars(struct nk_str *, int, int)");
             };
         };
     };
@@ -15068,7 +15108,7 @@ pub fn nk_str_delete_chars(arg_s: [*c]struct_nk_str, arg_pos: c_int, arg_len: c_
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if ((@as(c_int, @bitCast(@as(c_uint, @truncate(s.*.buffer.allocated)))) - len) >= @as(c_int, 0)) {} else {
-                    __assert_fail("((int)s->buffer.allocated - (int)len) >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9042))), "void nk_str_delete_chars(struct nk_str *, int, int)");
+                    __assert_fail("((int)s->buffer.allocated - (int)len) >= 0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9043))), "void nk_str_delete_chars(struct nk_str *, int, int)");
                 };
             };
         };
@@ -15099,7 +15139,7 @@ pub fn nk_str_delete_runes(arg_s: [*c]struct_nk_str, arg_pos: c_int, arg_len: c_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9056))), "void nk_str_delete_runes(struct nk_str *, int, int)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9057))), "void nk_str_delete_runes(struct nk_str *, int, int)");
             };
         };
     };
@@ -15107,7 +15147,7 @@ pub fn nk_str_delete_runes(arg_s: [*c]struct_nk_str, arg_pos: c_int, arg_len: c_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s.*.len >= (pos + len)) {} else {
-                __assert_fail("s->len >= pos + len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9057))), "void nk_str_delete_runes(struct nk_str *, int, int)");
+                __assert_fail("s->len >= pos + len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9058))), "void nk_str_delete_runes(struct nk_str *, int, int)");
             };
         };
     };
@@ -15133,7 +15173,7 @@ pub fn nk_str_at_char(arg_s: [*c]struct_nk_str, arg_pos: c_int) callconv(.c) [*c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9074))), "char *nk_str_at_char(struct nk_str *, int)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9075))), "char *nk_str_at_char(struct nk_str *, int)");
             };
         };
     };
@@ -15163,7 +15203,7 @@ pub fn nk_str_at_rune(arg_str: [*c]struct_nk_str, arg_pos: c_int, arg_unicode: [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9087))), "char *nk_str_at_rune(struct nk_str *, int, nk_rune *, int *)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9088))), "char *nk_str_at_rune(struct nk_str *, int, nk_rune *, int *)");
             };
         };
     };
@@ -15171,7 +15211,7 @@ pub fn nk_str_at_rune(arg_str: [*c]struct_nk_str, arg_pos: c_int, arg_unicode: [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (unicode != null) {} else {
-                __assert_fail("unicode", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9088))), "char *nk_str_at_rune(struct nk_str *, int, nk_rune *, int *)");
+                __assert_fail("unicode", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9089))), "char *nk_str_at_rune(struct nk_str *, int, nk_rune *, int *)");
             };
         };
     };
@@ -15179,7 +15219,7 @@ pub fn nk_str_at_rune(arg_str: [*c]struct_nk_str, arg_pos: c_int, arg_unicode: [
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (len != null) {} else {
-                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9089))), "char *nk_str_at_rune(struct nk_str *, int, nk_rune *, int *)");
+                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9090))), "char *nk_str_at_rune(struct nk_str *, int, nk_rune *, int *)");
             };
         };
     };
@@ -15225,7 +15265,7 @@ pub fn nk_str_at_char_const(arg_s: [*c]const struct_nk_str, arg_pos: c_int) call
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9117))), "const char *nk_str_at_char_const(const struct nk_str *, int)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9118))), "const char *nk_str_at_char_const(const struct nk_str *, int)");
             };
         };
     };
@@ -15255,7 +15295,7 @@ pub fn nk_str_at_const(arg_str: [*c]const struct_nk_str, arg_pos: c_int, arg_uni
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9130))), "const char *nk_str_at_const(const struct nk_str *, int, nk_rune *, int *)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9131))), "const char *nk_str_at_const(const struct nk_str *, int, nk_rune *, int *)");
             };
         };
     };
@@ -15263,7 +15303,7 @@ pub fn nk_str_at_const(arg_str: [*c]const struct_nk_str, arg_pos: c_int, arg_uni
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (unicode != null) {} else {
-                __assert_fail("unicode", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9131))), "const char *nk_str_at_const(const struct nk_str *, int, nk_rune *, int *)");
+                __assert_fail("unicode", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9132))), "const char *nk_str_at_const(const struct nk_str *, int, nk_rune *, int *)");
             };
         };
     };
@@ -15271,7 +15311,7 @@ pub fn nk_str_at_const(arg_str: [*c]const struct_nk_str, arg_pos: c_int, arg_uni
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (len != null) {} else {
-                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9132))), "const char *nk_str_at_const(const struct nk_str *, int, nk_rune *, int *)");
+                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9133))), "const char *nk_str_at_const(const struct nk_str *, int, nk_rune *, int *)");
             };
         };
     };
@@ -15303,7 +15343,7 @@ pub fn nk_str_get(arg_s: [*c]struct_nk_str) callconv(.c) [*c]u8 {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9168))), "char *nk_str_get(struct nk_str *)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9169))), "char *nk_str_get(struct nk_str *)");
             };
         };
     };
@@ -15317,7 +15357,7 @@ pub fn nk_str_get_const(arg_s: [*c]const struct_nk_str) callconv(.c) [*c]const u
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9175))), "const char *nk_str_get_const(const struct nk_str *)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9176))), "const char *nk_str_get_const(const struct nk_str *)");
             };
         };
     };
@@ -15331,7 +15371,7 @@ pub fn nk_str_len(arg_s: [*c]const struct_nk_str) callconv(.c) c_int {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9182))), "int nk_str_len(const struct nk_str *)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9183))), "int nk_str_len(const struct nk_str *)");
             };
         };
     };
@@ -15345,7 +15385,7 @@ pub fn nk_str_len_char(arg_s: [*c]const struct_nk_str) callconv(.c) c_int {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9189))), "int nk_str_len_char(const struct nk_str *)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9190))), "int nk_str_len_char(const struct nk_str *)");
             };
         };
     };
@@ -15433,7 +15473,7 @@ pub fn nk_textedit_init(arg_state: [*c]struct_nk_text_edit, arg_alloc: [*c]const
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27785))), "void nk_textedit_init(struct nk_text_edit *, const struct nk_allocator *, nk_size)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27786))), "void nk_textedit_init(struct nk_text_edit *, const struct nk_allocator *, nk_size)");
             };
         };
     };
@@ -15441,7 +15481,7 @@ pub fn nk_textedit_init(arg_state: [*c]struct_nk_text_edit, arg_alloc: [*c]const
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (alloc != null) {} else {
-                __assert_fail("alloc", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27786))), "void nk_textedit_init(struct nk_text_edit *, const struct nk_allocator *, nk_size)");
+                __assert_fail("alloc", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27787))), "void nk_textedit_init(struct nk_text_edit *, const struct nk_allocator *, nk_size)");
             };
         };
     };
@@ -15461,7 +15501,7 @@ pub fn nk_textedit_init_fixed(arg_state: [*c]struct_nk_text_edit, arg_memory: ?*
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27775))), "void nk_textedit_init_fixed(struct nk_text_edit *, void *, nk_size)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27776))), "void nk_textedit_init_fixed(struct nk_text_edit *, void *, nk_size)");
             };
         };
     };
@@ -15469,7 +15509,7 @@ pub fn nk_textedit_init_fixed(arg_state: [*c]struct_nk_text_edit, arg_memory: ?*
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (memory != null) {} else {
-                __assert_fail("memory", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27776))), "void nk_textedit_init_fixed(struct nk_text_edit *, void *, nk_size)");
+                __assert_fail("memory", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27777))), "void nk_textedit_init_fixed(struct nk_text_edit *, void *, nk_size)");
             };
         };
     };
@@ -15485,16 +15525,16 @@ pub fn nk_textedit_free(arg_state: [*c]struct_nk_text_edit) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27813))), "void nk_textedit_free(struct nk_text_edit *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27814))), "void nk_textedit_free(struct nk_text_edit *)");
             };
         };
     };
     if (!(state != null)) return;
     nk_str_free(&state.*.string);
 }
-// libs/nuklear/nuklear.h:27160:29: warning: TODO implement translation of stmt class GotoStmtClass
+// libs/nuklear/nuklear.h:27161:29: warning: TODO implement translation of stmt class GotoStmtClass
 
-// libs/nuklear/nuklear.h:27146:1: warning: unable to translate function, demoted to extern
+// libs/nuklear/nuklear.h:27147:1: warning: unable to translate function, demoted to extern
 pub extern fn nk_textedit_text(arg_state: [*c]struct_nk_text_edit, arg_text: [*c]const u8, arg_total_len: c_int) callconv(.c) void;
 pub fn nk_textedit_delete(arg_state: [*c]struct_nk_text_edit, arg_where: c_int, arg_len: c_int) callconv(.c) void {
     var state = arg_state;
@@ -15537,7 +15577,7 @@ pub fn nk_textedit_select_all(arg_state: [*c]struct_nk_text_edit) callconv(.c) v
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27806))), "void nk_textedit_select_all(struct nk_text_edit *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27807))), "void nk_textedit_select_all(struct nk_text_edit *)");
             };
         };
     };
@@ -15845,7 +15885,7 @@ pub fn nk_stroke_line(arg_b: [*c]struct_nk_command_buffer, arg_x0: f32, arg_y0: 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9300))), "void nk_stroke_line(struct nk_command_buffer *, float, float, float, float, float, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9301))), "void nk_stroke_line(struct nk_command_buffer *, float, float, float, float, float, struct nk_color)");
             };
         };
     };
@@ -15888,7 +15928,7 @@ pub fn nk_stroke_curve(arg_b: [*c]struct_nk_command_buffer, arg_ax: f32, arg_ay:
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9318))), "void nk_stroke_curve(struct nk_command_buffer *, float, float, float, float, float, float, float, float, float, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9319))), "void nk_stroke_curve(struct nk_command_buffer *, float, float, float, float, float, float, float, float, float, struct nk_color)");
             };
         };
     };
@@ -15923,7 +15963,7 @@ pub fn nk_stroke_rect(arg_b: [*c]struct_nk_command_buffer, arg_rect: struct_nk_r
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9340))), "void nk_stroke_rect(struct nk_command_buffer *, struct nk_rect, float, float, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9341))), "void nk_stroke_rect(struct nk_command_buffer *, struct nk_rect, float, float, struct nk_color)");
             };
         };
     };
@@ -16024,7 +16064,7 @@ pub fn nk_stroke_triangle(arg_b: [*c]struct_nk_command_buffer, arg_x0: f32, arg_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9489))), "void nk_stroke_triangle(struct nk_command_buffer *, float, float, float, float, float, float, float, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9490))), "void nk_stroke_triangle(struct nk_command_buffer *, float, float, float, float, float, float, float, struct nk_color)");
             };
         };
     };
@@ -16066,7 +16106,7 @@ pub fn nk_stroke_polyline(arg_b: [*c]struct_nk_command_buffer, arg_points: [*c]c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9588))), "void nk_stroke_polyline(struct nk_command_buffer *, const float *, int, float, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9589))), "void nk_stroke_polyline(struct nk_command_buffer *, const float *, int, float, struct nk_color)");
             };
         };
     };
@@ -16112,7 +16152,7 @@ pub fn nk_stroke_polygon(arg_b: [*c]struct_nk_command_buffer, arg_points: [*c]co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9546))), "void nk_stroke_polygon(struct nk_command_buffer *, const float *, int, float, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9547))), "void nk_stroke_polygon(struct nk_command_buffer *, const float *, int, float, struct nk_color)");
             };
         };
     };
@@ -16152,7 +16192,7 @@ pub fn nk_fill_rect(arg_b: [*c]struct_nk_command_buffer, arg_rect: struct_nk_rec
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9363))), "void nk_fill_rect(struct nk_command_buffer *, struct nk_rect, float, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9364))), "void nk_fill_rect(struct nk_command_buffer *, struct nk_rect, float, struct nk_color)");
             };
         };
     };
@@ -16190,7 +16230,7 @@ pub fn nk_fill_rect_multi_color(arg_b: [*c]struct_nk_command_buffer, arg_rect: s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9387))), "void nk_fill_rect_multi_color(struct nk_command_buffer *, struct nk_rect, struct nk_color, struct nk_color, struct nk_color, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9388))), "void nk_fill_rect_multi_color(struct nk_command_buffer *, struct nk_rect, struct nk_color, struct nk_color, struct nk_color, struct nk_color)");
             };
         };
     };
@@ -16224,7 +16264,7 @@ pub fn nk_fill_circle(arg_b: [*c]struct_nk_command_buffer, arg_r: struct_nk_rect
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9433))), "void nk_fill_circle(struct nk_command_buffer *, struct nk_rect, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9434))), "void nk_fill_circle(struct nk_command_buffer *, struct nk_rect, struct nk_color)");
             };
         };
     };
@@ -16263,7 +16303,7 @@ pub fn nk_fill_arc(arg_b: [*c]struct_nk_command_buffer, arg_cx: f32, arg_cy: f32
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9472))), "void nk_fill_arc(struct nk_command_buffer *, float, float, float, float, float, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9473))), "void nk_fill_arc(struct nk_command_buffer *, float, float, float, float, float, struct nk_color)");
             };
         };
     };
@@ -16300,7 +16340,7 @@ pub fn nk_fill_triangle(arg_b: [*c]struct_nk_command_buffer, arg_x0: f32, arg_y0
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9516))), "void nk_fill_triangle(struct nk_command_buffer *, float, float, float, float, float, float, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9517))), "void nk_fill_triangle(struct nk_command_buffer *, float, float, float, float, float, float, struct nk_color)");
             };
         };
     };
@@ -16340,7 +16380,7 @@ pub fn nk_fill_polygon(arg_b: [*c]struct_nk_command_buffer, arg_points: [*c]cons
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9567))), "void nk_fill_polygon(struct nk_command_buffer *, const float *, int, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9568))), "void nk_fill_polygon(struct nk_command_buffer *, const float *, int, struct nk_color)");
             };
         };
     };
@@ -16379,7 +16419,7 @@ pub fn nk_draw_image(arg_b: [*c]struct_nk_command_buffer, arg_r: struct_nk_rect,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9606))), "void nk_draw_image(struct nk_command_buffer *, struct nk_rect, const struct nk_image *, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9607))), "void nk_draw_image(struct nk_command_buffer *, struct nk_rect, const struct nk_image *, struct nk_color)");
             };
         };
     };
@@ -16495,7 +16535,7 @@ pub fn nk_draw_text(arg_b: [*c]struct_nk_command_buffer, arg_r: struct_nk_rect, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9732))), "void nk_draw_text(struct nk_command_buffer *, struct nk_rect, const char *, int, const struct nk_user_font *, struct nk_color, struct nk_color)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9733))), "void nk_draw_text(struct nk_command_buffer *, struct nk_rect, const char *, int, const struct nk_user_font *, struct nk_color, struct nk_color)");
             };
         };
     };
@@ -16503,7 +16543,7 @@ pub fn nk_draw_text(arg_b: [*c]struct_nk_command_buffer, arg_r: struct_nk_rect, 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font != null) {} else {
-                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9733))), "void nk_draw_text(struct nk_command_buffer *, struct nk_rect, const char *, int, const struct nk_user_font *, struct nk_color, struct nk_color)");
+                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9734))), "void nk_draw_text(struct nk_command_buffer *, struct nk_rect, const char *, int, const struct nk_user_font *, struct nk_color, struct nk_color)");
             };
         };
     };
@@ -16547,7 +16587,7 @@ pub fn nk_push_scissor(arg_b: [*c]struct_nk_command_buffer, arg_r: struct_nk_rec
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9279))), "void nk_push_scissor(struct nk_command_buffer *, struct nk_rect)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9280))), "void nk_push_scissor(struct nk_command_buffer *, struct nk_rect)");
             };
         };
     };
@@ -16578,7 +16618,7 @@ pub fn nk_push_custom(arg_b: [*c]struct_nk_command_buffer, arg_r: struct_nk_rect
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9706))), "void nk_push_custom(struct nk_command_buffer *, struct nk_rect, nk_command_custom_callback, nk_handle)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9707))), "void nk_push_custom(struct nk_command_buffer *, struct nk_rect, nk_command_custom_callback, nk_handle)");
             };
         };
     };
@@ -16837,7 +16877,6 @@ pub const enum_nk_window_flags = c_uint;
 pub extern fn __assert_fail(__assertion: [*c]const u8, __file: [*c]const u8, __line: c_uint, __function: [*c]const u8) noreturn;
 pub extern fn __assert_perror_fail(__errnum: c_int, __file: [*c]const u8, __line: c_uint, __function: [*c]const u8) noreturn;
 pub extern fn __assert(__assertion: [*c]const u8, __file: [*c]const u8, __line: c_int) noreturn;
-pub const _dummy_array6115 = [1]u8;
 pub const _dummy_array6116 = [1]u8;
 pub const _dummy_array6117 = [1]u8;
 pub const _dummy_array6118 = [1]u8;
@@ -16846,7 +16885,8 @@ pub const _dummy_array6120 = [1]u8;
 pub const _dummy_array6121 = [1]u8;
 pub const _dummy_array6122 = [1]u8;
 pub const _dummy_array6123 = [1]u8;
-pub const _dummy_array6127 = [1]u8;
+pub const _dummy_array6124 = [1]u8;
+pub const _dummy_array6128 = [1]u8;
 pub const nk_null_rect: struct_nk_rect = struct_nk_rect{
     .x = -8192.0,
     .y = -8192.0,
@@ -16998,7 +17038,7 @@ pub fn nk_atan(arg_x: f32) callconv(.c) f32 {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((x >= 0.0) and (@intFromPtr("TODO support negative floats") != 0)) {} else {
-                __assert_fail("x >= 0.0f && \"TODO support negative floats\"", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6522))), "float nk_atan(float)");
+                __assert_fail("x >= 0.0f && \"TODO support negative floats\"", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6523))), "float nk_atan(float)");
             };
         };
     };
@@ -17097,7 +17137,7 @@ pub fn nk_unify(arg_clip: [*c]struct_nk_rect, arg_a: [*c]const struct_nk_rect, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (a != null) {} else {
-                __assert_fail("a", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6736))), "void nk_unify(struct nk_rect *, const struct nk_rect *, float, float, float, float)");
+                __assert_fail("a", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6737))), "void nk_unify(struct nk_rect *, const struct nk_rect *, float, float, float, float)");
             };
         };
     };
@@ -17105,7 +17145,7 @@ pub fn nk_unify(arg_clip: [*c]struct_nk_rect, arg_a: [*c]const struct_nk_rect, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (clip != null) {} else {
-                __assert_fail("clip", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6737))), "void nk_unify(struct nk_rect *, const struct nk_rect *, float, float, float, float)");
+                __assert_fail("clip", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6738))), "void nk_unify(struct nk_rect *, const struct nk_rect *, float, float, float, float)");
             };
         };
     };
@@ -17211,9 +17251,9 @@ pub fn nk_to_lower(arg_c: c_int) callconv(.c) c_int {
     _ = &c;
     return if ((c >= @as(c_int, 'A')) and (c <= @as(c_int, 'Z'))) c - (@as(c_int, 'a') + @as(c_int, 'A')) else c;
 }
-// libs/nuklear/nuklear.h:6808:9: warning: TODO implement translation of stmt class GotoStmtClass
+// libs/nuklear/nuklear.h:6809:9: warning: TODO implement translation of stmt class GotoStmtClass
 
-// libs/nuklear/nuklear.h:6802:1: warning: unable to translate function, demoted to extern
+// libs/nuklear/nuklear.h:6803:1: warning: unable to translate function, demoted to extern
 pub extern fn nk_memcopy(arg_dst0: ?*anyopaque, arg_src0: ?*const anyopaque, arg_length: nk_size) callconv(.c) ?*anyopaque;
 pub fn nk_memset(arg_ptr: ?*anyopaque, arg_c0: c_int, arg_size: nk_size) callconv(.c) void {
     var ptr = arg_ptr;
@@ -17312,7 +17352,7 @@ pub fn nk_zero(arg_ptr: ?*anyopaque, arg_size: nk_size) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ptr != null) {} else {
-                __assert_fail("ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6915))), "void nk_zero(void *, nk_size)");
+                __assert_fail("ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 6916))), "void nk_zero(void *, nk_size)");
             };
         };
     };
@@ -17422,7 +17462,7 @@ pub fn nk_dtoa(arg_s: [*c]u8, arg_n: f64) callconv(.c) [*c]u8 {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (s != null) {} else {
-                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 7295))), "char *nk_dtoa(char *, double)");
+                __assert_fail("s", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 7296))), "char *nk_dtoa(char *, double)");
             };
         };
     };
@@ -17787,7 +17827,7 @@ pub fn nk_buffer_alloc(arg_b: [*c]struct_nk_buffer, arg_type: enum_nk_buffer_all
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8623))), "void *nk_buffer_alloc(struct nk_buffer *, enum nk_buffer_allocation_type, nk_size, nk_size)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8624))), "void *nk_buffer_alloc(struct nk_buffer *, enum nk_buffer_allocation_type, nk_size, nk_size)");
             };
         };
     };
@@ -17795,7 +17835,7 @@ pub fn nk_buffer_alloc(arg_b: [*c]struct_nk_buffer, arg_type: enum_nk_buffer_all
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (size != 0) {} else {
-                __assert_fail("size", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8624))), "void *nk_buffer_alloc(struct nk_buffer *, enum nk_buffer_allocation_type, nk_size, nk_size)");
+                __assert_fail("size", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8625))), "void *nk_buffer_alloc(struct nk_buffer *, enum nk_buffer_allocation_type, nk_size, nk_size)");
             };
         };
     };
@@ -17820,7 +17860,7 @@ pub fn nk_buffer_alloc(arg_b: [*c]struct_nk_buffer, arg_type: enum_nk_buffer_all
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if ((b.*.pool.alloc != null) and (b.*.pool.free != null)) {} else {
-                    __assert_fail("b->pool.alloc && b->pool.free", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8643))), "void *nk_buffer_alloc(struct nk_buffer *, enum nk_buffer_allocation_type, nk_size, nk_size)");
+                    __assert_fail("b->pool.alloc && b->pool.free", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8644))), "void *nk_buffer_alloc(struct nk_buffer *, enum nk_buffer_allocation_type, nk_size, nk_size)");
                 };
             };
         };
@@ -17860,7 +17900,7 @@ pub fn nk_buffer_realloc(arg_b: [*c]struct_nk_buffer, arg_capacity: nk_size, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8582))), "void *nk_buffer_realloc(struct nk_buffer *, nk_size, nk_size *)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8583))), "void *nk_buffer_realloc(struct nk_buffer *, nk_size, nk_size *)");
             };
         };
     };
@@ -17868,7 +17908,7 @@ pub fn nk_buffer_realloc(arg_b: [*c]struct_nk_buffer, arg_capacity: nk_size, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (size != null) {} else {
-                __assert_fail("size", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8583))), "void *nk_buffer_realloc(struct nk_buffer *, nk_size, nk_size *)");
+                __assert_fail("size", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8584))), "void *nk_buffer_realloc(struct nk_buffer *, nk_size, nk_size *)");
             };
         };
     };
@@ -17879,7 +17919,7 @@ pub fn nk_buffer_realloc(arg_b: [*c]struct_nk_buffer, arg_capacity: nk_size, arg
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (temp != null) {} else {
-                __assert_fail("temp", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8589))), "void *nk_buffer_realloc(struct nk_buffer *, nk_size, nk_size *)");
+                __assert_fail("temp", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8590))), "void *nk_buffer_realloc(struct nk_buffer *, nk_size, nk_size *)");
             };
         };
     };
@@ -17918,7 +17958,7 @@ pub fn nk_command_buffer_init(arg_cb: [*c]struct_nk_command_buffer, arg_b: [*c]s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (cb != null) {} else {
-                __assert_fail("cb", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9220))), "void nk_command_buffer_init(struct nk_command_buffer *, struct nk_buffer *, enum nk_command_clipping)");
+                __assert_fail("cb", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9221))), "void nk_command_buffer_init(struct nk_command_buffer *, struct nk_buffer *, enum nk_command_clipping)");
             };
         };
     };
@@ -17926,7 +17966,7 @@ pub fn nk_command_buffer_init(arg_cb: [*c]struct_nk_command_buffer, arg_b: [*c]s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9221))), "void nk_command_buffer_init(struct nk_command_buffer *, struct nk_buffer *, enum nk_command_clipping)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9222))), "void nk_command_buffer_init(struct nk_command_buffer *, struct nk_buffer *, enum nk_command_clipping)");
             };
         };
     };
@@ -17944,7 +17984,7 @@ pub fn nk_command_buffer_reset(arg_b: [*c]struct_nk_command_buffer) callconv(.c)
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (b != null) {} else {
-                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9232))), "void nk_command_buffer_reset(struct nk_command_buffer *)");
+                __assert_fail("b", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 9233))), "void nk_command_buffer_reset(struct nk_command_buffer *)");
             };
         };
     };
@@ -17954,9 +17994,9 @@ pub fn nk_command_buffer_reset(arg_b: [*c]struct_nk_command_buffer) callconv(.c)
     b.*.last = 0;
     b.*.clip = nk_null_rect;
 }
-// libs/nuklear/nuklear.h:6022:28: warning: failed to translate simple OffsetOfExpr
+// libs/nuklear/nuklear.h:6023:28: warning: failed to translate simple OffsetOfExpr
 
-// libs/nuklear/nuklear.h:9243:1: warning: unable to translate function, demoted to extern
+// libs/nuklear/nuklear.h:9244:1: warning: unable to translate function, demoted to extern
 pub extern fn nk_command_buffer_push(arg_b: [*c]struct_nk_command_buffer, arg_t: enum_nk_command_type, arg_size: nk_size) callconv(.c) ?*anyopaque;
 pub fn nk_draw_symbol(arg_out: [*c]struct_nk_command_buffer, arg_type: enum_nk_symbol_type, arg_content: struct_nk_rect, arg_background: struct_nk_color, arg_foreground: struct_nk_color, arg_border_width: f32, arg_font: [*c]const struct_nk_user_font) callconv(.c) void {
     var out = arg_out;
@@ -18042,7 +18082,7 @@ pub fn nk_start_buffer(arg_ctx: [*c]struct_nk_context, arg_buffer: [*c]struct_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19508))), "void nk_start_buffer(struct nk_context *, struct nk_command_buffer *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19509))), "void nk_start_buffer(struct nk_context *, struct nk_command_buffer *)");
             };
         };
     };
@@ -18050,7 +18090,7 @@ pub fn nk_start_buffer(arg_ctx: [*c]struct_nk_context, arg_buffer: [*c]struct_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (buffer != null) {} else {
-                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19509))), "void nk_start_buffer(struct nk_context *, struct nk_command_buffer *)");
+                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19510))), "void nk_start_buffer(struct nk_context *, struct nk_command_buffer *)");
             };
         };
     };
@@ -18069,7 +18109,7 @@ pub fn nk_start(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_window) c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19519))), "void nk_start(struct nk_context *, struct nk_window *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19520))), "void nk_start(struct nk_context *, struct nk_window *)");
             };
         };
     };
@@ -18077,7 +18117,7 @@ pub fn nk_start(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_window) c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (win != null) {} else {
-                __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19520))), "void nk_start(struct nk_context *, struct nk_window *)");
+                __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19521))), "void nk_start(struct nk_context *, struct nk_window *)");
             };
         };
     };
@@ -18094,7 +18134,7 @@ pub fn nk_start_popup(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_win
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19527))), "void nk_start_popup(struct nk_context *, struct nk_window *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19528))), "void nk_start_popup(struct nk_context *, struct nk_window *)");
             };
         };
     };
@@ -18102,7 +18142,7 @@ pub fn nk_start_popup(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_win
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (win != null) {} else {
-                __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19528))), "void nk_start_popup(struct nk_context *, struct nk_window *)");
+                __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19529))), "void nk_start_popup(struct nk_context *, struct nk_window *)");
             };
         };
     };
@@ -18125,7 +18165,7 @@ pub fn nk_finish_popup(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_wi
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19543))), "void nk_finish_popup(struct nk_context *, struct nk_window *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19544))), "void nk_finish_popup(struct nk_context *, struct nk_window *)");
             };
         };
     };
@@ -18133,7 +18173,7 @@ pub fn nk_finish_popup(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_wi
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (win != null) {} else {
-                __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19544))), "void nk_finish_popup(struct nk_context *, struct nk_window *)");
+                __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19545))), "void nk_finish_popup(struct nk_context *, struct nk_window *)");
             };
         };
     };
@@ -18151,7 +18191,7 @@ pub fn nk_finish_buffer(arg_ctx: [*c]struct_nk_context, arg_buffer: [*c]struct_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19554))), "void nk_finish_buffer(struct nk_context *, struct nk_command_buffer *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19555))), "void nk_finish_buffer(struct nk_context *, struct nk_command_buffer *)");
             };
         };
     };
@@ -18159,7 +18199,7 @@ pub fn nk_finish_buffer(arg_ctx: [*c]struct_nk_context, arg_buffer: [*c]struct_n
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (buffer != null) {} else {
-                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19555))), "void nk_finish_buffer(struct nk_context *, struct nk_command_buffer *)");
+                __assert_fail("buffer", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19556))), "void nk_finish_buffer(struct nk_context *, struct nk_command_buffer *)");
             };
         };
     };
@@ -18181,7 +18221,7 @@ pub fn nk_finish(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_window) 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19566))), "void nk_finish(struct nk_context *, struct nk_window *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19567))), "void nk_finish(struct nk_context *, struct nk_window *)");
             };
         };
     };
@@ -18189,7 +18229,7 @@ pub fn nk_finish(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_window) 
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (win != null) {} else {
-                __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19567))), "void nk_finish(struct nk_context *, struct nk_window *)");
+                __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19568))), "void nk_finish(struct nk_context *, struct nk_window *)");
             };
         };
     };
@@ -18201,9 +18241,9 @@ pub fn nk_finish(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_window) 
     parent_last = @as([*c]struct_nk_command, @ptrCast(@alignCast(@as(?*anyopaque, @ptrCast(@as([*c]nk_byte, @ptrCast(@alignCast(memory))) + buf.*.parent)))));
     parent_last.*.next = buf.*.end;
 }
-// libs/nuklear/nuklear.h:19608:13: warning: TODO implement translation of stmt class GotoStmtClass
+// libs/nuklear/nuklear.h:19609:13: warning: TODO implement translation of stmt class GotoStmtClass
 
-// libs/nuklear/nuklear.h:19578:1: warning: unable to translate function, demoted to extern
+// libs/nuklear/nuklear.h:19579:1: warning: unable to translate function, demoted to extern
 pub extern fn nk_build(arg_ctx: [*c]struct_nk_context) callconv(.c) void;
 pub fn nk_textedit_clear_state(arg_state: [*c]struct_nk_text_edit, arg_type: enum_nk_text_edit_type, arg_filter: nk_plugin_filter) callconv(.c) void {
     var state = arg_state;
@@ -18269,9 +18309,9 @@ pub fn nk_textedit_drag(arg_state: [*c]struct_nk_text_edit, arg_x: f32, arg_y: f
         break :blk tmp;
     };
 }
-// libs/nuklear/nuklear.h:27198:1: warning: TODO implement translation of stmt class LabelStmtClass
+// libs/nuklear/nuklear.h:27199:1: warning: TODO implement translation of stmt class LabelStmtClass
 
-// libs/nuklear/nuklear.h:27195:1: warning: unable to translate function, demoted to extern
+// libs/nuklear/nuklear.h:27196:1: warning: unable to translate function, demoted to extern
 pub extern fn nk_textedit_key(arg_state: [*c]struct_nk_text_edit, arg_key: enum_nk_keys, arg_shift_mod: c_int, arg_font: [*c]const struct_nk_user_font, arg_row_height: f32) callconv(.c) void;
 pub const NK_INSERT_BACK: c_int = 0;
 pub const NK_INSERT_FRONT: c_int = 1;
@@ -18368,7 +18408,7 @@ pub fn nk_find_window(arg_ctx: [*c]const struct_nk_context, arg_hash: nk_hash, a
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (iter != iter.*.next) {} else {
-                    __assert_fail("iter != iter->next", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20568))), "struct nk_window *nk_find_window(const struct nk_context *, nk_hash, const char *)");
+                    __assert_fail("iter != iter->next", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20569))), "struct nk_window *nk_find_window(const struct nk_context *, nk_hash, const char *)");
                 };
             };
         };
@@ -18394,7 +18434,7 @@ pub fn nk_insert_window(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_w
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20583))), "void nk_insert_window(struct nk_context *, struct nk_window *, enum nk_window_insert_location)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20584))), "void nk_insert_window(struct nk_context *, struct nk_window *, enum nk_window_insert_location)");
             };
         };
     };
@@ -18402,7 +18442,7 @@ pub fn nk_insert_window(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_w
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (win != null) {} else {
-                __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20584))), "void nk_insert_window(struct nk_context *, struct nk_window *, enum nk_window_insert_location)");
+                __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20585))), "void nk_insert_window(struct nk_context *, struct nk_window *, enum nk_window_insert_location)");
             };
         };
     };
@@ -18413,7 +18453,7 @@ pub fn nk_insert_window(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_w
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (iter != @as([*c]const struct_nk_window, @ptrCast(@alignCast(iter.*.next)))) {} else {
-                    __assert_fail("iter != iter->next", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20589))), "void nk_insert_window(struct nk_context *, struct nk_window *, enum nk_window_insert_location)");
+                    __assert_fail("iter != iter->next", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20590))), "void nk_insert_window(struct nk_context *, struct nk_window *, enum nk_window_insert_location)");
                 };
             };
         };
@@ -18421,7 +18461,7 @@ pub fn nk_insert_window(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_w
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (iter != @as([*c]const struct_nk_window, @ptrCast(@alignCast(win)))) {} else {
-                    __assert_fail("iter != win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20590))), "void nk_insert_window(struct nk_context *, struct nk_window *, enum nk_window_insert_location)");
+                    __assert_fail("iter != win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20591))), "void nk_insert_window(struct nk_context *, struct nk_window *, enum nk_window_insert_location)");
                 };
             };
         };
@@ -18467,7 +18507,7 @@ pub fn nk_pool_init(arg_pool: [*c]struct_nk_pool, arg_alloc: [*c]const struct_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (capacity >= @as(c_uint, @bitCast(@as(c_int, 1)))) {} else {
-                __assert_fail("capacity >= 1", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19688))), "void nk_pool_init(struct nk_pool *, const struct nk_allocator *, unsigned int)");
+                __assert_fail("capacity >= 1", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19689))), "void nk_pool_init(struct nk_pool *, const struct nk_allocator *, unsigned int)");
             };
         };
     };
@@ -18504,7 +18544,7 @@ pub fn nk_pool_init_fixed(arg_pool: [*c]struct_nk_pool, arg_memory: ?*anyopaque,
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (size >= @sizeOf(struct_nk_page)) {} else {
-                __assert_fail("size >= sizeof(struct nk_page)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19712))), "void nk_pool_init_fixed(struct nk_pool *, void *, nk_size)");
+                __assert_fail("size >= sizeof(struct nk_page)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19713))), "void nk_pool_init_fixed(struct nk_pool *, void *, nk_size)");
             };
         };
     };
@@ -18525,7 +18565,7 @@ pub fn nk_pool_alloc(arg_pool: [*c]struct_nk_pool) callconv(.c) [*c]struct_nk_pa
                 _ = @sizeOf(c_int);
                 break :blk blk_1: {
                     break :blk_1 if (pool.*.pages != null) {} else {
-                        __assert_fail("pool->pages", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19727))), "struct nk_page_element *nk_pool_alloc(struct nk_pool *)");
+                        __assert_fail("pool->pages", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19728))), "struct nk_page_element *nk_pool_alloc(struct nk_pool *)");
                     };
                 };
             };
@@ -18534,7 +18574,7 @@ pub fn nk_pool_alloc(arg_pool: [*c]struct_nk_pool) callconv(.c) [*c]struct_nk_pa
                 _ = @sizeOf(c_int);
                 break :blk blk_1: {
                     break :blk_1 if (pool.*.pages.*.size < pool.*.capacity) {} else {
-                        __assert_fail("pool->pages->size < pool->capacity", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19729))), "struct nk_page_element *nk_pool_alloc(struct nk_pool *)");
+                        __assert_fail("pool->pages->size < pool->capacity", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19730))), "struct nk_page_element *nk_pool_alloc(struct nk_pool *)");
                     };
                 };
             };
@@ -18549,16 +18589,18 @@ pub fn nk_pool_alloc(arg_pool: [*c]struct_nk_pool) callconv(.c) [*c]struct_nk_pa
             page.*.size = 0;
         }
     }
-    return &pool.*.pages.*.win[blk: {
-        const ref = &pool.*.pages.*.size;
-        const tmp = ref.*;
-        ref.* +%= 1;
-        break :blk tmp;
-    }];
+    return &pool.*.pages.*.win[
+        blk: {
+            const ref = &pool.*.pages.*.size;
+            const tmp = ref.*;
+            ref.* +%= 1;
+            break :blk tmp;
+        }
+    ];
 }
-// libs/nuklear/nuklear.h:6022:28: warning: failed to translate simple OffsetOfExpr
+// libs/nuklear/nuklear.h:6023:28: warning: failed to translate simple OffsetOfExpr
 
-// libs/nuklear/nuklear.h:19752:1: warning: unable to translate function, demoted to extern
+// libs/nuklear/nuklear.h:19753:1: warning: unable to translate function, demoted to extern
 pub extern fn nk_create_page_element(arg_ctx: [*c]struct_nk_context) callconv(.c) [*c]struct_nk_page_element;
 pub fn nk_link_page_element_into_freelist(arg_ctx: [*c]struct_nk_context, arg_elem: [*c]struct_nk_page_element) callconv(.c) void {
     var ctx = arg_ctx;
@@ -18664,7 +18706,7 @@ pub fn nk_add_value(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_windo
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19864))), "nk_uint *nk_add_value(struct nk_context *, struct nk_window *, nk_hash, nk_uint)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19865))), "nk_uint *nk_add_value(struct nk_context *, struct nk_window *, nk_hash, nk_uint)");
             };
         };
     };
@@ -18672,7 +18714,7 @@ pub fn nk_add_value(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_windo
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (win != null) {} else {
-                __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19865))), "nk_uint *nk_add_value(struct nk_context *, struct nk_window *, nk_hash, nk_uint)");
+                __assert_fail("win", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19866))), "nk_uint *nk_add_value(struct nk_context *, struct nk_window *, nk_hash, nk_uint)");
             };
         };
     };
@@ -18684,7 +18726,7 @@ pub fn nk_add_value(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_windo
             _ = @sizeOf(c_int);
             break :blk blk_1: {
                 break :blk_1 if (tbl != null) {} else {
-                    __assert_fail("tbl", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19869))), "nk_uint *nk_add_value(struct nk_context *, struct nk_window *, nk_hash, nk_uint)");
+                    __assert_fail("tbl", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19870))), "nk_uint *nk_add_value(struct nk_context *, struct nk_window *, nk_hash, nk_uint)");
                 };
             };
         };
@@ -18694,12 +18736,14 @@ pub fn nk_add_value(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_windo
     win.*.tables.*.seq = win.*.seq;
     win.*.tables.*.keys[win.*.tables.*.size] = name;
     win.*.tables.*.values[win.*.tables.*.size] = value;
-    return &win.*.tables.*.values[blk: {
-        const ref = &win.*.tables.*.size;
-        const tmp = ref.*;
-        ref.* +%= 1;
-        break :blk tmp;
-    }];
+    return &win.*.tables.*.values[
+        blk: {
+            const ref = &win.*.tables.*.size;
+            const tmp = ref.*;
+            ref.* +%= 1;
+            break :blk tmp;
+        }
+    ];
 }
 pub fn nk_find_value(arg_win: [*c]const struct_nk_window, arg_name: nk_hash) callconv(.c) [*c]nk_uint {
     var win = arg_win;
@@ -18858,7 +18902,7 @@ pub fn nk_panel_begin(arg_ctx: [*c]struct_nk_context, arg_title: [*c]const u8, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19994))), "nk_bool nk_panel_begin(struct nk_context *, const char *, enum nk_panel_type)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19995))), "nk_bool nk_panel_begin(struct nk_context *, const char *, enum nk_panel_type)");
             };
         };
     };
@@ -18866,7 +18910,7 @@ pub fn nk_panel_begin(arg_ctx: [*c]struct_nk_context, arg_title: [*c]const u8, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19995))), "nk_bool nk_panel_begin(struct nk_context *, const char *, enum nk_panel_type)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19996))), "nk_bool nk_panel_begin(struct nk_context *, const char *, enum nk_panel_type)");
             };
         };
     };
@@ -18874,7 +18918,7 @@ pub fn nk_panel_begin(arg_ctx: [*c]struct_nk_context, arg_title: [*c]const u8, a
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19996))), "nk_bool nk_panel_begin(struct nk_context *, const char *, enum nk_panel_type)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19997))), "nk_bool nk_panel_begin(struct nk_context *, const char *, enum nk_panel_type)");
             };
         };
     };
@@ -19123,7 +19167,7 @@ pub fn nk_panel_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20233))), "void nk_panel_end(struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20234))), "void nk_panel_end(struct nk_context *)");
             };
         };
     };
@@ -19131,7 +19175,7 @@ pub fn nk_panel_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20234))), "void nk_panel_end(struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20235))), "void nk_panel_end(struct nk_context *)");
             };
         };
     };
@@ -19139,7 +19183,7 @@ pub fn nk_panel_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20235))), "void nk_panel_end(struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20236))), "void nk_panel_end(struct nk_context *)");
             };
         };
     };
@@ -19388,7 +19432,7 @@ pub fn nk_panel_end(arg_ctx: [*c]struct_nk_context) callconv(.c) void {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (!(layout.*.row.tree_depth != 0)) {} else {
-                __assert_fail("!layout->row.tree_depth", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20514))), "void nk_panel_end(struct nk_context *)");
+                __assert_fail("!layout->row.tree_depth", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 20515))), "void nk_panel_end(struct nk_context *)");
             };
         };
     };
@@ -19437,7 +19481,7 @@ pub fn nk_panel_layout(arg_ctx: [*c]const struct_nk_context, arg_win: [*c]struct
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22059))), "void nk_panel_layout(const struct nk_context *, struct nk_window *, float, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22060))), "void nk_panel_layout(const struct nk_context *, struct nk_window *, float, int)");
             };
         };
     };
@@ -19445,7 +19489,7 @@ pub fn nk_panel_layout(arg_ctx: [*c]const struct_nk_context, arg_win: [*c]struct
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22060))), "void nk_panel_layout(const struct nk_context *, struct nk_window *, float, int)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22061))), "void nk_panel_layout(const struct nk_context *, struct nk_window *, float, int)");
             };
         };
     };
@@ -19453,7 +19497,7 @@ pub fn nk_panel_layout(arg_ctx: [*c]const struct_nk_context, arg_win: [*c]struct
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22061))), "void nk_panel_layout(const struct nk_context *, struct nk_window *, float, int)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22062))), "void nk_panel_layout(const struct nk_context *, struct nk_window *, float, int)");
             };
         };
     };
@@ -19467,7 +19511,7 @@ pub fn nk_panel_layout(arg_ctx: [*c]const struct_nk_context, arg_win: [*c]struct
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (!((layout.*.flags & @as(nk_flags, @bitCast(NK_WINDOW_MINIMIZED))) != 0)) {} else {
-                __assert_fail("!(layout->flags & NK_WINDOW_MINIMIZED)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22077))), "void nk_panel_layout(const struct nk_context *, struct nk_window *, float, int)");
+                __assert_fail("!(layout->flags & NK_WINDOW_MINIMIZED)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22078))), "void nk_panel_layout(const struct nk_context *, struct nk_window *, float, int)");
             };
         };
     };
@@ -19475,7 +19519,7 @@ pub fn nk_panel_layout(arg_ctx: [*c]const struct_nk_context, arg_win: [*c]struct
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (!((layout.*.flags & @as(nk_flags, @bitCast(NK_WINDOW_HIDDEN))) != 0)) {} else {
-                __assert_fail("!(layout->flags & NK_WINDOW_HIDDEN)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22078))), "void nk_panel_layout(const struct nk_context *, struct nk_window *, float, int)");
+                __assert_fail("!(layout->flags & NK_WINDOW_HIDDEN)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22079))), "void nk_panel_layout(const struct nk_context *, struct nk_window *, float, int)");
             };
         };
     };
@@ -19483,7 +19527,7 @@ pub fn nk_panel_layout(arg_ctx: [*c]const struct_nk_context, arg_win: [*c]struct
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (!((layout.*.flags & @as(nk_flags, @bitCast(NK_WINDOW_CLOSED))) != 0)) {} else {
-                __assert_fail("!(layout->flags & NK_WINDOW_CLOSED)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22079))), "void nk_panel_layout(const struct nk_context *, struct nk_window *, float, int)");
+                __assert_fail("!(layout->flags & NK_WINDOW_CLOSED)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22080))), "void nk_panel_layout(const struct nk_context *, struct nk_window *, float, int)");
             };
         };
     };
@@ -19523,7 +19567,7 @@ pub fn nk_row_layout(arg_ctx: [*c]struct_nk_context, arg_fmt: enum_nk_layout_for
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22106))), "void nk_row_layout(struct nk_context *, enum nk_layout_format, float, int, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22107))), "void nk_row_layout(struct nk_context *, enum nk_layout_format, float, int, int)");
             };
         };
     };
@@ -19531,7 +19575,7 @@ pub fn nk_row_layout(arg_ctx: [*c]struct_nk_context, arg_fmt: enum_nk_layout_for
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22107))), "void nk_row_layout(struct nk_context *, enum nk_layout_format, float, int, int)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22108))), "void nk_row_layout(struct nk_context *, enum nk_layout_format, float, int, int)");
             };
         };
     };
@@ -19539,7 +19583,7 @@ pub fn nk_row_layout(arg_ctx: [*c]struct_nk_context, arg_fmt: enum_nk_layout_for
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22108))), "void nk_row_layout(struct nk_context *, enum nk_layout_format, float, int, int)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22109))), "void nk_row_layout(struct nk_context *, enum nk_layout_format, float, int, int)");
             };
         };
     };
@@ -19596,7 +19640,7 @@ pub fn nk_layout_widget_space(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22576))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22577))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
             };
         };
     };
@@ -19604,7 +19648,7 @@ pub fn nk_layout_widget_space(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22577))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22578))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
             };
         };
     };
@@ -19612,7 +19656,7 @@ pub fn nk_layout_widget_space(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22578))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22579))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
             };
         };
     };
@@ -19624,7 +19668,7 @@ pub fn nk_layout_widget_space(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (bounds != null) {} else {
-                __assert_fail("bounds", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22585))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
+                __assert_fail("bounds", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22586))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
             };
         };
     };
@@ -19678,7 +19722,7 @@ pub fn nk_layout_widget_space(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const
                         _ = @sizeOf(c_int);
                         break :blk blk_1: {
                             break :blk_1 if (layout.*.row.ratio != null) {} else {
-                                __assert_fail("layout->row.ratio", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22627))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
+                                __assert_fail("layout->row.ratio", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22628))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
                             };
                         };
                     };
@@ -19755,7 +19799,7 @@ pub fn nk_layout_widget_space(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const
                         _ = @sizeOf(c_int);
                         break :blk blk_1: {
                             break :blk_1 if (layout.*.row.index < layout.*.row.columns) {} else {
-                                __assert_fail("layout->row.index < layout->row.columns", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22676))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
+                                __assert_fail("layout->row.index < layout->row.columns", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22677))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
                             };
                         };
                     };
@@ -19763,7 +19807,7 @@ pub fn nk_layout_widget_space(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const
                         _ = @sizeOf(c_int);
                         break :blk blk_1: {
                             break :blk_1 if (layout.*.row.index < @as(c_int, 16)) {} else {
-                                __assert_fail("layout->row.index < 16", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22677))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
+                                __assert_fail("layout->row.index < 16", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22678))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
                             };
                         };
                     };
@@ -19782,7 +19826,7 @@ pub fn nk_layout_widget_space(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const
                     _ = @sizeOf(c_int);
                     break :blk blk_1: {
                         break :blk_1 if (false) {} else {
-                            __assert_fail("0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22685))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
+                            __assert_fail("0", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22686))), "void nk_layout_widget_space(struct nk_rect *, const struct nk_context *, struct nk_window *, int)");
                         };
                     };
                 };
@@ -19813,7 +19857,7 @@ pub fn nk_panel_alloc_space(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22703))), "void nk_panel_alloc_space(struct nk_rect *, const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22704))), "void nk_panel_alloc_space(struct nk_rect *, const struct nk_context *)");
             };
         };
     };
@@ -19821,7 +19865,7 @@ pub fn nk_panel_alloc_space(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22704))), "void nk_panel_alloc_space(struct nk_rect *, const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22705))), "void nk_panel_alloc_space(struct nk_rect *, const struct nk_context *)");
             };
         };
     };
@@ -19829,7 +19873,7 @@ pub fn nk_panel_alloc_space(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22705))), "void nk_panel_alloc_space(struct nk_rect *, const struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22706))), "void nk_panel_alloc_space(struct nk_rect *, const struct nk_context *)");
             };
         };
     };
@@ -19859,7 +19903,7 @@ pub fn nk_layout_peek(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const struct_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22727))), "void nk_layout_peek(struct nk_rect *, const struct nk_context *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22728))), "void nk_layout_peek(struct nk_rect *, const struct nk_context *)");
             };
         };
     };
@@ -19867,7 +19911,7 @@ pub fn nk_layout_peek(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const struct_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22728))), "void nk_layout_peek(struct nk_rect *, const struct nk_context *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22729))), "void nk_layout_peek(struct nk_rect *, const struct nk_context *)");
             };
         };
     };
@@ -19875,7 +19919,7 @@ pub fn nk_layout_peek(arg_bounds: [*c]struct_nk_rect, arg_ctx: [*c]const struct_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22729))), "void nk_layout_peek(struct nk_rect *, const struct nk_context *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22730))), "void nk_layout_peek(struct nk_rect *, const struct nk_context *)");
             };
         };
     };
@@ -19921,7 +19965,7 @@ pub fn nk_nonblock_begin(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21313))), "nk_bool nk_nonblock_begin(struct nk_context *, nk_flags, struct nk_rect, struct nk_rect, enum nk_panel_type)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21314))), "nk_bool nk_nonblock_begin(struct nk_context *, nk_flags, struct nk_rect, struct nk_rect, enum nk_panel_type)");
             };
         };
     };
@@ -19929,7 +19973,7 @@ pub fn nk_nonblock_begin(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21314))), "nk_bool nk_nonblock_begin(struct nk_context *, nk_flags, struct nk_rect, struct nk_rect, enum nk_panel_type)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21315))), "nk_bool nk_nonblock_begin(struct nk_context *, nk_flags, struct nk_rect, struct nk_rect, enum nk_panel_type)");
             };
         };
     };
@@ -19937,7 +19981,7 @@ pub fn nk_nonblock_begin(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21315))), "nk_bool nk_nonblock_begin(struct nk_context *, nk_flags, struct nk_rect, struct nk_rect, enum nk_panel_type)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21316))), "nk_bool nk_nonblock_begin(struct nk_context *, nk_flags, struct nk_rect, struct nk_rect, enum nk_panel_type)");
             };
         };
     };
@@ -19948,7 +19992,7 @@ pub fn nk_nonblock_begin(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (!((@as(c_int, @bitCast(panel.*.type)) & NK_PANEL_SET_POPUP) != 0)) {} else {
-                __assert_fail("!((int)panel->type & (int)NK_PANEL_SET_POPUP)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21322))), "nk_bool nk_nonblock_begin(struct nk_context *, nk_flags, struct nk_rect, struct nk_rect, enum nk_panel_type)");
+                __assert_fail("!((int)panel->type & (int)NK_PANEL_SET_POPUP)", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21323))), "nk_bool nk_nonblock_begin(struct nk_context *, nk_flags, struct nk_rect, struct nk_rect, enum nk_panel_type)");
             };
         };
     };
@@ -19996,7 +20040,7 @@ pub fn nk_nonblock_begin(arg_ctx: [*c]struct_nk_context, arg_flags: nk_flags, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (popup.*.layout != null) {} else {
-                __assert_fail("popup->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21364))), "nk_bool nk_nonblock_begin(struct nk_context *, nk_flags, struct nk_rect, struct nk_rect, enum nk_panel_type)");
+                __assert_fail("popup->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21365))), "nk_bool nk_nonblock_begin(struct nk_context *, nk_flags, struct nk_rect, struct nk_rect, enum nk_panel_type)");
             };
         };
     };
@@ -20043,7 +20087,7 @@ pub fn nk_widget_text(arg_o: [*c]struct_nk_command_buffer, arg_b: struct_nk_rect
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (o != null) {} else {
-                __assert_fail("o", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23803))), "void nk_widget_text(struct nk_command_buffer *, struct nk_rect, const char *, int, const struct nk_text *, nk_flags, const struct nk_user_font *)");
+                __assert_fail("o", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23804))), "void nk_widget_text(struct nk_command_buffer *, struct nk_rect, const char *, int, const struct nk_text *, nk_flags, const struct nk_user_font *)");
             };
         };
     };
@@ -20051,7 +20095,7 @@ pub fn nk_widget_text(arg_o: [*c]struct_nk_command_buffer, arg_b: struct_nk_rect
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (t != null) {} else {
-                __assert_fail("t", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23804))), "void nk_widget_text(struct nk_command_buffer *, struct nk_rect, const char *, int, const struct nk_text *, nk_flags, const struct nk_user_font *)");
+                __assert_fail("t", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23805))), "void nk_widget_text(struct nk_command_buffer *, struct nk_rect, const char *, int, const struct nk_text *, nk_flags, const struct nk_user_font *)");
             };
         };
     };
@@ -20122,7 +20166,7 @@ pub fn nk_widget_text_wrap(arg_o: [*c]struct_nk_command_buffer, arg_b: struct_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (o != null) {} else {
-                __assert_fail("o", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23853))), "void nk_widget_text_wrap(struct nk_command_buffer *, struct nk_rect, const char *, int, const struct nk_text *, const struct nk_user_font *)");
+                __assert_fail("o", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23854))), "void nk_widget_text_wrap(struct nk_command_buffer *, struct nk_rect, const char *, int, const struct nk_text *, const struct nk_user_font *)");
             };
         };
     };
@@ -20130,7 +20174,7 @@ pub fn nk_widget_text_wrap(arg_o: [*c]struct_nk_command_buffer, arg_b: struct_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (t != null) {} else {
-                __assert_fail("t", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23854))), "void nk_widget_text_wrap(struct nk_command_buffer *, struct nk_rect, const char *, int, const struct nk_text *, const struct nk_user_font *)");
+                __assert_fail("t", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 23855))), "void nk_widget_text_wrap(struct nk_command_buffer *, struct nk_rect, const char *, int, const struct nk_text *, const struct nk_user_font *)");
             };
         };
     };
@@ -20253,7 +20297,7 @@ pub fn nk_do_button(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buff
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24460))), "nk_bool nk_do_button(nk_flags *, struct nk_command_buffer *, struct nk_rect, const struct nk_style_button *, const struct nk_input *, enum nk_button_behavior, struct nk_rect *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24461))), "nk_bool nk_do_button(nk_flags *, struct nk_command_buffer *, struct nk_rect, const struct nk_style_button *, const struct nk_input *, enum nk_button_behavior, struct nk_rect *)");
             };
         };
     };
@@ -20261,7 +20305,7 @@ pub fn nk_do_button(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buff
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24461))), "nk_bool nk_do_button(nk_flags *, struct nk_command_buffer *, struct nk_rect, const struct nk_style_button *, const struct nk_input *, enum nk_button_behavior, struct nk_rect *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24462))), "nk_bool nk_do_button(nk_flags *, struct nk_command_buffer *, struct nk_rect, const struct nk_style_button *, const struct nk_input *, enum nk_button_behavior, struct nk_rect *)");
             };
         };
     };
@@ -20269,7 +20313,7 @@ pub fn nk_do_button(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buff
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24462))), "nk_bool nk_do_button(nk_flags *, struct nk_command_buffer *, struct nk_rect, const struct nk_style_button *, const struct nk_input *, enum nk_button_behavior, struct nk_rect *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24463))), "nk_bool nk_do_button(nk_flags *, struct nk_command_buffer *, struct nk_rect, const struct nk_style_button *, const struct nk_input *, enum nk_button_behavior, struct nk_rect *)");
             };
         };
     };
@@ -20353,7 +20397,7 @@ pub fn nk_do_button_text(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24514))), "nk_bool nk_do_button_text(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24515))), "nk_bool nk_do_button_text(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -20361,7 +20405,7 @@ pub fn nk_do_button_text(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24515))), "nk_bool nk_do_button_text(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24516))), "nk_bool nk_do_button_text(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -20369,7 +20413,7 @@ pub fn nk_do_button_text(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24516))), "nk_bool nk_do_button_text(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24517))), "nk_bool nk_do_button_text(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -20377,7 +20421,7 @@ pub fn nk_do_button_text(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (string != null) {} else {
-                __assert_fail("string", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24517))), "nk_bool nk_do_button_text(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("string", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24518))), "nk_bool nk_do_button_text(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -20385,7 +20429,7 @@ pub fn nk_do_button_text(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font != null) {} else {
-                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24518))), "nk_bool nk_do_button_text(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24519))), "nk_bool nk_do_button_text(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -20462,7 +20506,7 @@ pub fn nk_do_button_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_comma
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24562))), "nk_bool nk_do_button_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24563))), "nk_bool nk_do_button_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -20470,7 +20514,7 @@ pub fn nk_do_button_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_comma
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24563))), "nk_bool nk_do_button_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24564))), "nk_bool nk_do_button_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -20478,7 +20522,7 @@ pub fn nk_do_button_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_comma
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font != null) {} else {
-                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24564))), "nk_bool nk_do_button_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24565))), "nk_bool nk_do_button_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -20486,7 +20530,7 @@ pub fn nk_do_button_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_comma
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24565))), "nk_bool nk_do_button_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24566))), "nk_bool nk_do_button_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -20540,7 +20584,7 @@ pub fn nk_do_button_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_comman
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24592))), "nk_bool nk_do_button_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24593))), "nk_bool nk_do_button_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *)");
             };
         };
     };
@@ -20548,7 +20592,7 @@ pub fn nk_do_button_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_comman
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24593))), "nk_bool nk_do_button_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24594))), "nk_bool nk_do_button_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *)");
             };
         };
     };
@@ -20556,7 +20600,7 @@ pub fn nk_do_button_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_comman
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24594))), "nk_bool nk_do_button_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24595))), "nk_bool nk_do_button_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, enum nk_button_behavior, const struct nk_style_button *, const struct nk_input *)");
             };
         };
     };
@@ -20662,7 +20706,7 @@ pub fn nk_do_button_text_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24655))), "nk_bool nk_do_button_text_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24656))), "nk_bool nk_do_button_text_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
             };
         };
     };
@@ -20670,7 +20714,7 @@ pub fn nk_do_button_text_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24656))), "nk_bool nk_do_button_text_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24657))), "nk_bool nk_do_button_text_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
             };
         };
     };
@@ -20678,7 +20722,7 @@ pub fn nk_do_button_text_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font != null) {} else {
-                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24657))), "nk_bool nk_do_button_text_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
+                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24658))), "nk_bool nk_do_button_text_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, enum nk_symbol_type, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
             };
         };
     };
@@ -20778,7 +20822,7 @@ pub fn nk_do_button_text_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24713))), "nk_bool nk_do_button_text_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24714))), "nk_bool nk_do_button_text_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
             };
         };
     };
@@ -20786,7 +20830,7 @@ pub fn nk_do_button_text_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24714))), "nk_bool nk_do_button_text_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24715))), "nk_bool nk_do_button_text_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
             };
         };
     };
@@ -20794,7 +20838,7 @@ pub fn nk_do_button_text_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font != null) {} else {
-                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24715))), "nk_bool nk_do_button_text_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
+                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24716))), "nk_bool nk_do_button_text_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
             };
         };
     };
@@ -20802,7 +20846,7 @@ pub fn nk_do_button_text_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24716))), "nk_bool nk_do_button_text_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 24717))), "nk_bool nk_do_button_text_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, struct nk_image, const char *, int, nk_flags, enum nk_button_behavior, const struct nk_style_button *, const struct nk_user_font *, const struct nk_input *)");
             };
         };
     };
@@ -21022,7 +21066,7 @@ pub fn nk_do_toggle(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buff
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25142))), "nk_bool nk_do_toggle(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_bool *, const char *, int, enum nk_toggle_type, const struct nk_style_toggle *, const struct nk_input *, const struct nk_user_font *, nk_flags, nk_flags)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25143))), "nk_bool nk_do_toggle(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_bool *, const char *, int, enum nk_toggle_type, const struct nk_style_toggle *, const struct nk_input *, const struct nk_user_font *, nk_flags, nk_flags)");
             };
         };
     };
@@ -21030,7 +21074,7 @@ pub fn nk_do_toggle(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buff
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25143))), "nk_bool nk_do_toggle(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_bool *, const char *, int, enum nk_toggle_type, const struct nk_style_toggle *, const struct nk_input *, const struct nk_user_font *, nk_flags, nk_flags)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25144))), "nk_bool nk_do_toggle(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_bool *, const char *, int, enum nk_toggle_type, const struct nk_style_toggle *, const struct nk_input *, const struct nk_user_font *, nk_flags, nk_flags)");
             };
         };
     };
@@ -21038,7 +21082,7 @@ pub fn nk_do_toggle(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buff
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font != null) {} else {
-                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25144))), "nk_bool nk_do_toggle(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_bool *, const char *, int, enum nk_toggle_type, const struct nk_style_toggle *, const struct nk_input *, const struct nk_user_font *, nk_flags, nk_flags)");
+                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25145))), "nk_bool nk_do_toggle(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_bool *, const char *, int, enum nk_toggle_type, const struct nk_style_toggle *, const struct nk_input *, const struct nk_user_font *, nk_flags, nk_flags)");
             };
         };
     };
@@ -21235,7 +21279,7 @@ pub fn nk_do_progress(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_bu
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26408))), "nk_size nk_do_progress(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_size, nk_size, nk_bool, const struct nk_style_progress *, struct nk_input *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26409))), "nk_size nk_do_progress(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_size, nk_size, nk_bool, const struct nk_style_progress *, struct nk_input *)");
             };
         };
     };
@@ -21243,7 +21287,7 @@ pub fn nk_do_progress(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_bu
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26409))), "nk_size nk_do_progress(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_size, nk_size, nk_bool, const struct nk_style_progress *, struct nk_input *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26410))), "nk_size nk_do_progress(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_size, nk_size, nk_bool, const struct nk_style_progress *, struct nk_input *)");
             };
         };
     };
@@ -21443,7 +21487,7 @@ pub fn nk_do_slider(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buff
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25927))), "float nk_do_slider(nk_flags *, struct nk_command_buffer *, struct nk_rect, float, float, float, float, const struct nk_style_slider *, struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25928))), "float nk_do_slider(nk_flags *, struct nk_command_buffer *, struct nk_rect, float, float, float, float, const struct nk_style_slider *, struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -21451,7 +21495,7 @@ pub fn nk_do_slider(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buff
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25928))), "float nk_do_slider(nk_flags *, struct nk_command_buffer *, struct nk_rect, float, float, float, float, const struct nk_style_slider *, struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25929))), "float nk_do_slider(nk_flags *, struct nk_command_buffer *, struct nk_rect, float, float, float, float, const struct nk_style_slider *, struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -21719,7 +21763,7 @@ pub fn nk_do_scrollbarv(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26616))), "float nk_do_scrollbarv(nk_flags *, struct nk_command_buffer *, struct nk_rect, int, float, float, float, float, const struct nk_style_scrollbar *, struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26617))), "float nk_do_scrollbarv(nk_flags *, struct nk_command_buffer *, struct nk_rect, int, float, float, float, float, const struct nk_style_scrollbar *, struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -21727,7 +21771,7 @@ pub fn nk_do_scrollbarv(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26617))), "float nk_do_scrollbarv(nk_flags *, struct nk_command_buffer *, struct nk_rect, int, float, float, float, float, const struct nk_style_scrollbar *, struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26618))), "float nk_do_scrollbarv(nk_flags *, struct nk_command_buffer *, struct nk_rect, int, float, float, float, float, const struct nk_style_scrollbar *, struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -21735,7 +21779,7 @@ pub fn nk_do_scrollbarv(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26618))), "float nk_do_scrollbarv(nk_flags *, struct nk_command_buffer *, struct nk_rect, int, float, float, float, float, const struct nk_style_scrollbar *, struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26619))), "float nk_do_scrollbarv(nk_flags *, struct nk_command_buffer *, struct nk_rect, int, float, float, float, float, const struct nk_style_scrollbar *, struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -21835,7 +21879,7 @@ pub fn nk_do_scrollbarh(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26705))), "float nk_do_scrollbarh(nk_flags *, struct nk_command_buffer *, struct nk_rect, int, float, float, float, float, const struct nk_style_scrollbar *, struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26706))), "float nk_do_scrollbarh(nk_flags *, struct nk_command_buffer *, struct nk_rect, int, float, float, float, float, const struct nk_style_scrollbar *, struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -21843,7 +21887,7 @@ pub fn nk_do_scrollbarh(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26706))), "float nk_do_scrollbarh(nk_flags *, struct nk_command_buffer *, struct nk_rect, int, float, float, float, float, const struct nk_style_scrollbar *, struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26707))), "float nk_do_scrollbarh(nk_flags *, struct nk_command_buffer *, struct nk_rect, int, float, float, float, float, const struct nk_style_scrollbar *, struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22015,7 +22059,7 @@ pub fn nk_do_selectable(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25536))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25537))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22023,7 +22067,7 @@ pub fn nk_do_selectable(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25537))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25538))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22031,7 +22075,7 @@ pub fn nk_do_selectable(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25538))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25539))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22039,7 +22083,7 @@ pub fn nk_do_selectable(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (len != 0) {} else {
-                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25539))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25540))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22047,7 +22091,7 @@ pub fn nk_do_selectable(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (value != null) {} else {
-                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25540))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25541))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22055,7 +22099,7 @@ pub fn nk_do_selectable(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25541))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25542))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22063,7 +22107,7 @@ pub fn nk_do_selectable(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font != null) {} else {
-                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25542))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25543))), "nk_bool nk_do_selectable(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22118,7 +22162,7 @@ pub fn nk_do_selectable_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25573))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25574))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22126,7 +22170,7 @@ pub fn nk_do_selectable_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25574))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25575))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22134,7 +22178,7 @@ pub fn nk_do_selectable_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25575))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25576))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22142,7 +22186,7 @@ pub fn nk_do_selectable_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (len != 0) {} else {
-                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25576))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25577))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22150,7 +22194,7 @@ pub fn nk_do_selectable_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (value != null) {} else {
-                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25577))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25578))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22158,7 +22202,7 @@ pub fn nk_do_selectable_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25578))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25579))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22166,7 +22210,7 @@ pub fn nk_do_selectable_image(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_co
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font != null) {} else {
-                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25579))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25580))), "nk_bool nk_do_selectable_image(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, const struct nk_image *, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22233,7 +22277,7 @@ pub fn nk_edit_draw_text(arg_out: [*c]struct_nk_command_buffer, arg_style: [*c]c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27896))), "void nk_edit_draw_text(struct nk_command_buffer *, const struct nk_style_edit *, float, float, float, const char *, int, float, const struct nk_user_font *, struct nk_color, struct nk_color, nk_bool)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27897))), "void nk_edit_draw_text(struct nk_command_buffer *, const struct nk_style_edit *, float, float, float, const char *, int, float, const struct nk_user_font *, struct nk_color, struct nk_color, nk_bool)");
             };
         };
     };
@@ -22241,7 +22285,7 @@ pub fn nk_edit_draw_text(arg_out: [*c]struct_nk_command_buffer, arg_style: [*c]c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font != null) {} else {
-                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27897))), "void nk_edit_draw_text(struct nk_command_buffer *, const struct nk_style_edit *, float, float, float, const char *, int, float, const struct nk_user_font *, struct nk_color, struct nk_color, nk_bool)");
+                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27898))), "void nk_edit_draw_text(struct nk_command_buffer *, const struct nk_style_edit *, float, float, float, const char *, int, float, const struct nk_user_font *, struct nk_color, struct nk_color, nk_bool)");
             };
         };
     };
@@ -22249,7 +22293,7 @@ pub fn nk_edit_draw_text(arg_out: [*c]struct_nk_command_buffer, arg_style: [*c]c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27898))), "void nk_edit_draw_text(struct nk_command_buffer *, const struct nk_style_edit *, float, float, float, const char *, int, float, const struct nk_user_font *, struct nk_color, struct nk_color, nk_bool)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27899))), "void nk_edit_draw_text(struct nk_command_buffer *, const struct nk_style_edit *, float, float, float, const char *, int, float, const struct nk_user_font *, struct nk_color, struct nk_color, nk_bool)");
             };
         };
     };
@@ -22372,7 +22416,7 @@ pub fn nk_do_edit(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buffer
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27988))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27989))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22380,7 +22424,7 @@ pub fn nk_do_edit(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buffer
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27989))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27990))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22388,7 +22432,7 @@ pub fn nk_do_edit(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buffer
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27990))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 27991))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -22797,7 +22841,7 @@ pub fn nk_do_edit(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buffer
                             _ = @sizeOf(c_int);
                             break :blk blk_1: {
                                 break :blk_1 if (select_begin_ptr != null) {} else {
-                                    __assert_fail("select_begin_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28391))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
+                                    __assert_fail("select_begin_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28392))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
                                 };
                             };
                         };
@@ -22808,7 +22852,7 @@ pub fn nk_do_edit(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buffer
                             _ = @sizeOf(c_int);
                             break :blk blk_1: {
                                 break :blk_1 if (select_begin_ptr != null) {} else {
-                                    __assert_fail("select_begin_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28398))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
+                                    __assert_fail("select_begin_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28399))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
                                 };
                             };
                         };
@@ -22828,7 +22872,7 @@ pub fn nk_do_edit(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buffer
                             _ = @sizeOf(c_int);
                             break :blk blk_1: {
                                 break :blk_1 if (select_end_ptr != null) {} else {
-                                    __assert_fail("select_end_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28417))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
+                                    __assert_fail("select_end_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28418))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
                                 };
                             };
                         };
@@ -22858,7 +22902,7 @@ pub fn nk_do_edit(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buffer
                             _ = @sizeOf(c_int);
                             break :blk blk_1: {
                                 break :blk_1 if (cursor_ptr != null) {} else {
-                                    __assert_fail("cursor_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28447))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
+                                    __assert_fail("cursor_ptr", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 28448))), "nk_flags nk_do_edit(nk_flags *, struct nk_command_buffer *, struct nk_rect, nk_flags, nk_plugin_filter, struct nk_text_edit *, const struct nk_style_edit *, struct nk_input *, const struct nk_user_font *)");
                                 };
                             };
                         };
@@ -22935,7 +22979,7 @@ pub fn nk_color_picker_behavior(arg_state: [*c]nk_flags, arg_bounds: [*c]const s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29520))), "nk_bool nk_color_picker_behavior(nk_flags *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf *, const struct nk_input *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29521))), "nk_bool nk_color_picker_behavior(nk_flags *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf *, const struct nk_input *)");
             };
         };
     };
@@ -22943,7 +22987,7 @@ pub fn nk_color_picker_behavior(arg_state: [*c]nk_flags, arg_bounds: [*c]const s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (matrix != null) {} else {
-                __assert_fail("matrix", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29521))), "nk_bool nk_color_picker_behavior(nk_flags *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf *, const struct nk_input *)");
+                __assert_fail("matrix", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29522))), "nk_bool nk_color_picker_behavior(nk_flags *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf *, const struct nk_input *)");
             };
         };
     };
@@ -22951,7 +22995,7 @@ pub fn nk_color_picker_behavior(arg_state: [*c]nk_flags, arg_bounds: [*c]const s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (hue_bar != null) {} else {
-                __assert_fail("hue_bar", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29522))), "nk_bool nk_color_picker_behavior(nk_flags *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf *, const struct nk_input *)");
+                __assert_fail("hue_bar", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29523))), "nk_bool nk_color_picker_behavior(nk_flags *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf *, const struct nk_input *)");
             };
         };
     };
@@ -22959,7 +23003,7 @@ pub fn nk_color_picker_behavior(arg_state: [*c]nk_flags, arg_bounds: [*c]const s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (color != null) {} else {
-                __assert_fail("color", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29523))), "nk_bool nk_color_picker_behavior(nk_flags *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf *, const struct nk_input *)");
+                __assert_fail("color", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29524))), "nk_bool nk_color_picker_behavior(nk_flags *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf *, const struct nk_input *)");
             };
         };
     };
@@ -23062,7 +23106,7 @@ pub fn nk_draw_color_picker(arg_o: [*c]struct_nk_command_buffer, arg_matrix: [*c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (o != null) {} else {
-                __assert_fail("o", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29577))), "void nk_draw_color_picker(struct nk_command_buffer *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf)");
+                __assert_fail("o", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29578))), "void nk_draw_color_picker(struct nk_command_buffer *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf)");
             };
         };
     };
@@ -23070,7 +23114,7 @@ pub fn nk_draw_color_picker(arg_o: [*c]struct_nk_command_buffer, arg_matrix: [*c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (matrix != null) {} else {
-                __assert_fail("matrix", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29578))), "void nk_draw_color_picker(struct nk_command_buffer *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf)");
+                __assert_fail("matrix", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29579))), "void nk_draw_color_picker(struct nk_command_buffer *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf)");
             };
         };
     };
@@ -23078,7 +23122,7 @@ pub fn nk_draw_color_picker(arg_o: [*c]struct_nk_command_buffer, arg_matrix: [*c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (hue_bar != null) {} else {
-                __assert_fail("hue_bar", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29579))), "void nk_draw_color_picker(struct nk_command_buffer *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf)");
+                __assert_fail("hue_bar", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29580))), "void nk_draw_color_picker(struct nk_command_buffer *, const struct nk_rect *, const struct nk_rect *, const struct nk_rect *, struct nk_colorf)");
             };
         };
     };
@@ -23194,7 +23238,7 @@ pub fn nk_do_color_picker(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_comman
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29634))), "nk_bool nk_do_color_picker(nk_flags *, struct nk_command_buffer *, struct nk_colorf *, enum nk_color_format, struct nk_rect, struct nk_vec2, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29635))), "nk_bool nk_do_color_picker(nk_flags *, struct nk_command_buffer *, struct nk_colorf *, enum nk_color_format, struct nk_rect, struct nk_vec2, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -23202,7 +23246,7 @@ pub fn nk_do_color_picker(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_comman
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (col != null) {} else {
-                __assert_fail("col", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29635))), "nk_bool nk_do_color_picker(nk_flags *, struct nk_command_buffer *, struct nk_colorf *, enum nk_color_format, struct nk_rect, struct nk_vec2, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("col", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29636))), "nk_bool nk_do_color_picker(nk_flags *, struct nk_command_buffer *, struct nk_colorf *, enum nk_color_format, struct nk_rect, struct nk_vec2, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -23210,7 +23254,7 @@ pub fn nk_do_color_picker(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_comman
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29636))), "nk_bool nk_do_color_picker(nk_flags *, struct nk_command_buffer *, struct nk_colorf *, enum nk_color_format, struct nk_rect, struct nk_vec2, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29637))), "nk_bool nk_do_color_picker(nk_flags *, struct nk_command_buffer *, struct nk_colorf *, enum nk_color_format, struct nk_rect, struct nk_vec2, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -23218,7 +23262,7 @@ pub fn nk_do_color_picker(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_comman
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font != null) {} else {
-                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29637))), "nk_bool nk_do_color_picker(nk_flags *, struct nk_command_buffer *, struct nk_colorf *, enum nk_color_format, struct nk_rect, struct nk_vec2, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29638))), "nk_bool nk_do_color_picker(nk_flags *, struct nk_command_buffer *, struct nk_colorf *, enum nk_color_format, struct nk_rect, struct nk_vec2, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -23750,7 +23794,7 @@ pub fn nk_property(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, arg_v
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29008))), "void nk_property(struct nk_context *, const char *, struct nk_property_variant *, float, const enum nk_property_filter)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29009))), "void nk_property(struct nk_context *, const char *, struct nk_property_variant *, float, const enum nk_property_filter)");
             };
         };
     };
@@ -23758,7 +23802,7 @@ pub fn nk_property(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, arg_v
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29009))), "void nk_property(struct nk_context *, const char *, struct nk_property_variant *, float, const enum nk_property_filter)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29010))), "void nk_property(struct nk_context *, const char *, struct nk_property_variant *, float, const enum nk_property_filter)");
             };
         };
     };
@@ -23766,7 +23810,7 @@ pub fn nk_property(arg_ctx: [*c]struct_nk_context, arg_name: [*c]const u8, arg_v
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29010))), "void nk_property(struct nk_context *, const char *, struct nk_property_variant *, float, const enum nk_property_filter)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29011))), "void nk_property(struct nk_context *, const char *, struct nk_property_variant *, float, const enum nk_property_filter)");
             };
         };
     };
@@ -23969,7 +24013,7 @@ pub fn nk_utf_validate(arg_u: [*c]nk_rune, arg_i: c_int) callconv(.c) c_int {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (u != null) {} else {
-                __assert_fail("u", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8353))), "int nk_utf_validate(nk_rune *, int)");
+                __assert_fail("u", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8354))), "int nk_utf_validate(nk_rune *, int)");
             };
         };
     };
@@ -23992,7 +24036,7 @@ pub fn nk_utf_decode_byte(arg_c: u8, arg_i: [*c]c_int) callconv(.c) nk_rune {
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (i != null) {} else {
-                __assert_fail("i", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8364))), "nk_rune nk_utf_decode_byte(char, int *)");
+                __assert_fail("i", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 8365))), "nk_rune nk_utf_decode_byte(char, int *)");
             };
         };
     };
@@ -24505,7 +24549,7 @@ pub fn nk_setup(arg_ctx: [*c]struct_nk_context, arg_font: [*c]const struct_nk_us
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19342))), "void nk_setup(struct nk_context *, const struct nk_user_font *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 19343))), "void nk_setup(struct nk_context *, const struct nk_user_font *)");
             };
         };
     };
@@ -24544,7 +24588,7 @@ pub fn nk_menu_begin(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_wind
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21778))), "int nk_menu_begin(struct nk_context *, struct nk_window *, const char *, int, struct nk_rect, struct nk_vec2)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21779))), "int nk_menu_begin(struct nk_context *, struct nk_window *, const char *, int, struct nk_rect, struct nk_vec2)");
             };
         };
     };
@@ -24552,7 +24596,7 @@ pub fn nk_menu_begin(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_wind
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21779))), "int nk_menu_begin(struct nk_context *, struct nk_window *, const char *, int, struct nk_rect, struct nk_vec2)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21780))), "int nk_menu_begin(struct nk_context *, struct nk_window *, const char *, int, struct nk_rect, struct nk_vec2)");
             };
         };
     };
@@ -24560,7 +24604,7 @@ pub fn nk_menu_begin(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_wind
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21780))), "int nk_menu_begin(struct nk_context *, struct nk_window *, const char *, int, struct nk_rect, struct nk_vec2)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 21781))), "int nk_menu_begin(struct nk_context *, struct nk_window *, const char *, int, struct nk_rect, struct nk_vec2)");
             };
         };
     };
@@ -24631,7 +24675,7 @@ pub fn nk_tree_state_base(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_tree
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22786))), "int nk_tree_state_base(struct nk_context *, enum nk_tree_type, struct nk_image *, const char *, enum nk_collapse_states *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22787))), "int nk_tree_state_base(struct nk_context *, enum nk_tree_type, struct nk_image *, const char *, enum nk_collapse_states *)");
             };
         };
     };
@@ -24639,7 +24683,7 @@ pub fn nk_tree_state_base(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_tree
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22787))), "int nk_tree_state_base(struct nk_context *, enum nk_tree_type, struct nk_image *, const char *, enum nk_collapse_states *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22788))), "int nk_tree_state_base(struct nk_context *, enum nk_tree_type, struct nk_image *, const char *, enum nk_collapse_states *)");
             };
         };
     };
@@ -24647,7 +24691,7 @@ pub fn nk_tree_state_base(arg_ctx: [*c]struct_nk_context, arg_type: enum_nk_tree
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22788))), "int nk_tree_state_base(struct nk_context *, enum nk_tree_type, struct nk_image *, const char *, enum nk_collapse_states *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22789))), "int nk_tree_state_base(struct nk_context *, enum nk_tree_type, struct nk_image *, const char *, enum nk_collapse_states *)");
             };
         };
     };
@@ -24842,7 +24886,7 @@ pub fn nk_tree_element_image_push_hashed_base(arg_ctx: [*c]struct_nk_context, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22975))), "int nk_tree_element_image_push_hashed_base(struct nk_context *, enum nk_tree_type, struct nk_image *, const char *, int, enum nk_collapse_states *, nk_bool *)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22976))), "int nk_tree_element_image_push_hashed_base(struct nk_context *, enum nk_tree_type, struct nk_image *, const char *, int, enum nk_collapse_states *, nk_bool *)");
             };
         };
     };
@@ -24850,7 +24894,7 @@ pub fn nk_tree_element_image_push_hashed_base(arg_ctx: [*c]struct_nk_context, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22976))), "int nk_tree_element_image_push_hashed_base(struct nk_context *, enum nk_tree_type, struct nk_image *, const char *, int, enum nk_collapse_states *, nk_bool *)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22977))), "int nk_tree_element_image_push_hashed_base(struct nk_context *, enum nk_tree_type, struct nk_image *, const char *, int, enum nk_collapse_states *, nk_bool *)");
             };
         };
     };
@@ -24858,7 +24902,7 @@ pub fn nk_tree_element_image_push_hashed_base(arg_ctx: [*c]struct_nk_context, ar
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22977))), "int nk_tree_element_image_push_hashed_base(struct nk_context *, enum nk_tree_type, struct nk_image *, const char *, int, enum nk_collapse_states *, nk_bool *)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 22978))), "int nk_tree_element_image_push_hashed_base(struct nk_context *, enum nk_tree_type, struct nk_image *, const char *, int, enum nk_collapse_states *, nk_bool *)");
             };
         };
     };
@@ -25027,7 +25071,7 @@ pub fn nk_do_selectable_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (state != null) {} else {
-                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25620))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("state", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25621))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -25035,7 +25079,7 @@ pub fn nk_do_selectable_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25621))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25622))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -25043,7 +25087,7 @@ pub fn nk_do_selectable_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (str != null) {} else {
-                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25622))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("str", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25623))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -25051,7 +25095,7 @@ pub fn nk_do_selectable_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (len != 0) {} else {
-                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25623))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("len", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25624))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -25059,7 +25103,7 @@ pub fn nk_do_selectable_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (value != null) {} else {
-                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25624))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("value", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25625))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -25067,7 +25111,7 @@ pub fn nk_do_selectable_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25625))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25626))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -25075,7 +25119,7 @@ pub fn nk_do_selectable_symbol(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_c
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (font != null) {} else {
-                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25626))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
+                __assert_fail("font", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 25627))), "nk_bool nk_do_selectable_symbol(nk_flags *, struct nk_command_buffer *, struct nk_rect, const char *, int, nk_flags, nk_bool *, enum nk_symbol_type, const struct nk_style_selectable *, const struct nk_input *, const struct nk_user_font *)");
             };
         };
     };
@@ -25320,7 +25364,7 @@ pub fn nk_do_knob(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buffer
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (style != null) {} else {
-                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26230))), "float nk_do_knob(nk_flags *, struct nk_command_buffer *, struct nk_rect, float, float, float, float, enum nk_heading, float, const struct nk_style_knob *, struct nk_input *)");
+                __assert_fail("style", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26231))), "float nk_do_knob(nk_flags *, struct nk_command_buffer *, struct nk_rect, float, float, float, float, enum nk_heading, float, const struct nk_style_knob *, struct nk_input *)");
             };
         };
     };
@@ -25328,7 +25372,7 @@ pub fn nk_do_knob(arg_state: [*c]nk_flags, arg_out: [*c]struct_nk_command_buffer
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (out != null) {} else {
-                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26231))), "float nk_do_knob(nk_flags *, struct nk_command_buffer *, struct nk_rect, float, float, float, float, enum nk_heading, float, const struct nk_style_knob *, struct nk_input *)");
+                __assert_fail("out", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 26232))), "float nk_do_knob(nk_flags *, struct nk_command_buffer *, struct nk_rect, float, float, float, float, enum nk_heading, float, const struct nk_style_knob *, struct nk_input *)");
             };
         };
     };
@@ -25817,12 +25861,14 @@ pub fn nk_textedit_create_undo_record(arg_state: [*c]struct_nk_text_undo_state, 
     while ((@as(c_int, @bitCast(@as(c_int, state.*.undo_char_point))) + numchars) > @as(c_int, 999)) {
         nk_textedit_discard_undo(state);
     }
-    return &state.*.undo_rec[@as(c_ushort, @intCast(blk: {
-        const ref = &state.*.undo_point;
-        const tmp = ref.*;
-        ref.* += 1;
-        break :blk tmp;
-    }))];
+    return &state.*.undo_rec[
+        @as(c_ushort, @intCast(blk: {
+            const ref = &state.*.undo_point;
+            const tmp = ref.*;
+            ref.* += 1;
+            break :blk tmp;
+        }))
+    ];
 }
 pub fn nk_textedit_createundo(arg_state: [*c]struct_nk_text_undo_state, arg_pos: c_int, arg_insert_len: c_int, arg_delete_len: c_int) callconv(.c) [*c]nk_rune {
     var state = arg_state;
@@ -25884,7 +25930,7 @@ pub fn nk_chart_push_line(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((slot >= @as(c_int, 0)) and (slot < @as(c_int, 4))) {} else {
-                __assert_fail("slot >= 0 && slot < 4", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29299))), "nk_flags nk_chart_push_line(struct nk_context *, struct nk_window *, struct nk_chart *, float, int)");
+                __assert_fail("slot >= 0 && slot < 4", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29300))), "nk_flags nk_chart_push_line(struct nk_context *, struct nk_window *, struct nk_chart *, float, int)");
             };
         };
     };
@@ -25973,7 +26019,7 @@ pub fn nk_chart_push_column(arg_ctx: [*c]const struct_nk_context, arg_win: [*c]s
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if ((slot >= @as(c_int, 0)) and (slot < @as(c_int, 4))) {} else {
-                __assert_fail("slot >= 0 && slot < 4", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29370))), "nk_flags nk_chart_push_column(const struct nk_context *, struct nk_window *, struct nk_chart *, float, int)");
+                __assert_fail("slot >= 0 && slot < 4", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29371))), "nk_flags nk_chart_push_column(const struct nk_context *, struct nk_window *, struct nk_chart *, float, int)");
             };
         };
     };
@@ -26028,7 +26074,7 @@ pub fn nk_combo_begin(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_win
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx != null) {} else {
-                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29722))), "nk_bool nk_combo_begin(struct nk_context *, struct nk_window *, struct nk_vec2, nk_bool, struct nk_rect)");
+                __assert_fail("ctx", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29723))), "nk_bool nk_combo_begin(struct nk_context *, struct nk_window *, struct nk_vec2, nk_bool, struct nk_rect)");
             };
         };
     };
@@ -26036,7 +26082,7 @@ pub fn nk_combo_begin(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_win
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current != null) {} else {
-                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29723))), "nk_bool nk_combo_begin(struct nk_context *, struct nk_window *, struct nk_vec2, nk_bool, struct nk_rect)");
+                __assert_fail("ctx->current", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29724))), "nk_bool nk_combo_begin(struct nk_context *, struct nk_window *, struct nk_vec2, nk_bool, struct nk_rect)");
             };
         };
     };
@@ -26044,7 +26090,7 @@ pub fn nk_combo_begin(arg_ctx: [*c]struct_nk_context, arg_win: [*c]struct_nk_win
         _ = @sizeOf(c_int);
         break :blk blk_1: {
             break :blk_1 if (ctx.*.current.*.layout != null) {} else {
-                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29724))), "nk_bool nk_combo_begin(struct nk_context *, struct nk_window *, struct nk_vec2, nk_bool, struct nk_rect)");
+                __assert_fail("ctx->current->layout", "libs/nuklear/nuklear.h", @as(c_uint, @bitCast(@as(c_int, 29725))), "nk_bool nk_combo_begin(struct nk_context *, struct nk_window *, struct nk_vec2, nk_bool, struct nk_rect)");
             };
         };
     };
@@ -26505,6 +26551,7 @@ pub const __GLIBC_MINOR__ = @as(c_int, 39);
 pub const _DEBUG = @as(c_int, 1);
 pub const __GCC_HAVE_DWARF2_CFI_ASM = @as(c_int, 1);
 pub const NK_IMPLEMENTATION = "";
+pub const banana = @as(c_int, 3);
 pub const NK_SINGLE_FILE = "";
 pub const NK_NUKLEAR_H_ = "";
 pub const NK_UNDEFINED = -@as(f32, 1.0);
@@ -26514,27 +26561,27 @@ pub const NK_INPUT_MAX = @as(c_int, 16);
 pub const NK_MAX_NUMBER_BUFFER = @as(c_int, 64);
 pub const NK_SCROLLBAR_HIDING_TIMEOUT = @as(f32, 4.0);
 pub const NK_API = @compileError("unable to translate C expr: unexpected token 'extern'");
-// libs/nuklear/nuklear.h:273:13
+// libs/nuklear/nuklear.h:274:13
 pub const NK_LIB = @compileError("unable to translate C expr: unexpected token 'static'");
-// libs/nuklear/nuklear.h:278:13
+// libs/nuklear/nuklear.h:279:13
 pub const NK_INTERN = @compileError("unable to translate C expr: unexpected token 'static'");
-// libs/nuklear/nuklear.h:284:9
-pub const NK_STORAGE = @compileError("unable to translate C expr: unexpected token 'static'");
 // libs/nuklear/nuklear.h:285:9
-pub const NK_GLOBAL = @compileError("unable to translate C expr: unexpected token 'static'");
+pub const NK_STORAGE = @compileError("unable to translate C expr: unexpected token 'static'");
 // libs/nuklear/nuklear.h:286:9
+pub const NK_GLOBAL = @compileError("unable to translate C expr: unexpected token 'static'");
+// libs/nuklear/nuklear.h:287:9
 pub inline fn NK_FLAG(x: anytype) @TypeOf(@as(c_int, 1) << x) {
     _ = &x;
     return @as(c_int, 1) << x;
 }
 pub const NK_STRINGIFY = @compileError("unable to translate C expr: unexpected token '#'");
-// libs/nuklear/nuklear.h:289:9
+// libs/nuklear/nuklear.h:290:9
 pub inline fn NK_MACRO_STRINGIFY(x: anytype) @TypeOf(NK_STRINGIFY(x)) {
     _ = &x;
     return NK_STRINGIFY(x);
 }
 pub const NK_STRING_JOIN_IMMEDIATE = @compileError("unable to translate C expr: unexpected token '##'");
-// libs/nuklear/nuklear.h:291:9
+// libs/nuklear/nuklear.h:292:9
 pub inline fn NK_STRING_JOIN_DELAY(arg1: anytype, arg2: anytype) @TypeOf(NK_STRING_JOIN_IMMEDIATE(arg1, arg2)) {
     _ = &arg1;
     _ = &arg2;
@@ -26546,11 +26593,11 @@ pub inline fn NK_STRING_JOIN(arg1: anytype, arg2: anytype) @TypeOf(NK_STRING_JOI
     return NK_STRING_JOIN_DELAY(arg1, arg2);
 }
 pub const NK_UNIQUE_NAME = @compileError("unable to translate macro: undefined identifier `__LINE__`");
-// libs/nuklear/nuklear.h:298:11
+// libs/nuklear/nuklear.h:299:11
 pub const NK_STATIC_ASSERT = @compileError("unable to translate macro: undefined identifier `_dummy_array`");
-// libs/nuklear/nuklear.h:302:11
+// libs/nuklear/nuklear.h:303:11
 pub const NK_FILE_LINE = @compileError("unable to translate macro: undefined identifier `__FILE__`");
-// libs/nuklear/nuklear.h:309:11
+// libs/nuklear/nuklear.h:310:11
 pub inline fn NK_MIN(a: anytype, b: anytype) @TypeOf(if (a < b) a else b) {
     _ = &a;
     _ = &b;
@@ -26577,9 +26624,9 @@ pub const NK_SIZE_TYPE = c_ulong;
 pub const NK_POINTER_TYPE = c_ulong;
 pub const NK_BOOL = c_int;
 pub const nk_foreach = @compileError("unable to translate C expr: unexpected token 'for'");
-// libs/nuklear/nuklear.h:1254:9
+// libs/nuklear/nuklear.h:1255:9
 pub const nk_tree_push = @compileError("unable to translate macro: undefined identifier `__LINE__`");
-// libs/nuklear/nuklear.h:3102:9
+// libs/nuklear/nuklear.h:3103:9
 pub inline fn nk_tree_push_id(ctx: anytype, @"type": anytype, title: anytype, state: anytype, id: anytype) @TypeOf(nk_tree_push_hashed(ctx, @"type", title, state, NK_FILE_LINE, nk_strlen(NK_FILE_LINE), id)) {
     _ = &ctx;
     _ = &@"type";
@@ -26589,7 +26636,7 @@ pub inline fn nk_tree_push_id(ctx: anytype, @"type": anytype, title: anytype, st
     return nk_tree_push_hashed(ctx, @"type", title, state, NK_FILE_LINE, nk_strlen(NK_FILE_LINE), id);
 }
 pub const nk_tree_image_push = @compileError("unable to translate macro: undefined identifier `__LINE__`");
-// libs/nuklear/nuklear.h:3167:9
+// libs/nuklear/nuklear.h:3168:9
 pub inline fn nk_tree_image_push_id(ctx: anytype, @"type": anytype, img: anytype, title: anytype, state: anytype, id: anytype) @TypeOf(nk_tree_image_push_hashed(ctx, @"type", img, title, state, NK_FILE_LINE, nk_strlen(NK_FILE_LINE), id)) {
     _ = &ctx;
     _ = &@"type";
@@ -26600,7 +26647,7 @@ pub inline fn nk_tree_image_push_id(ctx: anytype, @"type": anytype, img: anytype
     return nk_tree_image_push_hashed(ctx, @"type", img, title, state, NK_FILE_LINE, nk_strlen(NK_FILE_LINE), id);
 }
 pub const nk_tree_element_push = @compileError("unable to translate macro: undefined identifier `__LINE__`");
-// libs/nuklear/nuklear.h:3277:9
+// libs/nuklear/nuklear.h:3278:9
 pub inline fn nk_tree_element_push_id(ctx: anytype, @"type": anytype, title: anytype, state: anytype, sel: anytype, id: anytype) @TypeOf(nk_tree_element_push_hashed(ctx, @"type", title, state, sel, NK_FILE_LINE, nk_strlen(NK_FILE_LINE), id)) {
     _ = &ctx;
     _ = &@"type";
@@ -26625,9 +26672,9 @@ pub const NK_VECTOR_STACK_SIZE = @as(c_int, 16);
 pub const NK_FLAGS_STACK_SIZE = @as(c_int, 32);
 pub const NK_COLOR_STACK_SIZE = @as(c_int, 32);
 pub const NK_CONFIGURATION_STACK_TYPE = @compileError("unable to translate macro: undefined identifier `nk_config_stack_`");
-// libs/nuklear/nuklear.h:5846:9
+// libs/nuklear/nuklear.h:5847:9
 pub const NK_CONFIG_STACK = @compileError("unable to translate macro: undefined identifier `nk_config_stack_`");
-// libs/nuklear/nuklear.h:5851:9
+// libs/nuklear/nuklear.h:5852:9
 pub const nk_float = f32;
 pub const NK_VALUE_PAGE_CAPACITY = @import("std").zig.c_translation.MacroArithmetic.div(@import("std").zig.c_translation.MacroArithmetic.div(NK_MAX(@import("std").zig.c_translation.sizeof(struct_nk_window), @import("std").zig.c_translation.sizeof(struct_nk_panel)), @import("std").zig.c_translation.sizeof(nk_uint)), @as(c_int, 2));
 pub const NK_PI = @as(f32, 3.141592654);
@@ -26639,7 +26686,7 @@ pub inline fn NK_SATURATE(x: anytype) @TypeOf(NK_MAX(@as(c_int, 0), NK_MIN(@as(f
     return NK_MAX(@as(c_int, 0), NK_MIN(@as(f32, 1.0), x));
 }
 pub const NK_LEN = @compileError("unable to translate C expr: expected ')' instead got '['");
-// libs/nuklear/nuklear.h:5978:9
+// libs/nuklear/nuklear.h:5979:9
 pub inline fn NK_ABS(a: anytype) @TypeOf(if (a < @as(c_int, 0)) -a else a) {
     _ = &a;
     return if (a < @as(c_int, 0)) -a else a;
@@ -26701,9 +26748,9 @@ pub inline fn nk_vec2_muls(a: anytype, t: anytype) @TypeOf(nk_vec2(a.x * t, a.y 
     return nk_vec2(a.x * t, a.y * t);
 }
 pub const nk_ptr_add = @compileError("unable to translate C expr: unexpected token ')'");
-// libs/nuklear/nuklear.h:5994:9
-pub const nk_ptr_add_const = @compileError("unable to translate C expr: unexpected token 'const'");
 // libs/nuklear/nuklear.h:5995:9
+pub const nk_ptr_add_const = @compileError("unable to translate C expr: unexpected token 'const'");
+// libs/nuklear/nuklear.h:5996:9
 pub inline fn nk_zero_struct(s: anytype) @TypeOf(nk_zero(&s, @import("std").zig.c_translation.sizeof(s))) {
     _ = &s;
     return nk_zero(&s, @import("std").zig.c_translation.sizeof(s));
@@ -26727,11 +26774,11 @@ pub inline fn NK_ALIGN_PTR_BACK(x: anytype, mask: anytype) @TypeOf(NK_UINT_TO_PT
     return NK_UINT_TO_PTR(NK_PTR_TO_UINT(@import("std").zig.c_translation.cast([*c]nk_byte, x)) & ~(mask - @as(c_int, 1)));
 }
 pub const NK_OFFSETOF = @compileError("unable to translate C expr: unexpected token 'an identifier'");
-// libs/nuklear/nuklear.h:6022:9
+// libs/nuklear/nuklear.h:6023:9
 pub const NK_ALIGNOF = @compileError("unable to translate macro: undefined identifier `c`");
-// libs/nuklear/nuklear.h:6039:9
+// libs/nuklear/nuklear.h:6040:9
 pub const NK_CONTAINER_OF = @compileError("unable to translate C expr: unexpected token ')'");
-// libs/nuklear/nuklear.h:6042:9
+// libs/nuklear/nuklear.h:6043:9
 pub const NK_INTERNAL_H = "";
 pub const NK_POOL_DEFAULT_CAPACITY = @as(c_int, 16);
 pub const NK_DEFAULT_COMMAND_BUFFER_SIZE = @as(c_int, 4) * @as(c_int, 1024);
@@ -27003,7 +27050,7 @@ pub inline fn NK_ASSERT(expr: anytype) @TypeOf(assert(expr)) {
 }
 pub const NK_DEFAULT = -@as(c_int, 1);
 pub const NK_VSNPRINTF = @compileError("unable to translate macro: undefined identifier `vsnprintf`");
-// libs/nuklear/nuklear.h:6093:15
+// libs/nuklear/nuklear.h:6094:15
 pub const NK_SCHAR_MIN = -@as(c_int, 127);
 pub const NK_SCHAR_MAX = @as(c_int, 127);
 pub const NK_UCHAR_MIN = @as(c_int, 0);
@@ -27018,7 +27065,7 @@ pub const NK_UINT_MIN = @as(c_int, 0);
 pub const NK_UINT_MAX = @import("std").zig.c_translation.promoteIntLiteral(c_uint, 4294967295, .decimal);
 pub const NK_FLOAT_PRECISION = @as(f64, 0.00000000000001);
 pub const nk_widget_state_reset = @compileError("unable to translate C expr: unexpected token 'if'");
-// libs/nuklear/nuklear.h:6141:9
+// libs/nuklear/nuklear.h:6142:9
 pub const NK_INV_SQRT = nk_inv_sqrt;
 pub const NK_SIN = nk_sin;
 pub const NK_COS = nk_cos;
@@ -27029,9 +27076,9 @@ pub const nk_word = c_int;
 pub const nk_wsize = @import("std").zig.c_translation.sizeof(nk_word);
 pub const nk_wmask = nk_wsize - @as(c_int, 1);
 pub const NK_TLOOP = @compileError("unable to translate macro: undefined identifier `t`");
-// libs/nuklear/nuklear.h:6813:13
-pub const NK_TLOOP1 = @compileError("unable to translate macro: undefined identifier `t`");
 // libs/nuklear/nuklear.h:6814:13
+pub const NK_TLOOP1 = @compileError("unable to translate macro: undefined identifier `t`");
+// libs/nuklear/nuklear.h:6815:13
 pub const NK_MEMSET = nk_memset;
 pub const NK_ADJACENCY_BONUS = @as(c_int, 5);
 pub const NK_SEPARATOR_BONUS = @as(c_int, 10);
@@ -27050,15 +27097,15 @@ pub inline fn NK_TO_HEX(i: anytype) @TypeOf(if (i <= @as(c_int, 9)) '0' + i else
     return if (i <= @as(c_int, 9)) '0' + i else ('A' - @as(c_int, 10)) + i;
 }
 pub const IMG_RGN = @compileError("unable to translate macro: undefined identifier `img`");
-// libs/nuklear/nuklear.h:9649:9
+// libs/nuklear/nuklear.h:9650:9
 pub const STB_INCLUDE_STB_RECT_PACK_H = "";
 pub const STB_RECT_PACK_VERSION = @as(c_int, 1);
 pub const STBRP_DEF = @compileError("unable to translate C expr: unexpected token 'extern'");
-// libs/nuklear/nuklear.h:11180:9
+// libs/nuklear/nuklear.h:11181:9
 pub const STBRP__MAXVAL = @import("std").zig.c_translation.promoteIntLiteral(c_int, 0x7fffffff, .hex);
 pub const __STB_INCLUDE_STB_TRUETYPE_H__ = "";
 pub const STBTT_DEF = @compileError("unable to translate C expr: unexpected token 'extern'");
-// libs/nuklear/nuklear.h:12235:9
+// libs/nuklear/nuklear.h:12236:9
 pub inline fn STBTT_POINT_SIZE(x: anytype) @TypeOf(-x) {
     _ = &x;
     return -x;
@@ -27074,11 +27121,11 @@ pub inline fn NK_COLOR_MAP(NK_COLOR_1: anytype) @TypeOf(NK_COLOR_1(NK_COLOR_TEXT
     return NK_COLOR_1(NK_COLOR_TEXT, @as(c_int, 175), @as(c_int, 175), @as(c_int, 175), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_WINDOW, @as(c_int, 45), @as(c_int, 45), @as(c_int, 45), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_HEADER, @as(c_int, 40), @as(c_int, 40), @as(c_int, 40), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_BORDER, @as(c_int, 65), @as(c_int, 65), @as(c_int, 65), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_BUTTON, @as(c_int, 50), @as(c_int, 50), @as(c_int, 50), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_BUTTON_HOVER, @as(c_int, 40), @as(c_int, 40), @as(c_int, 40), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_BUTTON_ACTIVE, @as(c_int, 35), @as(c_int, 35), @as(c_int, 35), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_TOGGLE, @as(c_int, 100), @as(c_int, 100), @as(c_int, 100), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_TOGGLE_HOVER, @as(c_int, 120), @as(c_int, 120), @as(c_int, 120), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_TOGGLE_CURSOR, @as(c_int, 45), @as(c_int, 45), @as(c_int, 45), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_SELECT, @as(c_int, 45), @as(c_int, 45), @as(c_int, 45), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_SELECT_ACTIVE, @as(c_int, 35), @as(c_int, 35), @as(c_int, 35), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_SLIDER, @as(c_int, 38), @as(c_int, 38), @as(c_int, 38), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_SLIDER_CURSOR, @as(c_int, 100), @as(c_int, 100), @as(c_int, 100), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_SLIDER_CURSOR_HOVER, @as(c_int, 120), @as(c_int, 120), @as(c_int, 120), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_SLIDER_CURSOR_ACTIVE, @as(c_int, 150), @as(c_int, 150), @as(c_int, 150), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_PROPERTY, @as(c_int, 38), @as(c_int, 38), @as(c_int, 38), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_EDIT, @as(c_int, 38), @as(c_int, 38), @as(c_int, 38), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_EDIT_CURSOR, @as(c_int, 175), @as(c_int, 175), @as(c_int, 175), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_COMBO, @as(c_int, 45), @as(c_int, 45), @as(c_int, 45), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_CHART, @as(c_int, 120), @as(c_int, 120), @as(c_int, 120), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_CHART_COLOR, @as(c_int, 45), @as(c_int, 45), @as(c_int, 45), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_CHART_COLOR_HIGHLIGHT, @as(c_int, 255), @as(c_int, 0), @as(c_int, 0), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_SCROLLBAR, @as(c_int, 40), @as(c_int, 40), @as(c_int, 40), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_SCROLLBAR_CURSOR, @as(c_int, 100), @as(c_int, 100), @as(c_int, 100), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_SCROLLBAR_CURSOR_HOVER, @as(c_int, 120), @as(c_int, 120), @as(c_int, 120), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_SCROLLBAR_CURSOR_ACTIVE, @as(c_int, 150), @as(c_int, 150), @as(c_int, 150), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_TAB_HEADER, @as(c_int, 40), @as(c_int, 40), @as(c_int, 40), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_KNOB, @as(c_int, 38), @as(c_int, 38), @as(c_int, 38), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_KNOB_CURSOR, @as(c_int, 100), @as(c_int, 100), @as(c_int, 100), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_KNOB_CURSOR_HOVER, @as(c_int, 120), @as(c_int, 120), @as(c_int, 120), @as(c_int, 255)) ++ NK_COLOR_1(NK_COLOR_KNOB_CURSOR_ACTIVE, @as(c_int, 150), @as(c_int, 150), @as(c_int, 150), @as(c_int, 255));
 }
 pub const NK_COLOR = @compileError("unable to translate C expr: unexpected token '{'");
-// libs/nuklear/nuklear.h:18512:9
+// libs/nuklear/nuklear.h:18513:9
 pub const NK_STYLE_PUSH_IMPLEMENATION = @compileError("unable to translate macro: undefined identifier `nk_style_push_`");
-// libs/nuklear/nuklear.h:19241:9
+// libs/nuklear/nuklear.h:19242:9
 pub const NK_STYLE_POP_IMPLEMENATION = @compileError("unable to translate macro: undefined identifier `nk_style_pop_`");
-// libs/nuklear/nuklear.h:19258:9
+// libs/nuklear/nuklear.h:19259:9
 pub inline fn NK_FRAC(x: anytype) @TypeOf(x - @import("std").zig.c_translation.cast(f32, @import("std").zig.c_translation.cast(c_int, nk_roundf(x)))) {
     _ = &x;
     return x - @import("std").zig.c_translation.cast(f32, @import("std").zig.c_translation.cast(c_int, nk_roundf(x)));
