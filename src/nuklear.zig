@@ -18628,7 +18628,8 @@ pub fn nk_free_page_element(arg_ctx: [*c]struct_nk_context, arg_elem: [*c]struct
         var buffer_end: ?*anyopaque = @as(?*anyopaque, @ptrCast(@as([*c]nk_byte, @ptrCast(@alignCast(ctx.*.memory.memory.ptr))) + ctx.*.memory.size));
         _ = &buffer_end;
         if (elem_end == buffer_end) {
-            ctx.*.memory.size -%= @as(nk_size, @bitCast(@sizeOf(struct_nk_page_element)));
+            //ctx.*.memory.size -%= @as(nk_size, @bitCast(@sizeOf(struct_nk_page_element)));
+            ctx.*.memory.size -%= @as(nk_size, @intCast(@sizeOf(struct_nk_page_element)));
         } else {
             nk_link_page_element_into_freelist(ctx, elem);
         }
@@ -18785,7 +18786,8 @@ pub fn nk_free_panel(arg_ctx: [*c]struct_nk_context, arg_pan: [*c]struct_nk_pane
     _ = &ctx;
     var pan = arg_pan;
     _ = &pan;
-    var pd: [*c]union_nk_page_data = @as([*c]union_nk_page_data, @ptrCast(@alignCast(@as(?*anyopaque, @ptrCast(@as([*c]u8, @ptrCast(@alignCast(if (true) pan else &@as([*c]union_nk_page_data, @ptrFromInt(@as(c_int, 0))).*.pan))) - @offsetOf(union_nk_page_data, "pan"))))));
+    //var pd: [*c]union_nk_page_data = @as([*c]union_nk_page_data, @ptrCast(@alignCast(@as(?*anyopaque, @ptrCast(@as([*c]u8, @ptrCast(@alignCast(if (true) pan else &@as([*c]union_nk_page_data, @ptrFromInt(@as(c_int, 0))).*.pan))) - @offsetOf(union_nk_page_data, "pan"))))));
+    var pd: [*c]union_nk_page_data = @as([*c]union_nk_page_data, @ptrCast(@alignCast(@as(?*anyopaque, @ptrCast(@as([*c]u8, @ptrCast(@alignCast(if (true) pan else &@as([*c]union_nk_page_data, @ptrFromInt(@as(c_int, 0))).*.pan))) - 0)))));
     _ = &pd;
     var pe: [*c]struct_nk_page_element = @as([*c]struct_nk_page_element, @ptrCast(@alignCast(@as(?*anyopaque, @ptrCast(@as([*c]u8, @ptrCast(@alignCast(if (true) pd else &@as([*c]struct_nk_page_element, @ptrFromInt(@as(c_int, 0))).*.data))) - @offsetOf(struct_nk_page_element, "data"))))));
     _ = &pe;
