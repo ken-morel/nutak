@@ -1,11 +1,15 @@
 const std = @import("std");
 const testing = std.testing;
 
-const atak = @import("atak.zig");
+const atak = @import("atak");
 //const nuklear = @import("nuklear");
 
 pub fn sayHello() void {
     std.debug.print("Saying hello", .{});
-    atak.efus.Parser.init(std.heap.page_allocator, "<string>", "Window title=\"Hello Window\"");
-    std.debug.print("Done", .{});
+    const parser = atak.efus.Parser.init(std.heap.page_allocator, "<string>", "Window title=\"Hello Window\"");
+    std.debug.print("Done {any}", .{parser});
+}
+
+pub fn main() void {
+    sayHello();
 }
